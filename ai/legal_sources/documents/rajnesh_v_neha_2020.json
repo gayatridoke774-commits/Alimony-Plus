@@ -1,0 +1,156 @@
+{
+  "document_id": "SC_RAJNESH_V_NEHA_2020",
+  "title": "Rajnesh v. Neha & Anr.",
+  "document_type": "Supreme Court judgment",
+  "court": "Supreme Court of India",
+  "case_number": "Criminal Appeal No. 730 of 2020",
+  "date_of_judgment": "2020-11-04",
+  "bench": [
+    "Justice Indu Malhotra",
+    "Justice R. Subhash Reddy"
+  ],
+  "source": {
+    "authority": "Supreme Court of India",
+    "official_source": true,
+    "url": "https://api.sci.gov.in/supremecourt/2018/37875/37875_2018_39_1501_24602_Judgement_04-Nov-2020.pdf",
+    "source_type": "official_judgment",
+    "retrieved_for_project": "2026-10-08"
+  },
+  "legal_context": {
+    "subject": "Maintenance in matrimonial and family matters",
+    "purpose": "Provides guidelines for consistency in deciding applications for maintenance and interim maintenance.",
+    "important_note": "The judgment does not prescribe a fixed mathematical formula for determining maintenance."
+  },
+  "knowledge": {
+    "overlapping_jurisdictions": {
+      "summary": "Different statutes may provide independent and distinct remedies for maintenance or interim maintenance. Courts should consider previous proceedings and orders so that overlapping claims and amounts are appropriately addressed.",
+      "rag_use": [
+        "Identify possible maintenance proceedings.",
+        "Ask whether the applicant has filed or received maintenance orders in another proceeding.",
+        "Avoid treating every statutory route as an isolated claim."
+      ]
+    },
+    "interim_maintenance": {
+      "summary": "The judgment addresses the need for timely disposal of interim maintenance applications and lays down procedural directions intended to reduce delays.",
+      "rag_use": [
+        "Explain that interim maintenance is distinct from final maintenance.",
+        "Help users understand that courts consider financial circumstances and relevant facts when deciding interim maintenance."
+      ]
+    },
+    "criteria_for_determining_maintenance": {
+      "summary": "There is no straightjacket formula for determining the amount of maintenance. The court must consider the facts and circumstances of each case.",
+      "factors": [
+        "Status of the parties",
+        "Reasonable needs of the wife and dependent children",
+        "Independent income and property of the claimant",
+        "Income and financial capacity of the respondent",
+        "Standard of living enjoyed during the marriage",
+        "Educational qualifications of the parties",
+        "Employment status and employment history",
+        "Whether the claimant had to sacrifice employment or career opportunities for family responsibilities",
+        "Responsibilities relating to children",
+        "Medical needs and expenses",
+        "Education expenses of children",
+        "Reasonable additional education or training expenses where relevant",
+        "Liabilities of the respondent",
+        "Number of dependants",
+        "Existing maintenance obligations",
+        "Litigation expenses",
+        "Inflation and cost of living",
+        "Other relevant facts and circumstances of the case"
+      ],
+      "rag_use": [
+        "Explain factors that may be relevant when discussing maintenance.",
+        "Generate structured questions for case intake.",
+        "Support transparent planning estimates without presenting a guaranteed court amount."
+      ]
+    },
+    "children": {
+      "summary": "Maintenance-related assessment may take into account the reasonable needs and expenses of dependent children.",
+      "factors": [
+        "Food",
+        "Clothing",
+        "Residence",
+        "Medical expenses",
+        "Education expenses",
+        "Reasonable additional training or coaching expenses where applicable"
+      ]
+    },
+    "affidavit_of_assets_and_liabilities": {
+      "summary": "The Supreme Court directed disclosure of relevant financial information through an affidavit of assets and liabilities in maintenance proceedings.",
+      "information_relevant_to_disclosure": [
+        "Income",
+        "Employment",
+        "Assets",
+        "Liabilities",
+        "Expenses",
+        "Dependants",
+        "Children",
+        "Existing maintenance proceedings",
+        "Existing maintenance orders",
+        "Other relevant financial information"
+      ],
+      "rag_use": [
+        "Guide users on information they may need to collect.",
+        "Support structured case intake.",
+        "Help identify missing financial information before human legal review."
+      ]
+    },
+    "previous_maintenance_proceedings": {
+      "summary": "Parties should disclose previous maintenance proceedings and orders. Courts should consider previous orders when determining subsequent maintenance claims, including appropriate adjustment or set-off where applicable.",
+      "rag_use": [
+        "Ask whether another maintenance case has already been filed.",
+        "Ask whether a maintenance order has already been passed.",
+        "Flag possible overlapping maintenance proceedings for human/legal review."
+      ]
+    },
+    "date_from_which_maintenance_is_awarded": {
+      "summary": "The Supreme Court directed that maintenance should ordinarily be awarded from the date of filing of the application.",
+      "important_note": "This is a judicial guideline from Rajnesh v. Neha and should be presented with its case citation rather than as a universal statutory formula."
+    },
+    "enforcement": {
+      "summary": "The judgment provides directions concerning enforcement and execution of maintenance orders.",
+      "rag_use": [
+        "Explain that obtaining a maintenance order and enforcing that order are separate practical stages.",
+        "Direct users toward appropriate legal or court assistance when an existing order is not being complied with."
+      ]
+    },
+    "final_directions": {
+      "summary": "The Supreme Court issued consolidated directions intended to improve consistency, transparency and timely resolution of maintenance proceedings."
+    }
+  },
+  "application_to_alimony_plus": {
+    "primary_use": [
+      "Legal RAG retrieval",
+      "Case intake",
+      "Maintenance planning factors",
+      "Document readiness",
+      "Citation-backed explanations",
+      "Evaluation of AI responses"
+    ],
+    "calculator_rule": "Do not convert the listed factors into a fixed legal formula or guaranteed maintenance amount.",
+    "estimate_rule": "Any planning estimate must clearly state its assumptions, limitations and uncertainty.",
+    "human_review": "Questions involving legal entitlement, conflicting proceedings, interpretation of facts or enforcement should be escalated for appropriate human/legal review."
+  },
+  "rag_metadata": {
+    "language": "en",
+    "jurisdiction": "India",
+    "authority_level": "Supreme Court of India",
+    "document_type": "case_law",
+    "tags": [
+      "maintenance",
+      "interim-maintenance",
+      "alimony",
+      "matrimonial-law",
+      "assets-and-liabilities",
+      "maintenance-factors",
+      "children",
+      "enforcement",
+      "legal-procedure",
+      "Rajnesh-v-Neha"
+    ],
+    "intended_use": "retrieval_grounded_legal_navigation",
+    "legal_advice": false,
+    "requires_citation": true
+  }
+}
