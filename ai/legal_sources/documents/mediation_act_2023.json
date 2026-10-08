@@ -1,0 +1,147 @@
+{
+  "document_id": "INDIA_CODE_MEDIATION_ACT_2023",
+  "title": "Mediation Act, 2023",
+  "document_type": "statutory_text",
+  "act": "The Mediation Act, 2023",
+  "act_number": 32,
+  "enactment_date": "2023-09-14",
+
+  "source": {
+    "authority": "Government of India",
+    "publisher": "India Code",
+    "official_source": true,
+    "url": "https://www.indiacode.nic.in/bitstream/123456789/19637/1/A2023-32.pdf",
+    "source_type": "official_statutory_text",
+    "retrieved_for_project": "2026-10-08"
+  },
+
+  "legal_context": {
+    "subject": "Mediation and mediated settlement",
+    "scope": "Mediation Act, 2023",
+    "important_note": "The Act provides a statutory framework for mediation, including pre-litigation mediation, mediation proceedings, mediators, mediated settlement agreements, enforcement, online mediation and community mediation."
+  },
+
+  "act_purpose": {
+    "statutory_purpose": "The Act seeks to promote and facilitate mediation, especially institutional mediation, for resolution of disputes, commercial or otherwise, enforce mediated settlement agreements, provide for registration of mediators, encourage community mediation and make online mediation an acceptable and cost-effective process.",
+    "rag_use": [
+      "Explain mediation as a dispute-resolution option.",
+      "Identify when information about mediation may be relevant to a user's case.",
+      "Explain that mediation is distinct from a court deciding legal entitlement.",
+      "Guide users toward appropriate human/legal assistance when mediation is being considered."
+    ]
+  },
+
+  "key_provisions": {
+    "section_1": {
+      "title": "Short title, extent and commencement",
+      "summary": "The Act is called the Mediation Act, 2023 and extends to the whole of India. Its provisions come into force on dates appointed by the Central Government, and different dates may be appointed for different provisions."
+    },
+
+    "section_2": {
+      "title": "Application",
+      "summary": "The Act applies where mediation is conducted in India in circumstances specified by the Act, including specified situations involving parties residing or operating in India, mediation agreements, international mediation and certain government-related disputes."
+    },
+
+    "section_4": {
+      "title": "Mediation agreement",
+      "summary": "The Act contains provisions concerning agreements to submit disputes to mediation."
+    },
+
+    "section_5": {
+      "title": "Pre-litigation mediation",
+      "summary": "The Act provides a framework for pre-litigation mediation in matters covered by the Act."
+    },
+
+    "section_6": {
+      "title": "Disputes or matters not fit for mediation",
+      "summary": "The Act identifies disputes or matters that are not considered fit for mediation and provides a statutory framework for determining applicability."
+    },
+
+    "section_7": {
+      "title": "Power of court or tribunal to refer parties to mediation",
+      "summary": "The Act provides for courts or tribunals to refer parties to mediation in accordance with the statutory framework."
+    },
+
+    "section_13": {
+      "title": "Territorial jurisdiction to undertake mediation",
+      "summary": "The Act contains provisions governing territorial jurisdiction for conducting mediation."
+    },
+
+    "section_14": {
+      "title": "Commencement of mediation",
+      "summary": "The Act specifies when mediation proceedings commence."
+    },
+
+    "section_15": {
+      "title": "Conduct of mediation",
+      "summary": "The Act provides a statutory framework for the conduct of mediation proceedings."
+    },
+
+    "section_16": {
+      "title": "Role of mediator",
+      "summary": "The Act defines the role of the mediator in the mediation process."
+    },
+
+    "section_18": {
+      "title": "Time-limit for completion of mediation",
+      "summary": "The Act contains provisions governing the time period for completion of mediation."
+    }
+  },
+
+  "important_principles_for_alimony_plus": [
+    "Mediation is a dispute-resolution process and should not be represented as a guaranteed way to obtain maintenance or alimony.",
+    "The AI should not pressure a user to enter mediation.",
+    "The AI should not negotiate with an opposing party on the user's behalf.",
+    "The AI should not represent itself as a mediator or lawyer.",
+    "The suitability of mediation can depend on the facts and circumstances of the dispute.",
+    "Where domestic violence, coercion, safety concerns or other circumstances may make mediation unsuitable or unsafe, the system should prioritize appropriate human/legal review and safety escalation.",
+    "Any mediated settlement should be explained as distinct from an AI-generated estimate or prediction."
+  ],
+
+  "rag_use": [
+    "Answer basic questions about mediation.",
+    "Explain that mediation can be a dispute-resolution pathway where legally applicable.",
+    "Retrieve information about pre-litigation mediation and court or tribunal referral.",
+    "Explain the role of a mediator at a high level.",
+    "Support the Mediation/ADR navigation component of Alimony Plus.",
+    "Provide source-backed information rather than presenting mediation as mandatory or guaranteed."
+  ],
+
+  "application_to_alimony_plus": {
+    "primary_use": [
+      "Alternative dispute-resolution navigation",
+      "Mediation information",
+      "Settlement-process explanation",
+      "Next-step guidance",
+      "Human/legal referral"
+    ],
+
+    "safety_rule": "The AI must not pressure, negotiate, threaten or communicate with an opposing spouse or party. It should provide neutral information about mediation and recommend appropriate professional assistance for case-specific decisions.",
+
+    "legal_entitlement_rule": "The Mediation Act must not be used to determine whether a person is legally entitled to maintenance or alimony or to calculate a guaranteed amount.",
+
+    "human_review": "Questions about whether mediation is appropriate for a particular dispute, the legal effect of a proposed settlement, safety concerns, coercion or negotiation strategy should be referred to an appropriate legal professional."
+  },
+
+  "rag_metadata": {
+    "language": "en",
+    "jurisdiction": "India",
+    "authority_level": "Central statute",
+    "document_type": "bare_act",
+
+    "tags": [
+      "Mediation-Act",
+      "Mediation-Act-2023",
+      "mediation",
+      "pre-litigation-mediation",
+      "mediated-settlement",
+      "alternative-dispute-resolution",
+      "online-mediation",
+      "community-mediation"
+    ],
+
+    "intended_use": "retrieval_grounded_legal_navigation",
+    "legal_advice": false,
+    "requires_citation": true
+  }
+}
