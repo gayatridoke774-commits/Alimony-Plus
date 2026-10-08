@@ -1,0 +1,197 @@
+{
+  "document_id": "INDIA_CODE_DPDP_ACT_2023",
+  "title": "Digital Personal Data Protection Act, 2023",
+  "document_type": "statutory_text",
+  "act": "The Digital Personal Data Protection Act, 2023",
+  "act_number": 22,
+  "enactment_date": "2023-08-11",
+
+  "source": {
+    "authority": "Government of India",
+    "publisher": "India Code",
+    "official_source": true,
+    "url": "https://www.indiacode.nic.in/bitstream/123456789/22037/1/a2023-22.pdf",
+    "source_type": "official_statutory_text",
+    "retrieved_for_project": "2026-10-08",
+    "version_note": "Official India Code text includes the commencement notification dated 13 November 2025."
+  },
+
+  "legal_context": {
+    "subject": "Protection and processing of digital personal data",
+    "purpose": "The Act provides for processing of digital personal data in a manner that recognises an individual's right to protect personal data while allowing lawful processing.",
+    "important_note": "The Act has phased commencement under the notification dated 13 November 2025. The AI must check the applicable commencement date of a provision before representing that provision as currently operative."
+  },
+
+  "key_definitions": {
+    "personal_data": "Data about an individual who is identifiable by or in relation to such data.",
+    "digital_personal_data": "Personal data in digital form.",
+    "data_principal": "The individual to whom the personal data relates, with specified rules for children and persons with disability.",
+    "data_fiduciary": "A person who alone or in conjunction with other persons determines the purpose and means of processing personal data.",
+    "data_processor": "A person who processes personal data on behalf of a Data Fiduciary.",
+    "consent_manager": "A person registered with the Board who enables a Data Principal to give, manage, review and withdraw consent through an accessible, transparent and interoperable platform.",
+    "child": "An individual who has not completed eighteen years of age."
+  },
+
+  "core_principles": {
+    "lawful_processing": "Personal data processing must be carried out in accordance with the applicable provisions of the Act and for lawful purposes.",
+    "consent": "The Act provides a framework for processing personal data based on consent and certain legitimate uses.",
+    "notice": "The Act contains requirements concerning notice to the Data Principal in specified circumstances.",
+    "purpose_and_scope": "The framework regulates processing of digital personal data and establishes responsibilities for Data Fiduciaries and rights and duties of Data Principals."
+  },
+
+  "data_principal_rights": {
+    "rights": [
+      "Right to access information about personal data and its processing, subject to the Act.",
+      "Right to correction and erasure of personal data, subject to applicable conditions.",
+      "Right to grievance redressal.",
+      "Right to nominate another individual to exercise rights in accordance with the Act."
+    ],
+
+    "important_note": "The availability and exercise of each right is subject to the applicable provisions, conditions and commencement status under the Act."
+  },
+
+  "data_principal_duties": {
+    "duties": [
+      "Comply with applicable law while exercising rights under the Act.",
+      "Provide information that is authentic where required.",
+      "Not impersonate another person in specified interactions.",
+      "Not suppress material information while obtaining specified documents or services.",
+      "Provide information that is not false or misleading in specified circumstances."
+    ]
+  },
+
+  "data_fiduciary_obligations": {
+    "key_obligations": [
+      "Implement appropriate technical and organisational measures to ensure effective compliance with the Act.",
+      "Take reasonable security safeguards to prevent personal data breaches.",
+      "Provide required information and respond to Data Principal requests in accordance with the Act.",
+      "Erase personal data when retention is no longer necessary for the specified purpose, subject to applicable legal requirements.",
+      "Appoint or designate required personnel where applicable.",
+      "Provide mechanisms for grievance redressal."
+    ],
+
+    "security_principle": "A Data Fiduciary must protect personal data through reasonable security safeguards appropriate to the Act and applicable requirements."
+  },
+
+  "children": {
+    "age_threshold": "Under 18 years",
+    "special_protection": [
+      "The Act contains special provisions concerning processing of children's personal data.",
+      "Verifiable parental consent requirements apply under the relevant provisions.",
+      "The Act restricts certain processing practices involving children, subject to the statutory framework."
+    ]
+  },
+
+  "data_breach": {
+    "principle": "The Act contains obligations concerning personal data breaches, including requirements to notify the Data Protection Board of India and affected Data Principals in circumstances specified by the Act."
+  },
+
+  "data_protection_board": {
+    "name": "Data Protection Board of India",
+    "role": [
+      "Exercise powers and perform functions assigned under the Act.",
+      "Deal with breaches and contraventions within its statutory jurisdiction.",
+      "Perform functions connected with enforcement of the Act."
+    ],
+    "establishment_note": "The Data Protection Board of India was established by notification dated 13 November 2025."
+  },
+
+  "commencement": {
+    "notification_date": "2025-11-13",
+    "important_note": "Different provisions of the Act commence on different dates under the Central Government notification.",
+
+    "phases": [
+      {
+        "phase": "immediate",
+        "date": "2025-11-13",
+        "provisions": [
+          "Section 2",
+          "Sections 18 to 26",
+          "Section 35",
+          "Sections 38 to 43",
+          "Section 44(1) and 44(3)"
+        ]
+      },
+      {
+        "phase": "one_year",
+        "date": "2026-11-13",
+        "provisions": [
+          "Section 6(9)",
+          "Section 27(1)(d)"
+        ]
+      },
+      {
+        "phase": "eighteen_months",
+        "date": "2027-05-13",
+        "provisions": [
+          "Sections 3 to 5",
+          "Section 6(1) to 6(8) and 6(10)",
+          "Sections 7 to 17",
+          "Section 27 except clause (d) of sub-section (1)",
+          "Sections 28 to 34",
+          "Sections 36 and 37",
+          "Section 44(2)"
+        ]
+      }
+    ],
+
+    "rag_rule": "The RAG system must use the applicable commencement date when answering questions about whether a particular DPDP Act provision is currently operative."
+  },
+
+  "application_to_alimony_plus": {
+    "primary_use": [
+      "Privacy-by-design guidance",
+      "Personal-data handling",
+      "User rights navigation",
+      "Data-security requirements",
+      "Data-breach response planning",
+      "Legal-source retrieval"
+    ],
+
+    "sensitive_data_rule": "Alimony Plus should minimise collection and retention of personal information and should process only information necessary for the intended service.",
+
+    "security_rule": "Sensitive case information and uploaded documents should be protected using appropriate technical and organisational safeguards.",
+
+    "privacy_rule": "The application should avoid unnecessarily exposing personal legal information and should implement appropriate access controls, audit mechanisms and data-handling safeguards.",
+
+    "commencement_rule": "The system must not present a DPDP Act obligation as currently enforceable without checking the commencement status of the relevant provision."
+  },
+
+  "rag_use": [
+    "Answer high-level questions about digital personal-data protection.",
+    "Explain Data Principal, Data Fiduciary and related terminology.",
+    "Support privacy and security design decisions for Alimony Plus.",
+    "Explain relevant user rights when the applicable provisions are in force.",
+    "Identify privacy-related risks involving uploaded documents and case information.",
+    "Retrieve the applicable commencement status of DPDP Act provisions.",
+    "Provide citation-backed explanations rather than presenting the Act as blanket legal advice."
+  ],
+
+  "safety_rule": "The AI must not claim that Alimony Plus is legally compliant merely because it follows selected provisions. Compliance requires assessment of the complete applicable legal and technical framework.",
+
+  "human_review": "Questions concerning legal compliance, regulatory obligations, data-sharing arrangements, breach response or interpretation of the Act should be reviewed by an appropriate privacy/legal professional.",
+
+  "rag_metadata": {
+    "language": "en",
+    "jurisdiction": "India",
+    "authority_level": "Central statute",
+    "document_type": "bare_act",
+
+    "tags": [
+      "DPDP-Act",
+      "Digital-Personal-Data-Protection",
+      "personal-data",
+      "Data-Principal",
+      "Data-Fiduciary",
+      "privacy",
+      "data-security",
+      "data-breach",
+      "Data-Protection-Board",
+      "commencement"
+    ],
+
+    "intended_use": "retrieval_grounded_legal_navigation",
+    "legal_advice": false,
+    "requires_citation": true
+  }
+}
