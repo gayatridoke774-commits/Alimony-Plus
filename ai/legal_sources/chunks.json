@@ -1,6 +1,5 @@
 [
   {
-    "chunk_id": "BNSS_2023_S144_1",
     "document_id": "BNSS_2023_S144",
     "title": "Section 144 — Order for maintenance of wives, children and parents",
     "document_type": "statute",
@@ -9,11 +8,10 @@
     "source_url": "",
     "authority": "Government of India",
     "official_source": true,
-    "jurisdiction": "India",
+    "jurisdiction": "",
     "language": "en"
   },
   {
-    "chunk_id": "BNSS_2023_S144_2",
     "document_id": "BNSS_2023_S144",
     "title": "Section 144 — Order for maintenance of wives, children and parents",
     "document_type": "statute",
@@ -22,11 +20,10 @@
     "source_url": "",
     "authority": "Government of India",
     "official_source": true,
-    "jurisdiction": "India",
+    "jurisdiction": "",
     "language": "en"
   },
   {
-    "chunk_id": "BNSS_2023_S144_3",
     "document_id": "BNSS_2023_S144",
     "title": "Section 144 — Order for maintenance of wives, children and parents",
     "document_type": "statute",
@@ -35,15 +32,14 @@
     "source_url": "",
     "authority": "Government of India",
     "official_source": true,
-    "jurisdiction": "India",
+    "jurisdiction": "",
     "language": "en"
   },
   {
-    "chunk_id": "INDIA_CODE_DPDP_ACT_2023_4",
     "document_id": "INDIA_CODE_DPDP_ACT_2023",
     "title": "Digital Personal Data Protection Act, 2023",
     "document_type": "statutory_text",
-    "section": "legal_context",
+    "section": "Legal context",
     "text": "subject: Protection and processing of digital personal data\npurpose: The Act provides for processing of digital personal data in a manner that recognises an individual's right to protect personal data while allowing lawful processing.\nimportant_note: The Act has phased commencement under the notification dated 13 November 2025. The AI must check the applicable commencement date of a provision before representing that provision as currently operative.",
     "source_url": "https://www.indiacode.nic.in/bitstream/123456789/22037/1/a2023-22.pdf",
     "authority": "Government of India",
@@ -52,7 +48,6 @@
     "language": "en"
   },
   {
-    "chunk_id": "INDIA_CODE_DPDP_ACT_2023_5",
     "document_id": "INDIA_CODE_DPDP_ACT_2023",
     "title": "Digital Personal Data Protection Act, 2023",
     "document_type": "statutory_text",
@@ -65,7 +60,6 @@
     "language": "en"
   },
   {
-    "chunk_id": "INDIA_CODE_DPDP_ACT_2023_6",
     "document_id": "INDIA_CODE_DPDP_ACT_2023",
     "title": "Digital Personal Data Protection Act, 2023",
     "document_type": "statutory_text",
@@ -78,7 +72,6 @@
     "language": "en"
   },
   {
-    "chunk_id": "INDIA_CODE_DPDP_ACT_2023_7",
     "document_id": "INDIA_CODE_DPDP_ACT_2023",
     "title": "Digital Personal Data Protection Act, 2023",
     "document_type": "statutory_text",
@@ -91,7 +84,6 @@
     "language": "en"
   },
   {
-    "chunk_id": "INDIA_CODE_DPDP_ACT_2023_8",
     "document_id": "INDIA_CODE_DPDP_ACT_2023",
     "title": "Digital Personal Data Protection Act, 2023",
     "document_type": "statutory_text",
@@ -104,7 +96,6 @@
     "language": "en"
   },
   {
-    "chunk_id": "INDIA_CODE_DPDP_ACT_2023_9",
     "document_id": "INDIA_CODE_DPDP_ACT_2023",
     "title": "Digital Personal Data Protection Act, 2023",
     "document_type": "statutory_text",
@@ -117,7 +108,6 @@
     "language": "en"
   },
   {
-    "chunk_id": "INDIA_CODE_DPDP_ACT_2023_10",
     "document_id": "INDIA_CODE_DPDP_ACT_2023",
     "title": "Digital Personal Data Protection Act, 2023",
     "document_type": "statutory_text",
@@ -130,7 +120,6 @@
     "language": "en"
   },
   {
-    "chunk_id": "INDIA_CODE_DPDP_ACT_2023_11",
     "document_id": "INDIA_CODE_DPDP_ACT_2023",
     "title": "Digital Personal Data Protection Act, 2023",
     "document_type": "statutory_text",
@@ -143,7 +132,6 @@
     "language": "en"
   },
   {
-    "chunk_id": "INDIA_CODE_DPDP_ACT_2023_12",
     "document_id": "INDIA_CODE_DPDP_ACT_2023",
     "title": "Digital Personal Data Protection Act, 2023",
     "document_type": "statutory_text",
@@ -156,12 +144,11 @@
     "language": "en"
   },
   {
-    "chunk_id": "INDIA_CODE_DPDP_ACT_2023_13",
     "document_id": "INDIA_CODE_DPDP_ACT_2023",
     "title": "Digital Personal Data Protection Act, 2023",
     "document_type": "statutory_text",
     "section": "commencement",
-    "text": "important_note: Different provisions of the Act commence on different dates under the Central Government notification.\nphases: phase: immediate\ndate: 2025-11-13\nprovisions: Section 2\nSections 18 to 26\nSection 35\nSections 38 to 43\nSection 44(1) and 44(3)\nphase: one_year\ndate: 2026-11-13\nprovisions: Section 6(9)\nSection 27(1)(d)\nphase: eighteen_months\ndate: 2027-05-13\nprovisions: Sections 3 to 5\nSection 6(1) to 6(8) and 6(10)\nSections 7 to 17\nSection 27 except clause (d) of sub-section (1)\nSections 28 to 34\nSections 36 and 37\nSection 44(2)\nrag_rule: The RAG system must use the applicable commencement date when answering questions about whether a particular DPDP Act provision is currently operative.",
+    "text": "notification_date: 2025-11-13\nimportant_note: Different provisions of the Act commence on different dates under the Central Government notification.\nphases: phase: immediate\ndate: 2025-11-13\nprovisions: Section 2\nSections 18 to 26\nSection 35\nSections 38 to 43\nSection 44(1) and 44(3)\nphase: one_year\ndate: 2026-11-13\nprovisions: Section 6(9)\nSection 27(1)(d)\nphase: eighteen_months\ndate: 2027-05-13\nprovisions: Sections 3 to 5\nSection 6(1) to 6(8) and 6(10)\nSections 7 to 17\nSection 27 except clause (d) of sub-section (1)\nSections 28 to 34\nSections 36 and 37\nSection 44(2)\nrag_rule: The RAG system must use the applicable commencement date when answering questions about whether a particular DPDP Act provision is currently operative.",
     "source_url": "https://www.indiacode.nic.in/bitstream/123456789/22037/1/a2023-22.pdf",
     "authority": "Government of India",
     "official_source": true,
@@ -169,7 +156,6 @@
     "language": "en"
   },
   {
-    "chunk_id": "INDIA_CODE_DPDP_ACT_2023_14",
     "document_id": "INDIA_CODE_DPDP_ACT_2023",
     "title": "Digital Personal Data Protection Act, 2023",
     "document_type": "statutory_text",
@@ -182,7 +168,6 @@
     "language": "en"
   },
   {
-    "chunk_id": "INDIA_CODE_DPDP_ACT_2023_15",
     "document_id": "INDIA_CODE_DPDP_ACT_2023",
     "title": "Digital Personal Data Protection Act, 2023",
     "document_type": "statutory_text",
@@ -195,7 +180,6 @@
     "language": "en"
   },
   {
-    "chunk_id": "INDIA_CODE_DPDP_ACT_2023_16",
     "document_id": "INDIA_CODE_DPDP_ACT_2023",
     "title": "Digital Personal Data Protection Act, 2023",
     "document_type": "statutory_text",
@@ -208,7 +192,6 @@
     "language": "en"
   },
   {
-    "chunk_id": "INDIA_CODE_DPDP_ACT_2023_17",
     "document_id": "INDIA_CODE_DPDP_ACT_2023",
     "title": "Digital Personal Data Protection Act, 2023",
     "document_type": "statutory_text",
@@ -221,11 +204,10 @@
     "language": "en"
   },
   {
-    "chunk_id": "MEITY_DPDP_RULES_2025_18",
     "document_id": "MEITY_DPDP_RULES_2025",
     "title": "Digital Personal Data Protection Rules, 2025",
     "document_type": "subordinate_legislation",
-    "section": "legal_context",
+    "section": "Legal context",
     "text": "subject: Implementation and operational requirements under the Digital Personal Data Protection Act, 2023\nparent_law: Digital Personal Data Protection Act, 2023\nimportant_note: The Rules provide detailed requirements for implementation of the DPDP Act. Different rules commence on different dates under Rule 1 and the notification.",
     "source_url": "https://www.meity.gov.in/static/uploads/2025/11/53450e6e5dc0bfa85ebd78686cadad39.pdf",
     "authority": "Ministry of Electronics and Information Technology, Government of India",
@@ -234,12 +216,11 @@
     "language": "en"
   },
   {
-    "chunk_id": "MEITY_DPDP_RULES_2025_19",
     "document_id": "MEITY_DPDP_RULES_2025",
     "title": "Digital Personal Data Protection Rules, 2025",
     "document_type": "subordinate_legislation",
     "section": "commencement",
-    "text": "publication_date: 2025-11-13\nimmediate: effective_date: 2025-11-13\none_year: effective_date: 2026-11-13\neighteen_months: effective_date: 2027-05-13\nrag_rule: The system must check the commencement date of an individual rule before describing that rule as currently applicable or enforceable.",
+    "text": "publication_date: 2025-11-13\nimmediate: effective_date: 2025-11-13\nrules: Rule 1\nRule 2\nRules 17 to 21\none_year: effective_date: 2026-11-13\nrules: Rule 4\neighteen_months: effective_date: 2027-05-13\nrules: Rule 3\nRules 5 to 16\nRule 22\nRule 23\nrag_rule: The system must check the commencement date of an individual rule before describing that rule as currently applicable or enforceable.",
     "source_url": "https://www.meity.gov.in/static/uploads/2025/11/53450e6e5dc0bfa85ebd78686cadad39.pdf",
     "authority": "Ministry of Electronics and Information Technology, Government of India",
     "official_source": true,
@@ -247,12 +228,11 @@
     "language": "en"
   },
   {
-    "chunk_id": "MEITY_DPDP_RULES_2025_20",
     "document_id": "MEITY_DPDP_RULES_2025",
     "title": "Digital Personal Data Protection Rules, 2025",
     "document_type": "subordinate_legislation",
     "section": "definitions",
-    "text": "techno_legal_measures: Measures referred to in the Rules in connection with specified technical and legal requirements.\nuser_account: The online account registered by the Data Principal with the Data Fiduciary, including specified profiles, pages, handles, email address, mobile number or similar means of accessing services.\nverifiable_consent: Consent verified in accordance with the applicable provisions of the Rules.",
+    "text": "act: The Digital Personal Data Protection Act, 2023.\ntechno_legal_measures: Measures referred to in the Rules in connection with specified technical and legal requirements.\nuser_account: The online account registered by the Data Principal with the Data Fiduciary, including specified profiles, pages, handles, email address, mobile number or similar means of accessing services.\nverifiable_consent: Consent verified in accordance with the applicable provisions of the Rules.",
     "source_url": "https://www.meity.gov.in/static/uploads/2025/11/53450e6e5dc0bfa85ebd78686cadad39.pdf",
     "authority": "Ministry of Electronics and Information Technology, Government of India",
     "official_source": true,
@@ -260,12 +240,11 @@
     "language": "en"
   },
   {
-    "chunk_id": "MEITY_DPDP_RULES_2025_21",
     "document_id": "MEITY_DPDP_RULES_2025",
     "title": "Digital Personal Data Protection Rules, 2025",
     "document_type": "subordinate_legislation",
     "section": "key_rules",
-    "text": "rule_3: summary: The notice must be understandable independently and provide clear and plain information necessary for specific and informed consent, including an itemised description of personal data and the specified purpose or purposes of processing.\nimportant_elements: Notice should be presented independently of other information.\nNotice should use clear and plain language.\nPersonal data proposed to be processed should be described in an itemised manner.\nThe specified purpose or purposes of processing should be clearly described.\nThe notice should provide the relevant communication link and other means for exercising specified rights and withdrawing consent.\ncommencement: 2027-05-13\nrule_4: summary: The Rules provide requirements concerning registration of Consent Managers and related conditions.\ncommencement: 2026-11-13\nrules_5_to_7: summary: The Rules contain operational requirements connected with processing of personal data and specified obligations under the Act.\ncommencement: 2027-05-13\nrules_8_and_9: summary: The Rules contain detailed requirements concerning specified obligations of Data Fiduciaries.\ncommencement: 2027-05-13\nrules_10_and_11: summary: The Rules provide requirements concerning verifiable consent in circumstances covered by the Act and Rules.\ncommencement: 2027-05-13\nrules_12_to_16: summary: The Rules contain operational mechanisms connected with Data Principal rights and related requirements.\ncommencement: 2027-05-13\nrules_17_to_21: summary: These rules contain provisions connected with the Data Protection Board and other institutional or procedural requirements.\ncommencement: 2025-11-13\nrules_22_and_23: summary: The Rules contain further requirements under the DPDP framework.\ncommencement: 2027-05-13",
+    "text": "rule_3: title: Notice given by Data Fiduciary to Data Principal\nsummary: The notice must be understandable independently and provide clear and plain information necessary for specific and informed consent, including an itemised description of personal data and the specified purpose or purposes of processing.\nimportant_elements: Notice should be presented independently of other information.\nNotice should use clear and plain language.\nPersonal data proposed to be processed should be described in an itemised manner.\nThe specified purpose or purposes of processing should be clearly described.\nThe notice should provide the relevant communication link and other means for exercising specified rights and withdrawing consent.\ncommencement: 2027-05-13\nrule_4: title: Registration of Consent Manager\nsummary: The Rules provide requirements concerning registration of Consent Managers and related conditions.\ncommencement: 2026-11-13\nrules_5_to_7: title: Processing and related requirements\nsummary: The Rules contain operational requirements connected with processing of personal data and specified obligations under the Act.\ncommencement: 2027-05-13\nrules_8_and_9: title: Data Fiduciary obligations\nsummary: The Rules contain detailed requirements concerning specified obligations of Data Fiduciaries.\ncommencement: 2027-05-13\nrules_10_and_11: title: Verifiable consent for specified processing\nsummary: The Rules provide requirements concerning verifiable consent in circumstances covered by the Act and Rules.\ncommencement: 2027-05-13\nrules_12_to_16: title: Rights and related mechanisms\nsummary: The Rules contain operational mechanisms connected with Data Principal rights and related requirements.\ncommencement: 2027-05-13\nrules_17_to_21: title: Data Protection Board and related matters",
     "source_url": "https://www.meity.gov.in/static/uploads/2025/11/53450e6e5dc0bfa85ebd78686cadad39.pdf",
     "authority": "Ministry of Electronics and Information Technology, Government of India",
     "official_source": true,
@@ -273,7 +252,18 @@
     "language": "en"
   },
   {
-    "chunk_id": "MEITY_DPDP_RULES_2025_22",
+    "document_id": "MEITY_DPDP_RULES_2025",
+    "title": "Digital Personal Data Protection Rules, 2025",
+    "document_type": "subordinate_legislation",
+    "section": "key_rules",
+    "text": "summary: These rules contain provisions connected with the Data Protection Board and other institutional or procedural requirements.\ncommencement: 2025-11-13\nrules_22_and_23: title: Additional compliance and procedural requirements\nsummary: The Rules contain further requirements under the DPDP framework.\ncommencement: 2027-05-13",
+    "source_url": "https://www.meity.gov.in/static/uploads/2025/11/53450e6e5dc0bfa85ebd78686cadad39.pdf",
+    "authority": "Ministry of Electronics and Information Technology, Government of India",
+    "official_source": true,
+    "jurisdiction": "India",
+    "language": "en"
+  },
+  {
     "document_id": "MEITY_DPDP_RULES_2025",
     "title": "Digital Personal Data Protection Rules, 2025",
     "document_type": "subordinate_legislation",
@@ -286,7 +276,6 @@
     "language": "en"
   },
   {
-    "chunk_id": "MEITY_DPDP_RULES_2025_23",
     "document_id": "MEITY_DPDP_RULES_2025",
     "title": "Digital Personal Data Protection Rules, 2025",
     "document_type": "subordinate_legislation",
@@ -299,7 +288,6 @@
     "language": "en"
   },
   {
-    "chunk_id": "MEITY_DPDP_RULES_2025_24",
     "document_id": "MEITY_DPDP_RULES_2025",
     "title": "Digital Personal Data Protection Rules, 2025",
     "document_type": "subordinate_legislation",
@@ -312,7 +300,6 @@
     "language": "en"
   },
   {
-    "chunk_id": "MEITY_DPDP_RULES_2025_25",
     "document_id": "MEITY_DPDP_RULES_2025",
     "title": "Digital Personal Data Protection Rules, 2025",
     "document_type": "subordinate_legislation",
@@ -325,7 +312,6 @@
     "language": "en"
   },
   {
-    "chunk_id": "MEITY_DPDP_RULES_2025_26",
     "document_id": "MEITY_DPDP_RULES_2025",
     "title": "Digital Personal Data Protection Rules, 2025",
     "document_type": "subordinate_legislation",
@@ -338,7 +324,6 @@
     "language": "en"
   },
   {
-    "chunk_id": "ECOURTS_SERVICES_INDIA_27",
     "document_id": "ECOURTS_SERVICES_INDIA",
     "title": "eCourts Services — Case Status, Court Orders and Judicial Information",
     "document_type": "court_service_information",
@@ -351,7 +336,6 @@
     "language": "en"
   },
   {
-    "chunk_id": "ECOURTS_SERVICES_INDIA_28",
     "document_id": "ECOURTS_SERVICES_INDIA",
     "title": "eCourts Services — Case Status, Court Orders and Judicial Information",
     "document_type": "court_service_information",
@@ -364,7 +348,6 @@
     "language": "en"
   },
   {
-    "chunk_id": "ECOURTS_SERVICES_INDIA_29",
     "document_id": "ECOURTS_SERVICES_INDIA",
     "title": "eCourts Services — Case Status, Court Orders and Judicial Information",
     "document_type": "court_service_information",
@@ -377,7 +360,6 @@
     "language": "en"
   },
   {
-    "chunk_id": "ECOURTS_SERVICES_INDIA_30",
     "document_id": "ECOURTS_SERVICES_INDIA",
     "title": "eCourts Services — Case Status, Court Orders and Judicial Information",
     "document_type": "court_service_information",
@@ -390,7 +372,6 @@
     "language": "en"
   },
   {
-    "chunk_id": "ECOURTS_SERVICES_INDIA_31",
     "document_id": "ECOURTS_SERVICES_INDIA",
     "title": "eCourts Services — Case Status, Court Orders and Judicial Information",
     "document_type": "court_service_information",
@@ -403,7 +384,6 @@
     "language": "en"
   },
   {
-    "chunk_id": "ECOURTS_SERVICES_INDIA_32",
     "document_id": "ECOURTS_SERVICES_INDIA",
     "title": "eCourts Services — Case Status, Court Orders and Judicial Information",
     "document_type": "court_service_information",
@@ -416,7 +396,6 @@
     "language": "en"
   },
   {
-    "chunk_id": "ECOURTS_SERVICES_INDIA_33",
     "document_id": "ECOURTS_SERVICES_INDIA",
     "title": "eCourts Services — Case Status, Court Orders and Judicial Information",
     "document_type": "court_service_information",
@@ -429,7 +408,6 @@
     "language": "en"
   },
   {
-    "chunk_id": "ECOURTS_SERVICES_INDIA_34",
     "document_id": "ECOURTS_SERVICES_INDIA",
     "title": "eCourts Services — Case Status, Court Orders and Judicial Information",
     "document_type": "court_service_information",
@@ -442,7 +420,6 @@
     "language": "en"
   },
   {
-    "chunk_id": "ECOURTS_SERVICES_INDIA_35",
     "document_id": "ECOURTS_SERVICES_INDIA",
     "title": "eCourts Services — Case Status, Court Orders and Judicial Information",
     "document_type": "court_service_information",
@@ -455,12 +432,11 @@
     "language": "en"
   },
   {
-    "chunk_id": "INDIA_CODE_HAMA_1956_SECTION_18_36",
     "document_id": "INDIA_CODE_HAMA_1956_SECTION_18",
     "title": "Hindu Adoptions and Maintenance Act, 1956 — Section 18",
     "document_type": "statutory_text",
-    "section": "legal_context",
-    "text": "subject: Maintenance of a Hindu wife\nscope: Section 18\nimportant_note: Section 18 concerns the entitlement of a Hindu wife to maintenance from her husband and circumstances in which she may live separately without forfeiting her claim.",
+    "section": "Section 18",
+    "text": "subject: Maintenance of a Hindu wife\nscope: Section 18\nchapter: Chapter III — Maintenance\nimportant_note: Section 18 concerns the entitlement of a Hindu wife to maintenance from her husband and circumstances in which she may live separately without forfeiting her claim.",
     "source_url": "https://www.indiacode.nic.in/bitstream/123456789/1638/1/AA1956____78.pdf",
     "authority": "Government of India",
     "official_source": true,
@@ -468,12 +444,11 @@
     "language": "en"
   },
   {
-    "chunk_id": "INDIA_CODE_HAMA_1956_SECTION_18_37",
     "document_id": "INDIA_CODE_HAMA_1956_SECTION_18",
     "title": "Hindu Adoptions and Maintenance Act, 1956 — Section 18",
     "document_type": "statutory_text",
-    "section": "section_18",
-    "text": "statutory_text: subsection_1: Subject to the provisions of this section, a Hindu wife, whether married before or after the commencement of this Act, shall be entitled to be maintained by her husband during her lifetime.\nsubsection_2: intro: A Hindu wife shall be entitled to live separately from her husband without forfeiting her claim to maintenance if:\ngrounds: a: He is guilty of desertion, that is to say, of abandoning her without reasonable cause and without her consent or against her wish, or of wilfully neglecting her.\nb: He has treated her with such cruelty as to cause a reasonable apprehension in her mind that it will be harmful or injurious to live with her husband.\nd: He has any other wife living.\ne: He keeps a concubine in the same house in which his wife is living or habitually resides with a concubine elsewhere.\nf: He has ceased to be a Hindu by conversion to another religion.\ng: There is any other cause justifying her living separately.\nomitted_clause: Clause (c) has been omitted.\nsubsection_3: A Hindu wife shall not be entitled to separate residence and maintenance from her husband if she is unchaste or ceases to be a Hindu by conversion to another religion.\nplain_summary: Section 18 provides that, subject to the section's conditions, a Hindu wife is entitled to maintenance from her husband during her lifetime. It also recognizes specified circumstances in which she may live separately without losing her maintenance claim.\nkey_elements: The provision applies to a Hindu wife.\nThe wife is entitled to be maintained by her husband during her lifetime, subject to the section.\nA wife may live separately without forfeiting her maintenance claim in specified circumstances.\nDesertion is one recognized ground.",
+    "section": "Section 18",
+    "text": "title: Maintenance of wife\nstatutory_text: subsection_1: Subject to the provisions of this section, a Hindu wife, whether married before or after the commencement of this Act, shall be entitled to be maintained by her husband during her lifetime.\nsubsection_2: intro: A Hindu wife shall be entitled to live separately from her husband without forfeiting her claim to maintenance if:\ngrounds: a: He is guilty of desertion, that is to say, of abandoning her without reasonable cause and without her consent or against her wish, or of wilfully neglecting her.\nb: He has treated her with such cruelty as to cause a reasonable apprehension in her mind that it will be harmful or injurious to live with her husband.\nd: He has any other wife living.\ne: He keeps a concubine in the same house in which his wife is living or habitually resides with a concubine elsewhere.\nf: He has ceased to be a Hindu by conversion to another religion.\ng: There is any other cause justifying her living separately.\nomitted_clause: Clause (c) has been omitted.\nsubsection_3: A Hindu wife shall not be entitled to separate residence and maintenance from her husband if she is unchaste or ceases to be a Hindu by conversion to another religion.\nplain_summary: Section 18 provides that, subject to the section's conditions, a Hindu wife is entitled to maintenance from her husband during her lifetime. It also recognizes specified circumstances in which she may live separately without losing her maintenance claim.\nkey_elements: The provision applies to a Hindu wife.\nThe wife is entitled to be maintained by her husband during her lifetime, subject to the section.\nA wife may live separately without forfeiting her maintenance claim in specified circumstances.\nDesertion is one recognized ground.",
     "source_url": "https://www.indiacode.nic.in/bitstream/123456789/1638/1/AA1956____78.pdf",
     "authority": "Government of India",
     "official_source": true,
@@ -481,11 +456,10 @@
     "language": "en"
   },
   {
-    "chunk_id": "INDIA_CODE_HAMA_1956_SECTION_18_38",
     "document_id": "INDIA_CODE_HAMA_1956_SECTION_18",
     "title": "Hindu Adoptions and Maintenance Act, 1956 — Section 18",
     "document_type": "statutory_text",
-    "section": "section_18",
+    "section": "Section 18",
     "text": "Cruelty creating a reasonable apprehension that living with the husband would be harmful or injurious is one recognized ground.\nHaving another wife living is one recognized ground.\nKeeping a concubine in the same house or habitually residing with a concubine elsewhere is one recognized ground.\nConversion of the husband to another religion is one recognized ground.\nAny other cause justifying separate residence is one recognized ground.\nSub-section (3) specifies circumstances in which the wife is not entitled to separate residence and maintenance under this section.\nrag_use: Identify Section 18 as a possible maintenance route when the facts indicate that the Hindu Adoptions and Maintenance Act may apply.\nAsk relevant questions about the marital relationship and circumstances of separate residence.\nDistinguish statutory eligibility questions from the amount of maintenance.\nDo not automatically conclude that a user is entitled to maintenance solely from one stated fact.\nFlag fact-specific eligibility questions for appropriate human or legal review.",
     "source_url": "https://www.indiacode.nic.in/bitstream/123456789/1638/1/AA1956____78.pdf",
     "authority": "Government of India",
@@ -494,11 +468,10 @@
     "language": "en"
   },
   {
-    "chunk_id": "INDIA_CODE_HAMA_1956_SECTION_18_39",
     "document_id": "INDIA_CODE_HAMA_1956_SECTION_18",
     "title": "Hindu Adoptions and Maintenance Act, 1956 — Section 18",
     "document_type": "statutory_text",
-    "section": "application_to_alimony_plus",
+    "section": "Section 18",
     "text": "primary_use: Legal RAG retrieval\nMaintenance-route identification\nCase intake\nCitation-backed explanations\nEligibility-question generation\ncalculator_rule: Section 18 does not provide a fixed mathematical formula for calculating maintenance. Do not infer a guaranteed amount from this section.\nsafety_rule: The AI should explain the statutory provision and its stated grounds without deciding legal entitlement.\nhuman_review: Fact-specific questions concerning eligibility, separate residence, conduct, conflicting proceedings, or interpretation of the statutory grounds should be escalated for appropriate legal or human review.",
     "source_url": "https://www.indiacode.nic.in/bitstream/123456789/1638/1/AA1956____78.pdf",
     "authority": "Government of India",
@@ -507,11 +480,10 @@
     "language": "en"
   },
   {
-    "chunk_id": "INDIA_CODE_HMA_1955_SECTIONS_24_25_40",
     "document_id": "INDIA_CODE_HMA_1955_SECTIONS_24_25",
     "title": "Hindu Marriage Act, 1955 — Sections 24 and 25",
     "document_type": "statutory_text",
-    "section": "legal_context",
+    "section": "Sections 24, 25",
     "text": "subject: Maintenance and alimony under the Hindu Marriage Act, 1955\nscope: Sections 24 and 25\nimportant_note: These sections provide statutory routes within proceedings under the Hindu Marriage Act. They do not establish a universal fixed percentage or mathematical formula for maintenance.",
     "source_url": "https://www.indiacode.nic.in/bitstream/123456789/1560/1/A1955-25Eng.pdf",
     "authority": "Government of India",
@@ -520,12 +492,11 @@
     "language": "en"
   },
   {
-    "chunk_id": "INDIA_CODE_HMA_1955_SECTIONS_24_25_41",
     "document_id": "INDIA_CODE_HMA_1955_SECTIONS_24_25",
     "title": "Hindu Marriage Act, 1955 — Sections 24 and 25",
     "document_type": "statutory_text",
-    "section": "sections",
-    "text": "section_24: type: interim_maintenance\nplain_summary: Where, in a proceeding under the Hindu Marriage Act, either the wife or husband has no independent income sufficient for their support and the necessary expenses of the proceeding, the court may, on application by either spouse, order the respondent to pay proceeding expenses and a reasonable monthly sum during the proceeding, having regard to the petitioner's own income and the respondent's income.\nstatutory_text: main_provision: Where in any proceeding under this Act it appears to the court that either the wife or the husband, as the case may be, has no independent income sufficient for her or his support and the necessary expenses of the proceeding, it may, on the application of the wife or the husband, order the respondent to pay to the petitioner the expenses of the proceeding, and monthly during the proceeding such sum as, having regard to the petitioner's own income and the income of the respondent, it may seem to the court to be reasonable.\nproviso: Provided that the application for the payment of the expenses of the proceeding and such monthly sum during the proceeding, shall, as far as possible, be disposed of within sixty days from the date of service of notice on the wife or the husband, as the case may be.\nkey_elements: Applies to proceedings under the Hindu Marriage Act.\nEither spouse may apply.\nThe applicant's independent income is relevant.\nThe respondent's income is relevant.\nThe court may order payment of expenses of the proceeding.\nThe court may order a monthly sum during the proceeding.\nThe amount is what the court considers reasonable having regard to the relevant income.\nThe application should, as far as possible, be disposed of within sixty days from the date of service of notice.",
+    "section": "Sections 24, 25",
+    "text": "section_24: title: Maintenance pendente lite and expenses of proceedings\ntype: interim_maintenance\nplain_summary: Where, in a proceeding under the Hindu Marriage Act, either the wife or husband has no independent income sufficient for their support and the necessary expenses of the proceeding, the court may, on application by either spouse, order the respondent to pay proceeding expenses and a reasonable monthly sum during the proceeding, having regard to the petitioner's own income and the respondent's income.\nstatutory_text: main_provision: Where in any proceeding under this Act it appears to the court that either the wife or the husband, as the case may be, has no independent income sufficient for her or his support and the necessary expenses of the proceeding, it may, on the application of the wife or the husband, order the respondent to pay to the petitioner the expenses of the proceeding, and monthly during the proceeding such sum as, having regard to the petitioner's own income and the income of the respondent, it may seem to the court to be reasonable.\nproviso: Provided that the application for the payment of the expenses of the proceeding and such monthly sum during the proceeding, shall, as far as possible, be disposed of within sixty days from the date of service of notice on the wife or the husband, as the case may be.\nkey_elements: Applies to proceedings under the Hindu Marriage Act.\nEither spouse may apply.\nThe applicant's independent income is relevant.\nThe respondent's income is relevant.\nThe court may order payment of expenses of the proceeding.\nThe court may order a monthly sum during the proceeding.\nThe amount is what the court considers reasonable having regard to the relevant income.",
     "source_url": "https://www.indiacode.nic.in/bitstream/123456789/1560/1/A1955-25Eng.pdf",
     "authority": "Government of India",
     "official_source": true,
@@ -533,12 +504,11 @@
     "language": "en"
   },
   {
-    "chunk_id": "INDIA_CODE_HMA_1955_SECTIONS_24_25_42",
     "document_id": "INDIA_CODE_HMA_1955_SECTIONS_24_25",
     "title": "Hindu Marriage Act, 1955 — Sections 24 and 25",
     "document_type": "statutory_text",
-    "section": "sections",
-    "text": "rag_use: Identify Section 24 as a possible interim-maintenance route when the user is involved in a proceeding under the Hindu Marriage Act.\nAsk whether the applicant has independent income sufficient for support and proceeding expenses.\nAsk for relevant income information of both spouses.\nDistinguish interim maintenance under Section 24 from permanent alimony under Section 25.\nsection_25: type: permanent_alimony\nplain_summary: A court exercising jurisdiction under the Hindu Marriage Act may, at the time of passing a decree or subsequently, on an application by either spouse, order the respondent to pay maintenance and support as a gross sum or monthly or periodical sum for a term not exceeding the life of the applicant, having regard to the statutory considerations and circumstances of the case.\nstatutory_text: subsection_1: Any court exercising jurisdiction under this Act may, at the time of passing any decree or at any time subsequent thereto, on application made to it for the purpose by either the wife or the husband, as the case may be, order that the respondent shall pay to the applicant for her or his maintenance and support such gross sum or such monthly or periodical sum for a term not exceeding the life of the applicant as, having regard to the respondent's own income and other property, if any, the income and other property of the applicant, the conduct of the parties and other circumstances of the case, it may seem to the court to be just, and any such payment may be secured, if necessary, by a charge on the immovable property of the respondent.",
+    "section": "Sections 24, 25",
+    "text": "The application should, as far as possible, be disposed of within sixty days from the date of service of notice.\nrag_use: Identify Section 24 as a possible interim-maintenance route when the user is involved in a proceeding under the Hindu Marriage Act.\nAsk whether the applicant has independent income sufficient for support and proceeding expenses.\nAsk for relevant income information of both spouses.\nDistinguish interim maintenance under Section 24 from permanent alimony under Section 25.\nsection_25: title: Permanent alimony and maintenance\ntype: permanent_alimony\nplain_summary: A court exercising jurisdiction under the Hindu Marriage Act may, at the time of passing a decree or subsequently, on an application by either spouse, order the respondent to pay maintenance and support as a gross sum or monthly or periodical sum for a term not exceeding the life of the applicant, having regard to the statutory considerations and circumstances of the case.\nstatutory_text: subsection_1: Any court exercising jurisdiction under this Act may, at the time of passing any decree or at any time subsequent thereto, on application made to it for the purpose by either the wife or the husband, as the case may be, order that the respondent shall pay to the applicant for her or his maintenance and support such gross sum or such monthly or periodical sum for a term not exceeding the life of the applicant as, having regard to the respondent's own income and other property, if any, the income and other property of the applicant, the conduct of the parties and other circumstances of the case, it may seem to the court to be just, and any such payment may be secured, if necessary, by a charge on the immovable property of the respondent.",
     "source_url": "https://www.indiacode.nic.in/bitstream/123456789/1560/1/A1955-25Eng.pdf",
     "authority": "Government of India",
     "official_source": true,
@@ -546,11 +516,10 @@
     "language": "en"
   },
   {
-    "chunk_id": "INDIA_CODE_HMA_1955_SECTIONS_24_25_43",
     "document_id": "INDIA_CODE_HMA_1955_SECTIONS_24_25",
     "title": "Hindu Marriage Act, 1955 — Sections 24 and 25",
     "document_type": "statutory_text",
-    "section": "sections",
+    "section": "Sections 24, 25",
     "text": "subsection_2: If the court is satisfied that there is a change in the circumstances of either party at any time after it has made an order under sub-section (1), it may at the instance of either party, vary, modify or rescind any such order in such manner as the court may deem just.\nsubsection_3: If the court is satisfied that the party in whose favour an order has been made under this section has re-married or, if such party is the wife, that she has not remained chaste, or, if such party is the husband, that he has had sexual intercourse with any woman outside wedlock, it may at the instance of the other party vary, modify or rescind any such order in such manner as the court may deem just.\nkey_elements: Either spouse may apply.\nThe application may be made at the time of passing a decree or subsequently.\nThe court may order a gross sum.\nThe court may order a monthly or periodical sum.\nThe term cannot exceed the life of the applicant.\nThe respondent's income and other property may be considered.\nThe applicant's income and other property may be considered.\nThe conduct of the parties may be considered.\nOther circumstances of the case may be considered.\nA payment may, if necessary, be secured by a charge on the respondent's immovable property.\nAn order may be varied, modified or rescinded when there is a change in circumstances.\nSub-section (3) specifies circumstances concerning remarriage and conduct under which an order may be varied, modified or rescinded.\nrag_use: Identify Section 25 as a possible permanent-alimony and maintenance route under the Hindu Marriage Act.\nAsk whether a decree has been passed or whether the proceeding is at a stage where Section 25 may be relevant.\nCollect relevant income and property information for both parties.",
     "source_url": "https://www.indiacode.nic.in/bitstream/123456789/1560/1/A1955-25Eng.pdf",
     "authority": "Government of India",
@@ -559,11 +528,10 @@
     "language": "en"
   },
   {
-    "chunk_id": "INDIA_CODE_HMA_1955_SECTIONS_24_25_44",
     "document_id": "INDIA_CODE_HMA_1955_SECTIONS_24_25",
     "title": "Hindu Marriage Act, 1955 — Sections 24 and 25",
     "document_type": "statutory_text",
-    "section": "sections",
+    "section": "Sections 24, 25",
     "text": "Consider the conduct of the parties and other circumstances only as statutory considerations, not as an automatic formula.\nPreserve the distinction between statutory considerations and any planning estimate.",
     "source_url": "https://www.indiacode.nic.in/bitstream/123456789/1560/1/A1955-25Eng.pdf",
     "authority": "Government of India",
@@ -572,11 +540,10 @@
     "language": "en"
   },
   {
-    "chunk_id": "INDIA_CODE_HMA_1955_SECTIONS_24_25_45",
     "document_id": "INDIA_CODE_HMA_1955_SECTIONS_24_25",
     "title": "Hindu Marriage Act, 1955 — Sections 24 and 25",
     "document_type": "statutory_text",
-    "section": "application_to_alimony_plus",
+    "section": "Sections 24, 25",
     "text": "primary_use: Legal RAG retrieval\nCase-intake routing\nMaintenance pathway explanation\nCitation-backed answers\nEvaluation of statutory-route classification\ncalculator_rule: Do not infer a fixed percentage or guaranteed amount from Sections 24 or 25.\nsafety_rule: The AI should explain the statutory route and relevant considerations without deciding entitlement or predicting a court's final order.\nhuman_review: Questions requiring interpretation of the user's specific facts, entitlement, procedural strategy, or conflicting legal routes should be escalated for appropriate legal or human review.",
     "source_url": "https://www.indiacode.nic.in/bitstream/123456789/1560/1/A1955-25Eng.pdf",
     "authority": "Government of India",
@@ -585,11 +552,10 @@
     "language": "en"
   },
   {
-    "chunk_id": "INDIA_CODE_MEDIATION_ACT_2023_46",
     "document_id": "INDIA_CODE_MEDIATION_ACT_2023",
     "title": "Mediation Act, 2023",
     "document_type": "statutory_text",
-    "section": "legal_context",
+    "section": "Legal context",
     "text": "subject: Mediation and mediated settlement\nscope: Mediation Act, 2023\nimportant_note: The Act provides a statutory framework for mediation, including pre-litigation mediation, mediation proceedings, mediators, mediated settlement agreements, enforcement, online mediation and community mediation.",
     "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19637/1/A2023-32.pdf",
     "authority": "Government of India",
@@ -598,7 +564,6 @@
     "language": "en"
   },
   {
-    "chunk_id": "INDIA_CODE_MEDIATION_ACT_2023_47",
     "document_id": "INDIA_CODE_MEDIATION_ACT_2023",
     "title": "Mediation Act, 2023",
     "document_type": "statutory_text",
@@ -611,12 +576,11 @@
     "language": "en"
   },
   {
-    "chunk_id": "INDIA_CODE_MEDIATION_ACT_2023_48",
     "document_id": "INDIA_CODE_MEDIATION_ACT_2023",
     "title": "Mediation Act, 2023",
     "document_type": "statutory_text",
     "section": "key_provisions",
-    "text": "section_1: summary: The Act is called the Mediation Act, 2023 and extends to the whole of India. Its provisions come into force on dates appointed by the Central Government, and different dates may be appointed for different provisions.\nsection_2: summary: The Act applies where mediation is conducted in India in circumstances specified by the Act, including specified situations involving parties residing or operating in India, mediation agreements, international mediation and certain government-related disputes.\nsection_4: summary: The Act contains provisions concerning agreements to submit disputes to mediation.\nsection_5: summary: The Act provides a framework for pre-litigation mediation in matters covered by the Act.\nsection_6: summary: The Act identifies disputes or matters that are not considered fit for mediation and provides a statutory framework for determining applicability.\nsection_7: summary: The Act provides for courts or tribunals to refer parties to mediation in accordance with the statutory framework.\nsection_13: summary: The Act contains provisions governing territorial jurisdiction for conducting mediation.\nsection_14: summary: The Act specifies when mediation proceedings commence.\nsection_15: summary: The Act provides a statutory framework for the conduct of mediation proceedings.\nsection_16: summary: The Act defines the role of the mediator in the mediation process.\nsection_18: summary: The Act contains provisions governing the time period for completion of mediation.",
+    "text": "section_1: title: Short title, extent and commencement\nsummary: The Act is called the Mediation Act, 2023 and extends to the whole of India. Its provisions come into force on dates appointed by the Central Government, and different dates may be appointed for different provisions.\nsection_2: title: Application\nsummary: The Act applies where mediation is conducted in India in circumstances specified by the Act, including specified situations involving parties residing or operating in India, mediation agreements, international mediation and certain government-related disputes.\nsection_4: title: Mediation agreement\nsummary: The Act contains provisions concerning agreements to submit disputes to mediation.\nsection_5: title: Pre-litigation mediation\nsummary: The Act provides a framework for pre-litigation mediation in matters covered by the Act.\nsection_6: title: Disputes or matters not fit for mediation\nsummary: The Act identifies disputes or matters that are not considered fit for mediation and provides a statutory framework for determining applicability.\nsection_7: title: Power of court or tribunal to refer parties to mediation\nsummary: The Act provides for courts or tribunals to refer parties to mediation in accordance with the statutory framework.\nsection_13: title: Territorial jurisdiction to undertake mediation\nsummary: The Act contains provisions governing territorial jurisdiction for conducting mediation.\nsection_14: title: Commencement of mediation\nsummary: The Act specifies when mediation proceedings commence.\nsection_15: title: Conduct of mediation\nsummary: The Act provides a statutory framework for the conduct of mediation proceedings.\nsection_16: title: Role of mediator\nsummary: The Act defines the role of the mediator in the mediation process.",
     "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19637/1/A2023-32.pdf",
     "authority": "Government of India",
     "official_source": true,
@@ -624,7 +588,18 @@
     "language": "en"
   },
   {
-    "chunk_id": "INDIA_CODE_MEDIATION_ACT_2023_49",
+    "document_id": "INDIA_CODE_MEDIATION_ACT_2023",
+    "title": "Mediation Act, 2023",
+    "document_type": "statutory_text",
+    "section": "key_provisions",
+    "text": "section_18: title: Time-limit for completion of mediation\nsummary: The Act contains provisions governing the time period for completion of mediation.",
+    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19637/1/A2023-32.pdf",
+    "authority": "Government of India",
+    "official_source": true,
+    "jurisdiction": "India",
+    "language": "en"
+  },
+  {
     "document_id": "INDIA_CODE_MEDIATION_ACT_2023",
     "title": "Mediation Act, 2023",
     "document_type": "statutory_text",
@@ -637,7 +612,6 @@
     "language": "en"
   },
   {
-    "chunk_id": "INDIA_CODE_MEDIATION_ACT_2023_50",
     "document_id": "INDIA_CODE_MEDIATION_ACT_2023",
     "title": "Mediation Act, 2023",
     "document_type": "statutory_text",
@@ -650,7 +624,6 @@
     "language": "en"
   },
   {
-    "chunk_id": "INDIA_CODE_MEDIATION_ACT_2023_51",
     "document_id": "INDIA_CODE_MEDIATION_ACT_2023",
     "title": "Mediation Act, 2023",
     "document_type": "statutory_text",
@@ -663,11 +636,10 @@
     "language": "en"
   },
   {
-    "chunk_id": "SC_MOHD_ABDUL_SAMAD_2024_52",
     "document_id": "SC_MOHD_ABDUL_SAMAD_2024",
     "title": "Mohd Abdul Samad v. State of Telangana & Anr.",
     "document_type": "case_law",
-    "section": "legal_context",
+    "section": "Legal context",
     "text": "subject: Maintenance rights of a divorced Muslim woman\nimportant_note: The Supreme Court considered whether a divorced Muslim woman can seek maintenance under Section 125 of the Code of Criminal Procedure, 1973 and addressed the relationship between that remedy and the Muslim Women (Protection of Rights on Divorce) Act, 1986.",
     "source_url": "https://webapi.sci.gov.in/supremecourt/2024/3533/3533_2024_11_1501_53688_Judgement_10-Jul-2024.pdf",
     "authority": "Supreme Court of India",
@@ -676,7 +648,6 @@
     "language": "en"
   },
   {
-    "chunk_id": "SC_MOHD_ABDUL_SAMAD_2024_53",
     "document_id": "SC_MOHD_ABDUL_SAMAD_2024",
     "title": "Mohd Abdul Samad v. State of Telangana & Anr.",
     "document_type": "case_law",
@@ -689,7 +660,6 @@
     "language": "en"
   },
   {
-    "chunk_id": "SC_MOHD_ABDUL_SAMAD_2024_54",
     "document_id": "SC_MOHD_ABDUL_SAMAD_2024",
     "title": "Mohd Abdul Samad v. State of Telangana & Anr.",
     "document_type": "case_law",
@@ -702,7 +672,6 @@
     "language": "en"
   },
   {
-    "chunk_id": "SC_MOHD_ABDUL_SAMAD_2024_55",
     "document_id": "SC_MOHD_ABDUL_SAMAD_2024",
     "title": "Mohd Abdul Samad v. State of Telangana & Anr.",
     "document_type": "case_law",
@@ -715,7 +684,6 @@
     "language": "en"
   },
   {
-    "chunk_id": "NALSA_LEGAL_SERVICES_FAQ_56",
     "document_id": "NALSA_LEGAL_SERVICES_FAQ",
     "title": "NALSA — Legal Services Frequently Asked Questions",
     "document_type": "legal_aid_service_information",
@@ -728,7 +696,6 @@
     "language": "en"
   },
   {
-    "chunk_id": "NALSA_LEGAL_SERVICES_FAQ_57",
     "document_id": "NALSA_LEGAL_SERVICES_FAQ",
     "title": "NALSA — Legal Services Frequently Asked Questions",
     "document_type": "legal_aid_service_information",
@@ -741,7 +708,6 @@
     "language": "en"
   },
   {
-    "chunk_id": "NALSA_LEGAL_SERVICES_FAQ_58",
     "document_id": "NALSA_LEGAL_SERVICES_FAQ",
     "title": "NALSA — Legal Services Frequently Asked Questions",
     "document_type": "legal_aid_service_information",
@@ -754,7 +720,6 @@
     "language": "en"
   },
   {
-    "chunk_id": "NALSA_LEGAL_SERVICES_FAQ_59",
     "document_id": "NALSA_LEGAL_SERVICES_FAQ",
     "title": "NALSA — Legal Services Frequently Asked Questions",
     "document_type": "legal_aid_service_information",
@@ -767,7 +732,6 @@
     "language": "en"
   },
   {
-    "chunk_id": "NALSA_LEGAL_SERVICES_FAQ_60",
     "document_id": "NALSA_LEGAL_SERVICES_FAQ",
     "title": "NALSA — Legal Services Frequently Asked Questions",
     "document_type": "legal_aid_service_information",
@@ -780,7 +744,6 @@
     "language": "en"
   },
   {
-    "chunk_id": "NALSA_LEGAL_SERVICES_FAQ_61",
     "document_id": "NALSA_LEGAL_SERVICES_FAQ",
     "title": "NALSA — Legal Services Frequently Asked Questions",
     "document_type": "legal_aid_service_information",
@@ -793,7 +756,6 @@
     "language": "en"
   },
   {
-    "chunk_id": "NALSA_LEGAL_SERVICES_FAQ_62",
     "document_id": "NALSA_LEGAL_SERVICES_FAQ",
     "title": "NALSA — Legal Services Frequently Asked Questions",
     "document_type": "legal_aid_service_information",
@@ -806,7 +768,6 @@
     "language": "en"
   },
   {
-    "chunk_id": "NALSA_LEGAL_SERVICES_FAQ_63",
     "document_id": "NALSA_LEGAL_SERVICES_FAQ",
     "title": "NALSA — Legal Services Frequently Asked Questions",
     "document_type": "legal_aid_service_information",
@@ -819,7 +780,6 @@
     "language": "en"
   },
   {
-    "chunk_id": "NALSA_LEGAL_SERVICES_FAQ_64",
     "document_id": "NALSA_LEGAL_SERVICES_FAQ",
     "title": "NALSA — Legal Services Frequently Asked Questions",
     "document_type": "legal_aid_service_information",
@@ -832,7 +792,6 @@
     "language": "en"
   },
   {
-    "chunk_id": "NALSA_WOMENS_ASSISTANCE_65",
     "document_id": "NALSA_WOMENS_ASSISTANCE",
     "title": "NALSA — Assistance for Women",
     "document_type": "legal_aid_service_information",
@@ -845,7 +804,6 @@
     "language": "en"
   },
   {
-    "chunk_id": "NALSA_WOMENS_ASSISTANCE_66",
     "document_id": "NALSA_WOMENS_ASSISTANCE",
     "title": "NALSA — Assistance for Women",
     "document_type": "legal_aid_service_information",
@@ -858,7 +816,6 @@
     "language": "en"
   },
   {
-    "chunk_id": "NALSA_WOMENS_ASSISTANCE_67",
     "document_id": "NALSA_WOMENS_ASSISTANCE",
     "title": "NALSA — Assistance for Women",
     "document_type": "legal_aid_service_information",
@@ -871,7 +828,6 @@
     "language": "en"
   },
   {
-    "chunk_id": "NALSA_WOMENS_ASSISTANCE_68",
     "document_id": "NALSA_WOMENS_ASSISTANCE",
     "title": "NALSA — Assistance for Women",
     "document_type": "legal_aid_service_information",
@@ -884,12 +840,11 @@
     "language": "en"
   },
   {
-    "chunk_id": "INDIA_CODE_PWDVA_2005_SECTION_20_69",
     "document_id": "INDIA_CODE_PWDVA_2005_SECTION_20",
     "title": "Protection of Women from Domestic Violence Act, 2005 — Section 20",
     "document_type": "statutory_text",
-    "section": "legal_context",
-    "text": "subject: Monetary reliefs arising from domestic violence\nscope: Section 20\nimportant_note: Section 20 allows the Magistrate to direct monetary relief to meet expenses incurred and losses suffered by the aggrieved person and any child as a result of domestic violence.",
+    "section": "Section 20",
+    "text": "subject: Monetary reliefs arising from domestic violence\nscope: Section 20\nchapter: Chapter IV — Procedure for obtaining orders of reliefs\nimportant_note: Section 20 allows the Magistrate to direct monetary relief to meet expenses incurred and losses suffered by the aggrieved person and any child as a result of domestic violence.",
     "source_url": "https://www.indiacode.nic.in/bitstream/123456789/2021/5/A2005-43.pdf",
     "authority": "Government of India",
     "official_source": true,
@@ -897,12 +852,11 @@
     "language": "en"
   },
   {
-    "chunk_id": "INDIA_CODE_PWDVA_2005_SECTION_20_70",
     "document_id": "INDIA_CODE_PWDVA_2005_SECTION_20",
     "title": "Protection of Women from Domestic Violence Act, 2005 — Section 20",
     "document_type": "statutory_text",
-    "section": "section_20",
-    "text": "statutory_text: subsection_1: intro: While disposing of an application under sub-section (1) of section 12, the Magistrate may direct the respondent to pay monetary relief to meet the expenses incurred and losses suffered by the aggrieved person and any child of the aggrieved person as a result of the domestic violence.\nincluded_reliefs: a: Loss of earnings.\nb: Medical expenses.\nc: Loss caused due to the destruction, damage or removal of any property from the control of the aggrieved person.\nd: Maintenance for the aggrieved person as well as her children, if any, including an order under or in addition to an order of maintenance under section 125 of the Code of Criminal Procedure, 1973 or any other law for the time being in force.\nsubsection_2: The monetary relief granted under this section shall be adequate, fair and reasonable and consistent with the standard of living to which the aggrieved person is accustomed.\nsubsection_3: The Magistrate shall have the power to order an appropriate lump sum payment or monthly payments of maintenance, as the nature and circumstances of the case may require.\nsubsection_4: The Magistrate shall send a copy of the order for monetary relief made under sub-section (1) to the parties to the application and to the in charge of the police station within the local limits of whose jurisdiction the respondent resides.\nsubsection_5: The respondent shall pay the monetary relief granted to the aggrieved person within the period specified in the order under sub-section (1).",
+    "section": "Section 20",
+    "text": "title: Monetary reliefs\nstatutory_text: subsection_1: intro: While disposing of an application under sub-section (1) of section 12, the Magistrate may direct the respondent to pay monetary relief to meet the expenses incurred and losses suffered by the aggrieved person and any child of the aggrieved person as a result of the domestic violence.\nincluded_reliefs: a: Loss of earnings.\nb: Medical expenses.\nc: Loss caused due to the destruction, damage or removal of any property from the control of the aggrieved person.\nd: Maintenance for the aggrieved person as well as her children, if any, including an order under or in addition to an order of maintenance under section 125 of the Code of Criminal Procedure, 1973 or any other law for the time being in force.\nsubsection_2: The monetary relief granted under this section shall be adequate, fair and reasonable and consistent with the standard of living to which the aggrieved person is accustomed.\nsubsection_3: The Magistrate shall have the power to order an appropriate lump sum payment or monthly payments of maintenance, as the nature and circumstances of the case may require.\nsubsection_4: The Magistrate shall send a copy of the order for monetary relief made under sub-section (1) to the parties to the application and to the in charge of the police station within the local limits of whose jurisdiction the respondent resides.\nsubsection_5: The respondent shall pay the monetary relief granted to the aggrieved person within the period specified in the order under sub-section (1).",
     "source_url": "https://www.indiacode.nic.in/bitstream/123456789/2021/5/A2005-43.pdf",
     "authority": "Government of India",
     "official_source": true,
@@ -910,11 +864,10 @@
     "language": "en"
   },
   {
-    "chunk_id": "INDIA_CODE_PWDVA_2005_SECTION_20_71",
     "document_id": "INDIA_CODE_PWDVA_2005_SECTION_20",
     "title": "Protection of Women from Domestic Violence Act, 2005 — Section 20",
     "document_type": "statutory_text",
-    "section": "section_20",
+    "section": "Section 20",
     "text": "subsection_6: Upon failure by the respondent to make payment in terms of the order under sub-section (1), the Magistrate may direct the employer or a debtor of the respondent to directly pay to the aggrieved person or deposit with the court a portion of the wages, salaries or debt due to or accrued to the credit of the respondent, which amount may be adjusted towards the monetary relief payable.\nplain_summary: Section 20 provides a statutory route for monetary relief where domestic violence has resulted in expenses or losses. The relief may include loss of earnings, medical expenses, property-related losses, and maintenance for the aggrieved person and her children.\nkey_elements: The provision operates in connection with an application under section 12.\nThe Magistrate may direct the respondent to pay monetary relief.\nRelief may address expenses incurred and losses suffered as a result of domestic violence.\nLoss of earnings may be included.\nMedical expenses may be included.\nLoss caused by destruction, damage or removal of property may be included.\nMaintenance for the aggrieved person and her children may be included.\nMaintenance under or in addition to maintenance under another law may be covered.\nMonetary relief should be adequate, fair and reasonable.\nThe relief should be consistent with the standard of living to which the aggrieved person is accustomed.\nMaintenance may be ordered as a lump sum or through monthly payments.\nThe section also provides a mechanism concerning non-payment of ordered monetary relief.\nrag_use: Identify Section 20 as a possible legal route where domestic violence facts are relevant.\nExplain the types of monetary relief expressly recognized by the section.",
     "source_url": "https://www.indiacode.nic.in/bitstream/123456789/2021/5/A2005-43.pdf",
     "authority": "Government of India",
@@ -923,11 +876,10 @@
     "language": "en"
   },
   {
-    "chunk_id": "INDIA_CODE_PWDVA_2005_SECTION_20_72",
     "document_id": "INDIA_CODE_PWDVA_2005_SECTION_20",
     "title": "Protection of Women from Domestic Violence Act, 2005 — Section 20",
     "document_type": "statutory_text",
-    "section": "section_20",
+    "section": "Section 20",
     "text": "Identify whether the user's situation may involve maintenance, medical expenses, loss of earnings or property-related losses.\nDistinguish statutory relief categories from any estimated amount.\nProvide a citation to Section 20 whenever information retrieved from this document is presented.",
     "source_url": "https://www.indiacode.nic.in/bitstream/123456789/2021/5/A2005-43.pdf",
     "authority": "Government of India",
@@ -936,11 +888,10 @@
     "language": "en"
   },
   {
-    "chunk_id": "INDIA_CODE_PWDVA_2005_SECTION_20_73",
     "document_id": "INDIA_CODE_PWDVA_2005_SECTION_20",
     "title": "Protection of Women from Domestic Violence Act, 2005 — Section 20",
     "document_type": "statutory_text",
-    "section": "application_to_alimony_plus",
+    "section": "Section 20",
     "text": "primary_use: Legal RAG retrieval\nMaintenance-route identification\nDomestic-violence-related case intake\nCitation-backed explanations\nRelief-category identification\ncalculator_rule: Section 20 does not provide a fixed mathematical formula or guaranteed percentage for calculating monetary relief or maintenance.\nsafety_rule: The AI should explain the statutory categories and conditions without deciding whether a user is legally entitled to relief or predicting a court's order.\nhuman_review: Fact-specific questions involving domestic violence, eligibility, overlapping maintenance proceedings, evidence, or interpretation of the Act should be escalated for appropriate legal or human review.",
     "source_url": "https://www.indiacode.nic.in/bitstream/123456789/2021/5/A2005-43.pdf",
     "authority": "Government of India",
@@ -949,11 +900,10 @@
     "language": "en"
   },
   {
-    "chunk_id": "SC_RAJNESH_V_NEHA_2020_74",
     "document_id": "SC_RAJNESH_V_NEHA_2020",
     "title": "Rajnesh v. Neha & Anr.",
     "document_type": "Supreme Court judgment",
-    "section": "legal_context",
+    "section": "Legal context",
     "text": "subject: Maintenance in matrimonial and family matters\npurpose: Provides guidelines for consistency in deciding applications for maintenance and interim maintenance.\nimportant_note: The judgment does not prescribe a fixed mathematical formula for determining maintenance.",
     "source_url": "https://api.sci.gov.in/supremecourt/2018/37875/37875_2018_39_1501_24602_Judgement_04-Nov-2020.pdf",
     "authority": "Supreme Court of India",
@@ -962,7 +912,6 @@
     "language": "en"
   },
   {
-    "chunk_id": "SC_RAJNESH_V_NEHA_2020_75",
     "document_id": "SC_RAJNESH_V_NEHA_2020",
     "title": "Rajnesh v. Neha & Anr.",
     "document_type": "Supreme Court judgment",
@@ -975,12 +924,11 @@
     "language": "en"
   },
   {
-    "chunk_id": "SC_RAJNESH_V_NEHA_2020_76",
     "document_id": "SC_RAJNESH_V_NEHA_2020",
     "title": "Rajnesh v. Neha & Anr.",
     "document_type": "Supreme Court judgment",
     "section": "knowledge",
-    "text": "rag_use: Explain factors that may be relevant when discussing maintenance.\nGenerate structured questions for case intake.\nSupport transparent planning estimates without presenting a guaranteed court amount.\nchildren: summary: Maintenance-related assessment may take into account the reasonable needs and expenses of dependent children.\nfactors: Food\nClothing\nResidence\nMedical expenses\nEducation expenses\nReasonable additional training or coaching expenses where applicable\naffidavit_of_assets_and_liabilities: summary: The Supreme Court directed disclosure of relevant financial information through an affidavit of assets and liabilities in maintenance proceedings.\ninformation_relevant_to_disclosure: Income\nEmployment\nAssets\nLiabilities\nExpenses\nDependants\nChildren\nExisting maintenance proceedings\nExisting maintenance orders\nOther relevant financial information\nrag_use: Guide users on information they may need to collect.\nSupport structured case intake.\nHelp identify missing financial information before human legal review.\nprevious_maintenance_proceedings: summary: Parties should disclose previous maintenance proceedings and orders. Courts should consider previous orders when determining subsequent maintenance claims, including appropriate adjustment or set-off where applicable.\nrag_use: Ask whether another maintenance case has already been filed.\nAsk whether a maintenance order has already been passed.\nFlag possible overlapping maintenance proceedings for human/legal review.\ndate_from_which_maintenance_is_awarded: summary: The Supreme Court directed that maintenance should ordinarily be awarded from the date of filing of the application.",
+    "text": "rag_use: Explain factors that may be relevant when discussing maintenance.\nGenerate structured questions for case intake.\nSupport transparent planning estimates without presenting a guaranteed court amount.\nchildren: summary: Maintenance-related assessment may take into account the reasonable needs and expenses of dependent children.\nfactors: Food\nClothing\nResidence\nMedical expenses\nEducation expenses\nReasonable additional training or coaching expenses where applicable\naffidavit_of_assets_and_liabilities: summary: The Supreme Court directed disclosure of relevant financial information through an affidavit of assets and liabilities in maintenance proceedings.\ninformation_relevant_to_disclosure: Income\nEmployment\nAssets\nLiabilities\nExpenses\nDependants\nChildren\nExisting maintenance proceedings\nExisting maintenance orders\nOther relevant financial information\nrag_use: Guide users on information they may need to collect.\nSupport structured case intake.\nHelp identify missing financial information before human legal review.\nprevious_maintenance_proceedings: summary: Parties should disclose previous maintenance proceedings and orders. Courts should consider previous orders when determining subsequent maintenance claims, including appropriate adjustment or set-off where applicable.\nrag_use: Ask whether another maintenance case has already been filed.\nAsk whether a maintenance order has already been passed.\nFlag possible overlapping maintenance proceedings for human/legal review.\ndate_from_which_maintenance_is_awarded: summary: The Supreme Court directed that maintenance should ordinarily be awarded from the date of filing of the application.\nimportant_note: This is a judicial guideline from Rajnesh v. Neha and should be presented with its case citation rather than as a universal statutory formula.",
     "source_url": "https://api.sci.gov.in/supremecourt/2018/37875/37875_2018_39_1501_24602_Judgement_04-Nov-2020.pdf",
     "authority": "Supreme Court of India",
     "official_source": true,
@@ -988,12 +936,11 @@
     "language": "en"
   },
   {
-    "chunk_id": "SC_RAJNESH_V_NEHA_2020_77",
     "document_id": "SC_RAJNESH_V_NEHA_2020",
     "title": "Rajnesh v. Neha & Anr.",
     "document_type": "Supreme Court judgment",
     "section": "knowledge",
-    "text": "important_note: This is a judicial guideline from Rajnesh v. Neha and should be presented with its case citation rather than as a universal statutory formula.\nenforcement: summary: The judgment provides directions concerning enforcement and execution of maintenance orders.\nrag_use: Explain that obtaining a maintenance order and enforcing that order are separate practical stages.\nDirect users toward appropriate legal or court assistance when an existing order is not being complied with.\nfinal_directions: summary: The Supreme Court issued consolidated directions intended to improve consistency, transparency and timely resolution of maintenance proceedings.",
+    "text": "enforcement: summary: The judgment provides directions concerning enforcement and execution of maintenance orders.\nrag_use: Explain that obtaining a maintenance order and enforcing that order are separate practical stages.\nDirect users toward appropriate legal or court assistance when an existing order is not being complied with.\nfinal_directions: summary: The Supreme Court issued consolidated directions intended to improve consistency, transparency and timely resolution of maintenance proceedings.",
     "source_url": "https://api.sci.gov.in/supremecourt/2018/37875/37875_2018_39_1501_24602_Judgement_04-Nov-2020.pdf",
     "authority": "Supreme Court of India",
     "official_source": true,
@@ -1001,7 +948,6 @@
     "language": "en"
   },
   {
-    "chunk_id": "SC_RAJNESH_V_NEHA_2020_78",
     "document_id": "SC_RAJNESH_V_NEHA_2020",
     "title": "Rajnesh v. Neha & Anr.",
     "document_type": "Supreme Court judgment",
@@ -1014,12 +960,11 @@
     "language": "en"
   },
   {
-    "chunk_id": "INDIA_CODE_SMA_1954_SECTIONS_36_37_79",
     "document_id": "INDIA_CODE_SMA_1954_SECTIONS_36_37",
     "title": "Special Marriage Act, 1954 — Sections 36 and 37",
     "document_type": "statutory_text",
-    "section": "legal_context",
-    "text": "subject: Alimony pendente lite, permanent alimony and maintenance\nscope: Sections 36 and 37\nimportant_note: Sections 36 and 37 provide statutory routes for interim and permanent financial support in proceedings under Chapter V or Chapter VI of the Special Marriage Act.",
+    "section": "Sections 36, 37",
+    "text": "subject: Alimony pendente lite, permanent alimony and maintenance\nscope: Sections 36 and 37\nchapter: Chapter VII — Jurisdiction and Procedure\nimportant_note: Sections 36 and 37 provide statutory routes for interim and permanent financial support in proceedings under Chapter V or Chapter VI of the Special Marriage Act.",
     "source_url": "https://www.indiacode.nic.in/bitstream/123456789/20574/1/special_marriage_act.pdf",
     "authority": "Government of India",
     "official_source": true,
@@ -1027,12 +972,11 @@
     "language": "en"
   },
   {
-    "chunk_id": "INDIA_CODE_SMA_1954_SECTIONS_36_37_80",
     "document_id": "INDIA_CODE_SMA_1954_SECTIONS_36_37",
     "title": "Special Marriage Act, 1954 — Sections 36 and 37",
     "document_type": "statutory_text",
-    "section": "section_36",
-    "text": "statutory_text: main: Where in any proceeding under Chapter V or Chapter VI it appears to the district court that the wife has no independent income sufficient for her support and the necessary expenses of the proceeding, it may, on the application of the wife, order the husband to pay to her the expenses of the proceeding, and weekly or monthly during the proceeding such sum as having regard to the husband's income, it may seem to the court to be reasonable.\nproviso: Provided that the application for the payment of the expenses of the proceeding and such weekly or monthly sum during the proceeding under Chapter V or Chapter VI, shall, as far as possible, be disposed of within sixty days from the date of service of notice on the husband.\nplain_summary: Section 36 allows the district court, in proceedings under Chapter V or VI, to order the husband to pay the wife's proceeding expenses and a reasonable weekly or monthly amount during the proceeding when she has no independent income sufficient for her support and necessary proceeding expenses.\nkey_elements: The proceeding must be under Chapter V or Chapter VI.\nThe provision applies where the wife has no independent income sufficient for her support and necessary proceeding expenses.\nThe wife may apply for relief under the section.\nThe court may order payment of expenses of the proceeding.\nThe court may order a weekly or monthly amount during the proceeding.\nThe amount is to be determined having regard to the husband's income and what appears reasonable to the court.\nThe application should, as far as possible, be disposed of within sixty days from service of notice on the husband.\nrag_use: Identify Section 36 as a possible interim-support route in relevant Special Marriage Act proceedings.",
+    "section": "Section 36",
+    "text": "title: Alimony pendente lite\nstatutory_text: main: Where in any proceeding under Chapter V or Chapter VI it appears to the district court that the wife has no independent income sufficient for her support and the necessary expenses of the proceeding, it may, on the application of the wife, order the husband to pay to her the expenses of the proceeding, and weekly or monthly during the proceeding such sum as having regard to the husband's income, it may seem to the court to be reasonable.\nproviso: Provided that the application for the payment of the expenses of the proceeding and such weekly or monthly sum during the proceeding under Chapter V or Chapter VI, shall, as far as possible, be disposed of within sixty days from the date of service of notice on the husband.\nplain_summary: Section 36 allows the district court, in proceedings under Chapter V or VI, to order the husband to pay the wife's proceeding expenses and a reasonable weekly or monthly amount during the proceeding when she has no independent income sufficient for her support and necessary proceeding expenses.\nkey_elements: The proceeding must be under Chapter V or Chapter VI.\nThe provision applies where the wife has no independent income sufficient for her support and necessary proceeding expenses.\nThe wife may apply for relief under the section.\nThe court may order payment of expenses of the proceeding.\nThe court may order a weekly or monthly amount during the proceeding.\nThe amount is to be determined having regard to the husband's income and what appears reasonable to the court.\nThe application should, as far as possible, be disposed of within sixty days from service of notice on the husband.\nrag_use: Identify Section 36 as a possible interim-support route in relevant Special Marriage Act proceedings.",
     "source_url": "https://www.indiacode.nic.in/bitstream/123456789/20574/1/special_marriage_act.pdf",
     "authority": "Government of India",
     "official_source": true,
@@ -1040,11 +984,10 @@
     "language": "en"
   },
   {
-    "chunk_id": "INDIA_CODE_SMA_1954_SECTIONS_36_37_81",
     "document_id": "INDIA_CODE_SMA_1954_SECTIONS_36_37",
     "title": "Special Marriage Act, 1954 — Sections 36 and 37",
     "document_type": "statutory_text",
-    "section": "section_36",
+    "section": "Section 36",
     "text": "Explain the distinction between support during proceedings and permanent maintenance.\nRetrieve the provision when a user's facts indicate lack of sufficient independent income and ongoing proceeding expenses.\nDo not infer a fixed percentage or guaranteed amount from the provision.",
     "source_url": "https://www.indiacode.nic.in/bitstream/123456789/20574/1/special_marriage_act.pdf",
     "authority": "Government of India",
@@ -1053,12 +996,11 @@
     "language": "en"
   },
   {
-    "chunk_id": "INDIA_CODE_SMA_1954_SECTIONS_36_37_82",
     "document_id": "INDIA_CODE_SMA_1954_SECTIONS_36_37",
     "title": "Special Marriage Act, 1954 — Sections 36 and 37",
     "document_type": "statutory_text",
-    "section": "section_37",
-    "text": "statutory_text: subsection_1: Any court exercising jurisdiction under Chapter V or Chapter VI may, at the time of passing any decree or at any time subsequent to the decree, on application made to it for the purpose, order that the husband shall secure to the wife for her maintenance and support, if necessary, by a charge on the husband's property such gross sum or such monthly or periodical payment of money for a term not exceeding her life, as, having regard to her own property, if any, her husband's property and ability, the conduct of the parties and other circumstances of the case, it may seem to the court to be just.\nsubsection_2: If the district court is satisfied that there is a change in the circumstances of either party at any time after it has made an order under sub-section (1), it may, at the instance of either party, vary, modify or rescind any such order in such manner as it may seem to the court to be just.\nplain_summary: Section 37 allows a court exercising jurisdiction under Chapter V or Chapter VI to order permanent alimony and maintenance for the wife at the time of a decree or after the decree. The court considers factors including the parties' property, the husband's ability, the conduct of the parties and other circumstances.\nkey_elements: The court must be exercising jurisdiction under Chapter V or Chapter VI.\nAn application may be made for permanent alimony and maintenance.\nAn order may be made when the decree is passed or after the decree.\nThe court may order a gross sum.\nThe court may order monthly or periodical payments.\nThe payment may be secured by a charge on the husband's property if necessary.\nThe term of payment cannot exceed the wife's life.\nThe court considers the wife's property, if any.",
+    "section": "Section 37",
+    "text": "title: Permanent alimony and maintenance\nstatutory_text: subsection_1: Any court exercising jurisdiction under Chapter V or Chapter VI may, at the time of passing any decree or at any time subsequent to the decree, on application made to it for the purpose, order that the husband shall secure to the wife for her maintenance and support, if necessary, by a charge on the husband's property such gross sum or such monthly or periodical payment of money for a term not exceeding her life, as, having regard to her own property, if any, her husband's property and ability, the conduct of the parties and other circumstances of the case, it may seem to the court to be just.\nsubsection_2: If the district court is satisfied that there is a change in the circumstances of either party at any time after it has made an order under sub-section (1), it may, at the instance of either party, vary, modify or rescind any such order in such manner as it may seem to the court to be just.\nplain_summary: Section 37 allows a court exercising jurisdiction under Chapter V or Chapter VI to order permanent alimony and maintenance for the wife at the time of a decree or after the decree. The court considers factors including the parties' property, the husband's ability, the conduct of the parties and other circumstances.\nkey_elements: The court must be exercising jurisdiction under Chapter V or Chapter VI.\nAn application may be made for permanent alimony and maintenance.\nAn order may be made when the decree is passed or after the decree.\nThe court may order a gross sum.\nThe court may order monthly or periodical payments.\nThe payment may be secured by a charge on the husband's property if necessary.\nThe term of payment cannot exceed the wife's life.\nThe court considers the wife's property, if any.",
     "source_url": "https://www.indiacode.nic.in/bitstream/123456789/20574/1/special_marriage_act.pdf",
     "authority": "Government of India",
     "official_source": true,
@@ -1066,11 +1008,10 @@
     "language": "en"
   },
   {
-    "chunk_id": "INDIA_CODE_SMA_1954_SECTIONS_36_37_83",
     "document_id": "INDIA_CODE_SMA_1954_SECTIONS_36_37",
     "title": "Special Marriage Act, 1954 — Sections 36 and 37",
     "document_type": "statutory_text",
-    "section": "section_37",
+    "section": "Section 37",
     "text": "The court considers the husband's property and ability.\nThe court considers the conduct of the parties.\nThe court may consider other circumstances of the case.\nThe district court may vary, modify or rescind the order when circumstances of either party change.\nrag_use: Identify Section 37 as a possible permanent-alimony and maintenance route.\nRetrieve the factors expressly mentioned in the statutory provision.\nExplain that the provision does not establish a fixed mathematical formula.\nDistinguish court-ordered maintenance from an AI-generated estimate.\nFlag changes in circumstances as relevant when explaining the possibility of variation, modification or rescission.",
     "source_url": "https://www.indiacode.nic.in/bitstream/123456789/20574/1/special_marriage_act.pdf",
     "authority": "Government of India",
@@ -1079,11 +1020,10 @@
     "language": "en"
   },
   {
-    "chunk_id": "INDIA_CODE_SMA_1954_SECTIONS_36_37_84",
     "document_id": "INDIA_CODE_SMA_1954_SECTIONS_36_37",
     "title": "Special Marriage Act, 1954 — Sections 36 and 37",
     "document_type": "statutory_text",
-    "section": "application_to_alimony_plus",
+    "section": "Sections 36, 37",
     "text": "primary_use: Legal RAG retrieval\nMaintenance-route identification\nInterim maintenance explanation\nPermanent alimony explanation\nCitation-backed case navigation\ncalculator_rule: Sections 36 and 37 do not provide a fixed percentage or mathematical formula for calculating maintenance. The AI must not generate a guaranteed amount from these provisions.\nsafety_rule: The AI should explain the statutory framework and relevant factors without deciding entitlement or predicting what a court will order.\nhuman_review: Questions involving eligibility, interpretation of the proceeding type, financial evidence, conduct of the parties, property, ability to pay, or the effect of changed circumstances should be escalated for appropriate legal or human review.",
     "source_url": "https://www.indiacode.nic.in/bitstream/123456789/20574/1/special_marriage_act.pdf",
     "authority": "Government of India",
