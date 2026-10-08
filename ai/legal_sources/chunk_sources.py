@@ -2,8 +2,9 @@ import json
 from pathlib import Path
 
 
-DOCUMENTS_DIR = Path(__file__).parent / "documents"
-
+BASE_DIR = Path(__file__).resolve().parent
+DOCUMENTS_DIR = BASE_DIR / "documents"
+OUTPUT_FILE = BASE_DIR / "chunks.json"
 
 SKIP_FIELDS = {
     "document_id",
@@ -15,85 +16,74 @@ SKIP_FIELDS = {
     "act_number",
     "chapter",
     "rules",
-    "notification_date"
+    "notification_date",
 }
-
-MAX_CHARS = 1800
-MIN_CHARS = 80
-
-
-def load_sources():
-    """Load all legal JSON documents."""
-
-    sources = []
-
-    for file_path in sorted(DOCUMENTS_DIR.glob("*.json")):
-
-        with open(file_path, "r", encoding="utf-8") as file:
-            data = json.load(file)
-
-        sources.append(data)
-
-    return sources
 
 
 def text_from_value(value):
-    """Convert JSON content into readable text."""
-
+    """Convert JSON values into readable text."""
     if isinstance(value, str):
-        return value
+        return value.strip()
 
-    return json.dumps(
-        value,
-        ensure_ascii=False,
-        indent=2
-    )
+    if isinstance(value, dict):
+        parts = []
+
+        for key, item in value.items():
+            if key in SKIP_FIELDS:
+                continue
+
+            item_text = text_from_value(item)
+
+            if item_text:
+                parts.append(f"{key}: {item_text}")
+
+        return "\n".join(parts)
+
+    if isinstance(value, list):
+        parts = []
+
+        for item in value:
+            item_text = text_from_value(item)
+
+            if item_text:
+                parts.append(item_text)
+
+        return "\n".join(parts)
+
+    return str(value)
 
 
-def split_large_text(text, max_chars=MAX_CHARS):
-    """
-    Split large text into smaller pieces.
-
-    We split by lines first so that JSON/legal statements
-    are less likely to be cut in the middle.
-    """
-
+def split_long_text(text, max_chars=1800):
+    """Split very large text into smaller chunks."""
     if len(text) <= max_chars:
         return [text]
 
     lines = text.splitlines()
-
-    pieces = []
-    current = []
-
-    current_length = 0
+    chunks = []
+    current = ""
 
     for line in lines:
+        if len(current) + len(line) + 1 <= max_chars:
+            current += line + "\n"
+        else:
+            if current.strip():
+                chunks.append(current.strip())
 
-        line_length = len(line) + 1
+            current = line + "\n"
 
-        if current and current_length + line_length > max_chars:
+    if current.strip():
+        chunks.append(current.strip())
 
-            pieces.append("\n".join(current))
-
-            current = []
-            current_length = 0
-
-        current.append(line)
-        current_length += line_length
-
-    if current:
-        pieces.append("\n".join(current))
-
-    return pieces
+    return chunks
 
 
-def create_chunks(document):
-    """
-    Create meaningful retrieval chunks from one legal document.
-    """
+all_chunks = []
 
-    chunks = []
+json_files = sorted(DOCUMENTS_DIR.glob("*.json"))
+
+for file_path in json_files:
+    with open(file_path, "r", encoding="utf-8") as f:
+        document = json.load(f)
 
     document_id = document.get("document_id")
     title = document.get("title")
@@ -102,108 +92,62 @@ def create_chunks(document):
     source = document.get("source", {})
     rag_metadata = document.get("rag_metadata", {})
 
-    base_metadata = {
-        "document_id": document_id,
-        "title": title,
-        "document_type": document_type,
-        "source_url": source.get("url"),
-        "authority": source.get("authority"),
-        "official_source": source.get("official_source"),
-        "jurisdiction": rag_metadata.get("jurisdiction"),
-        "language": rag_metadata.get("language")
-    }
+    source_url = source.get("url", "")
+    authority = source.get("authority", "")
+    official_source = source.get("official_source", False)
 
-    for section_name, section_content in document.items():
+    # Process meaningful fields only
+    for field, value in document.items():
 
-        if section_name in SKIP_FIELDS:
+        if field in SKIP_FIELDS:
             continue
 
-        text = text_from_value(section_content)
+        text = text_from_value(value)
 
-        if len(text.strip()) < MIN_CHARS:
+        if len(text) < 80:
             continue
 
-        pieces = split_large_text(text)
+        text_parts = split_long_text(text)
 
-        for index, piece in enumerate(pieces, start=1):
+        for part in text_parts:
 
-            if len(pieces) == 1:
-                chunk_id = f"{document_id}_{section_name}"
-            else:
-                chunk_id = f"{document_id}_{section_name}_{index}"
+            if len(part) < 80:
+                continue
 
             chunk = {
-                "chunk_id": chunk_id,
-                "content": piece,
-                "metadata": {
-                    **base_metadata,
-                    "section": section_name
-                }
+                "chunk_id": f"{document_id}_{len(all_chunks) + 1}",
+                "document_id": document_id,
+                "title": title,
+                "document_type": document_type,
+                "section": field,
+                "text": part,
+                "source_url": source_url,
+                "authority": authority,
+                "official_source": official_source,
+                "jurisdiction": rag_metadata.get("jurisdiction", "India"),
+                "language": rag_metadata.get("language", "English"),
             }
 
-            chunks.append(chunk)
-
-    return chunks
+            all_chunks.append(chunk)
 
 
-def main():
-
-    print("=" * 60)
-    print("ALIMONY PLUS - LEGAL CHUNKER")
-    print("=" * 60)
-
-    sources = load_sources()
-
-    all_chunks = []
-
-    for document in sources:
-
-        chunks = create_chunks(document)
-
-        all_chunks.extend(chunks)
-
-        print(
-            f"✅ {document.get('document_id')} "
-            f"→ {len(chunks)} chunks"
-        )
-
-    print("\n" + "-" * 60)
-
-    print(f"Documents loaded : {len(sources)}")
-    print(f"Total chunks     : {len(all_chunks)}")
-
-    if all_chunks:
-
-        sizes = [
-            len(chunk["content"])
-            for chunk in all_chunks
-        ]
-
-        average_size = sum(sizes) / len(sizes)
-
-        print(f"Smallest chunk   : {min(sizes)} characters")
-        print(f"Largest chunk    : {max(sizes)} characters")
-        print(f"Average size     : {average_size:.0f} characters")
-
-    print("-" * 60)
-
-    
-    print("\nExample chunks:")
-    print("=" * 60)
-
-    for chunk in all_chunks[:3]:
-
-        print(f"\nChunk ID : {chunk['chunk_id']}")
-        print(f"Section  : {chunk['metadata']['section']}")
-        print(f"Title    : {chunk['metadata']['title']}")
-        print(f"Size     : {len(chunk['content'])} characters")
-
-        print("\nContent:")
-        print(chunk["content"][:400])
-
-        if len(chunk["content"]) > 400:
-            print("...")
+# Save chunks
+with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+    json.dump(all_chunks, f, ensure_ascii=False, indent=2)
 
 
-if __name__ == "__main__":
-    main()
+# Statistics
+sizes = [len(chunk["text"]) for chunk in all_chunks]
+
+print()
+print("Chunking completed successfully!")
+print(f"Documents processed: {len(json_files)}")
+print(f"Total chunks: {len(all_chunks)}")
+
+if sizes:
+    print(f"Smallest chunk: {min(sizes)} characters")
+    print(f"Largest chunk: {max(sizes)} characters")
+    print(f"Average chunk: {sum(sizes) // len(sizes)} characters")
+
+print()
+print(f"Saved to: {OUTPUT_FILE}")
