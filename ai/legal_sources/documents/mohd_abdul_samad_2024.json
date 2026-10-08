@@ -1,0 +1,91 @@
+{
+  "document_id": "SC_MOHD_ABDUL_SAMAD_2024",
+  "title": "Mohd Abdul Samad v. State of Telangana & Anr.",
+  "document_type": "case_law",
+  "court": "Supreme Court of India",
+  "case_number": "Criminal Appeal No. 2842 of 2024",
+  "judgment_date": "2024-07-10",
+  "citation": "2024 INSC 506",
+
+  "source": {
+    "authority": "Supreme Court of India",
+    "official_source": true,
+    "url": "https://webapi.sci.gov.in/supremecourt/2024/3533/3533_2024_11_1501_53688_Judgement_10-Jul-2024.pdf",
+    "source_type": "official_judgment",
+    "retrieved_for_project": "2026-10-08"
+  },
+
+  "legal_context": {
+    "subject": "Maintenance rights of a divorced Muslim woman",
+    "important_note": "The Supreme Court considered whether a divorced Muslim woman can seek maintenance under Section 125 of the Code of Criminal Procedure, 1973 and addressed the relationship between that remedy and the Muslim Women (Protection of Rights on Divorce) Act, 1986."
+  },
+
+  "case_summary": {
+    "issue": "Whether a divorced Muslim woman can claim maintenance under Section 125 of the Code of Criminal Procedure, 1973.",
+
+    "holding": "A divorced Muslim woman can seek maintenance under Section 125 of the Code of Criminal Procedure, 1973. The Supreme Court held that the remedy under Section 125 is available to a divorced Muslim woman and is not excluded merely because she is governed by the Muslim Women (Protection of Rights on Divorce) Act, 1986.",
+
+    "important_principles": [
+      "A divorced Muslim woman can invoke the maintenance remedy under Section 125 of the Code of Criminal Procedure, 1973.",
+      "The remedy under Section 125 CrPC is a secular remedy and is not confined by the personal law of the parties.",
+      "The Muslim Women (Protection of Rights on Divorce) Act, 1986 does not take away the remedy available to a divorced Muslim woman under Section 125 CrPC.",
+      "The availability of a remedy under the 1986 Act does not by itself prevent a divorced Muslim woman from seeking maintenance under Section 125 CrPC.",
+      "The judgment emphasizes the protective purpose of maintenance provisions and the need to prevent destitution and vagrancy."
+    ]
+  },
+
+  "rag_use": [
+    "Retrieve this judgment when a user asks whether a divorced Muslim woman can seek maintenance under Section 125 CrPC.",
+    "Explain that personal law does not by itself exclude the Section 125 maintenance remedy.",
+    "Use the judgment as Supreme Court authority for the availability of the Section 125 remedy to divorced Muslim women.",
+    "Provide the case citation and source when relying on this principle.",
+    "Do not treat the judgment as establishing a fixed maintenance amount or guaranteed entitlement in every individual case."
+  ],
+
+  "application_to_alimony_plus": {
+    "primary_use": [
+      "Legal RAG retrieval",
+      "Maintenance-route identification",
+      "Divorced-Muslim-woman case navigation",
+      "Citation-backed explanations",
+      "Legal-route comparison"
+    ],
+
+    "calculator_rule": "This judgment does not establish a fixed mathematical formula or guaranteed amount of maintenance.",
+
+    "safety_rule": "The AI should explain the Supreme Court's legal principle without deciding the user's entitlement or predicting the amount a court will award.",
+
+    "human_review": "Questions involving the interaction of multiple maintenance statutes, individual facts, prior orders, divorce status, or procedural choices should be escalated for appropriate legal or human review."
+  },
+
+  "rag_metadata": {
+    "language": "en",
+    "jurisdiction": "India",
+    "authority_level": "Supreme Court",
+    "document_type": "judgment",
+
+    "case_topics": [
+      "maintenance",
+      "divorced-Muslim-women",
+      "section-125-CrPC",
+      "Muslim-Women-Protection-of-Rights-on-Divorce-Act",
+      "personal-law",
+      "secular-maintenance-remedy"
+    ],
+
+    "tags": [
+      "Mohd-Abdul-Samad",
+      "2024-INSC-506",
+      "Supreme-Court",
+      "maintenance",
+      "Muslim-women",
+      "divorce",
+      "section-125",
+      "CrPC"
+    ],
+
+    "intended_use": "retrieval_grounded_legal_navigation",
+    "legal_advice": false,
+    "requires_citation": true
+  }
+}
