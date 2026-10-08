@@ -1,0 +1,131 @@
+{
+  "document_id": "INDIA_CODE_SMA_1954_SECTIONS_36_37",
+  "title": "Special Marriage Act, 1954 — Sections 36 and 37",
+  "document_type": "statutory_text",
+  "act": "The Special Marriage Act, 1954",
+  "act_number": 43,
+  "enactment_date": "1954-10-09",
+
+  "source": {
+    "authority": "Government of India",
+    "publisher": "India Code",
+    "official_source": true,
+    "url": "https://www.indiacode.nic.in/bitstream/123456789/20574/1/special_marriage_act.pdf",
+    "source_type": "official_statutory_text",
+    "retrieved_for_project": "2026-10-08"
+  },
+
+  "legal_context": {
+    "subject": "Alimony pendente lite, permanent alimony and maintenance",
+    "scope": "Sections 36 and 37",
+    "chapter": "Chapter VII — Jurisdiction and Procedure",
+    "important_note": "Sections 36 and 37 provide statutory routes for interim and permanent financial support in proceedings under Chapter V or Chapter VI of the Special Marriage Act."
+  },
+
+  "section_36": {
+    "title": "Alimony pendente lite",
+
+    "statutory_text": {
+      "main": "Where in any proceeding under Chapter V or Chapter VI it appears to the district court that the wife has no independent income sufficient for her support and the necessary expenses of the proceeding, it may, on the application of the wife, order the husband to pay to her the expenses of the proceeding, and weekly or monthly during the proceeding such sum as having regard to the husband's income, it may seem to the court to be reasonable.",
+
+      "proviso": "Provided that the application for the payment of the expenses of the proceeding and such weekly or monthly sum during the proceeding under Chapter V or Chapter VI, shall, as far as possible, be disposed of within sixty days from the date of service of notice on the husband."
+    },
+
+    "plain_summary": "Section 36 allows the district court, in proceedings under Chapter V or VI, to order the husband to pay the wife's proceeding expenses and a reasonable weekly or monthly amount during the proceeding when she has no independent income sufficient for her support and necessary proceeding expenses.",
+
+    "key_elements": [
+      "The proceeding must be under Chapter V or Chapter VI.",
+      "The provision applies where the wife has no independent income sufficient for her support and necessary proceeding expenses.",
+      "The wife may apply for relief under the section.",
+      "The court may order payment of expenses of the proceeding.",
+      "The court may order a weekly or monthly amount during the proceeding.",
+      "The amount is to be determined having regard to the husband's income and what appears reasonable to the court.",
+      "The application should, as far as possible, be disposed of within sixty days from service of notice on the husband."
+    ],
+
+    "rag_use": [
+      "Identify Section 36 as a possible interim-support route in relevant Special Marriage Act proceedings.",
+      "Explain the distinction between support during proceedings and permanent maintenance.",
+      "Retrieve the provision when a user's facts indicate lack of sufficient independent income and ongoing proceeding expenses.",
+      "Do not infer a fixed percentage or guaranteed amount from the provision."
+    ]
+  },
+
+  "section_37": {
+    "title": "Permanent alimony and maintenance",
+
+    "statutory_text": {
+      "subsection_1": "Any court exercising jurisdiction under Chapter V or Chapter VI may, at the time of passing any decree or at any time subsequent to the decree, on application made to it for the purpose, order that the husband shall secure to the wife for her maintenance and support, if necessary, by a charge on the husband's property such gross sum or such monthly or periodical payment of money for a term not exceeding her life, as, having regard to her own property, if any, her husband's property and ability, the conduct of the parties and other circumstances of the case, it may seem to the court to be just.",
+
+      "subsection_2": "If the district court is satisfied that there is a change in the circumstances of either party at any time after it has made an order under sub-section (1), it may, at the instance of either party, vary, modify or rescind any such order in such manner as it may seem to the court to be just."
+    },
+
+    "plain_summary": "Section 37 allows a court exercising jurisdiction under Chapter V or Chapter VI to order permanent alimony and maintenance for the wife at the time of a decree or after the decree. The court considers factors including the parties' property, the husband's ability, the conduct of the parties and other circumstances.",
+
+    "key_elements": [
+      "The court must be exercising jurisdiction under Chapter V or Chapter VI.",
+      "An application may be made for permanent alimony and maintenance.",
+      "An order may be made when the decree is passed or after the decree.",
+      "The court may order a gross sum.",
+      "The court may order monthly or periodical payments.",
+      "The payment may be secured by a charge on the husband's property if necessary.",
+      "The term of payment cannot exceed the wife's life.",
+      "The court considers the wife's property, if any.",
+      "The court considers the husband's property and ability.",
+      "The court considers the conduct of the parties.",
+      "The court may consider other circumstances of the case.",
+      "The district court may vary, modify or rescind the order when circumstances of either party change."
+    ],
+
+    "rag_use": [
+      "Identify Section 37 as a possible permanent-alimony and maintenance route.",
+      "Retrieve the factors expressly mentioned in the statutory provision.",
+      "Explain that the provision does not establish a fixed mathematical formula.",
+      "Distinguish court-ordered maintenance from an AI-generated estimate.",
+      "Flag changes in circumstances as relevant when explaining the possibility of variation, modification or rescission."
+    ]
+  },
+
+  "application_to_alimony_plus": {
+    "primary_use": [
+      "Legal RAG retrieval",
+      "Maintenance-route identification",
+      "Interim maintenance explanation",
+      "Permanent alimony explanation",
+      "Citation-backed case navigation"
+    ],
+
+    "calculator_rule": "Sections 36 and 37 do not provide a fixed percentage or mathematical formula for calculating maintenance. The AI must not generate a guaranteed amount from these provisions.",
+
+    "safety_rule": "The AI should explain the statutory framework and relevant factors without deciding entitlement or predicting what a court will order.",
+
+    "human_review": "Questions involving eligibility, interpretation of the proceeding type, financial evidence, conduct of the parties, property, ability to pay, or the effect of changed circumstances should be escalated for appropriate legal or human review."
+  },
+
+  "rag_metadata": {
+    "language": "en",
+    "jurisdiction": "India",
+    "authority_level": "Central statute",
+    "document_type": "bare_act_sections",
+
+    "sections": [
+      "36",
+      "37"
+    ],
+
+    "tags": [
+      "Special-Marriage-Act",
+      "SMA",
+      "section-36",
+      "section-37",
+      "alimony-pendente-lite",
+      "interim-maintenance",
+      "permanent-alimony",
+      "maintenance"
+    ],
+
+    "intended_use": "retrieval_grounded_legal_navigation",
+    "legal_advice": false,
+    "requires_citation": true
+  }
+}
