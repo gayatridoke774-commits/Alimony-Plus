@@ -1,6 +1,7 @@
 {
   "document_id": "BNSS_2023_S144",
   "title": "Section 144 — Order for maintenance of wives, children and parents",
+  "document_type": "statute",
   "act": "The Bharatiya Nagarik Suraksha Sanhita, 2023",
   "act_number": 46,
   "chapter": "Chapter X — Order for Maintenance of Wives, Children and Parents",
@@ -10,6 +11,7 @@
     "source_type": "central_act",
     "authority": "Government of India",
     "publisher": "India Code",
+    "official_source": true,
     "source_url": "https://www.indiacode.nic.in/bitstream/123456789/20335/1/a2023-46.pdf",
     "status": "approved_source_candidate",
     "retrieval_note": "Section text verified against the official India Code BNSS PDF/searchable copy on 2026-10-07."
