@@ -1,0 +1,135 @@
+{
+  "document_id": "NALSA_LEGAL_SERVICES_FAQ",
+  "title": "NALSA — Legal Services Frequently Asked Questions",
+  "document_type": "legal_aid_service_information",
+  "organization": "National Legal Services Authority",
+  "jurisdiction": "India",
+
+  "source": {
+    "authority": "National Legal Services Authority",
+    "official_source": true,
+    "url": "https://nalsa.gov.in/faqs/",
+    "source_type": "official_faq",
+    "retrieved_for_project": "2026-10-08"
+  },
+
+  "service_context": {
+    "subject": "Free legal services, legal aid eligibility and access",
+    "purpose": "Provide reliable information about legal services, free legal aid, eligibility and access to Legal Services Institutions.",
+    "important_note": "This source provides information about accessing legal services. It must not be used by the AI to determine the outcome of a user's legal case."
+  },
+
+  "legal_services": {
+    "definition": "Legal services include services connected with the conduct of a case or other legal proceeding before a court, authority or tribunal, as well as advice on legal matters.",
+
+    "free_legal_aid_may_include": [
+      "Representation by an advocate in legal proceedings.",
+      "Payment of process fees, witness expenses and other appropriate charges connected with legal proceedings.",
+      "Preparation of pleadings, memoranda of appeal and paper books, including printing and translation of documents.",
+      "Drafting of legal documents and special leave petitions.",
+      "Supply of certified copies of judgments, orders, notes of evidence and other documents."
+    ],
+
+    "additional_support": "Free legal services may also include aid and advice for accessing benefits under welfare statutes and government schemes and for ensuring access to justice."
+  },
+
+  "legal_aid_vs_legal_advice": {
+    "legal_aid": "Legal aid includes legal representation by a lawyer assigned through the concerned Legal Services Authority.",
+    "legal_advice_and_assistance": "Legal advice and assistance includes advice on general areas of law and assistance provided by lawyers associated with Legal Services Institutions.",
+    "important_point": "A person who does not fall within the eligibility criteria for free legal aid under Section 12 may still be able to obtain legal advice and assistance from Legal Services Institutions."
+  },
+
+  "eligibility": {
+    "statutory_basis": "Section 12 of the Legal Services Authorities Act, 1987",
+
+    "categories": [
+      "A member of a Scheduled Caste or Scheduled Tribe.",
+      "A victim of trafficking in human beings or begar.",
+      "A woman or a child.",
+      "A person with a disability or mental illness as covered by the applicable law.",
+      "A person facing circumstances of undeserved want such as mass disaster, ethnic violence, caste atrocity, flood, drought, earthquake or industrial disaster.",
+      "An industrial workman.",
+      "A person in custody, including specified protective, juvenile or mental-health institutions.",
+      "A person satisfying the applicable income criteria prescribed for the relevant court and jurisdiction."
+    ],
+
+    "women": {
+      "eligible": true,
+      "rule": "A woman is eligible to apply for free legal aid irrespective of her income or financial status under Section 12(c) of the Legal Services Authorities Act, 1987."
+    },
+
+    "genuine_case_requirement": "NALSA's FAQ states that a person satisfying the Section 12 criteria is entitled to legal services provided the concerned Legal Services Institution is satisfied that the person has a genuine case to prosecute or defend."
+  },
+
+  "access_and_scope": {
+    "types_of_cases": "Free legal aid is not restricted to a particular type of case. A person satisfying the applicable eligibility criteria may seek legal services for a case to be prosecuted or defended.",
+    "court_levels": [
+      "Lower and subordinate courts",
+      "High Courts",
+      "Supreme Court of India"
+    ],
+    "consultation_only": "A person may seek legal consultation or advice even when they do not intend to pursue a court case.",
+    "stage_of_case": "Eligible persons may apply for free legal aid at different stages of a case, including at the appeal stage."
+  },
+
+  "fees": {
+    "legal_services_cost": "Legal services provided by Legal Services Institutions are free of cost to eligible beneficiaries.",
+    "application_fee": "There is no charge for obtaining or submitting an application form for free legal aid."
+  },
+
+  "additional_points": {
+    "previous_private_lawyer": "A person may still apply for free legal aid after having been represented by a private lawyer, subject to the applicable procedure.",
+    "second_opinion": "NALSA's FAQ states that a person who has engaged a private lawyer may also obtain a second opinion from panel lawyers.",
+    "confidentiality": "NALSA states that personal information of clients approaching Legal Services Authorities is kept confidential.",
+    "appeals": "Free legal aid may be available for challenging orders of High Courts or the Supreme Court, subject to eligibility requirements."
+  },
+
+  "rag_use": [
+    "Answer questions about who can seek free legal aid.",
+    "Explain that women are eligible for free legal aid irrespective of income or financial status.",
+    "Explain what services may be included in free legal aid.",
+    "Distinguish legal representation from general legal advice and assistance.",
+    "Explain that legal aid can be available at different stages of a case.",
+    "Provide information about accessing Legal Services Institutions.",
+    "Use the FAQ as a service-navigation source rather than a source for deciding legal entitlement."
+  ],
+
+  "application_to_alimony_plus": {
+    "primary_use": [
+      "Legal-aid eligibility guidance",
+      "Human lawyer escalation",
+      "Legal-service navigation",
+      "Women support",
+      "Next-step recommendations"
+    ],
+
+    "routing_rule": "When the Alimony Plus user may benefit from legal representation or legal advice, the AI can use this source to explain available legal-aid pathways and eligibility information.",
+
+    "safety_rule": "The AI must not guarantee that a person will receive legal aid or that a case will succeed. It should provide the official eligibility and access information and recommend confirmation with the relevant Legal Services Institution when necessary.",
+
+    "human_review": "Questions requiring interpretation of individual facts, legal representation, or case-specific legal advice should be directed to an appropriate legal professional or Legal Services Institution."
+  },
+
+  "rag_metadata": {
+    "language": "en",
+    "jurisdiction": "India",
+    "authority_level": "Official legal services authority",
+    "document_type": "service_information",
+
+    "tags": [
+      "NALSA",
+      "legal-services",
+      "legal-aid",
+      "free-legal-aid",
+      "women",
+      "eligibility",
+      "legal-advice",
+      "legal-representation",
+      "Legal-Services-Authorities-Act"
+    ],
+
+    "intended_use": "retrieval_grounded_legal_navigation",
+    "legal_advice": false,
+    "requires_citation": true
+  }
+}
