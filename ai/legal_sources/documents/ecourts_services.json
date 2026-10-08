@@ -1,0 +1,177 @@
+{
+  "document_id": "ECOURTS_SERVICES_INDIA",
+  "title": "eCourts Services — Case Status, Court Orders and Judicial Information",
+  "document_type": "court_service_information",
+  "organization": "eCommittee, Supreme Court of India",
+  "jurisdiction": "India",
+
+  "source": {
+    "authority": "eCommittee, Supreme Court of India",
+    "official_source": true,
+    "url": "https://ecourts.gov.in/ecourts2.0/",
+    "source_type": "official_court_service_portal",
+    "retrieved_for_project": "2026-10-08"
+  },
+
+  "service_context": {
+    "subject": "Online access to court case information and judicial services",
+    "purpose": "Provide citizens and other stakeholders with access to case status, court orders and judgments, cause lists and other official eCourts services.",
+    "important_note": "eCourts provides court information and services. The AI must not invent case status, interpret an order as legal advice, or claim that information retrieved from eCourts determines the outcome of a case."
+  },
+
+  "services": {
+    "high_court_services": [
+      "Case status",
+      "Cause lists",
+      "Orders and judgments"
+    ],
+
+    "district_court_services": [
+      "Case status",
+      "Cause lists",
+      "Orders and judgments"
+    ],
+
+    "other_services": [
+      "Virtual Court",
+      "ePay",
+      "eFiling",
+      "Judgment Search",
+      "National Judicial Data Grid",
+      "Justice Clock",
+      "Knowledge Management resources"
+    ]
+  },
+
+  "case_status_search": {
+    "cnr_number": {
+      "available": true,
+      "description": "A case can be searched using its 16-character CNR number. The case status and available case history can then be viewed."
+    },
+
+    "case_number": {
+      "available": true,
+      "description": "Cases can be searched using the case type, case registration number and registration year."
+    },
+
+    "party_name": {
+      "available": true,
+      "description": "Cases can be searched using the name of a petitioner, plaintiff, complainant, respondent, defendant, appellant, accused or other party."
+    },
+
+    "advocate": {
+      "available": true,
+      "description": "Cases can be searched using advocate-related information."
+    },
+
+    "filing_number": {
+      "available": true,
+      "description": "Cases can be searched using the filing number and filing year."
+    },
+
+    "fir_number": {
+      "available": true,
+      "description": "Applicable cases can be searched using police station, FIR number and FIR year."
+    },
+
+    "act_and_section": {
+      "available": true,
+      "description": "Cases can be searched by selecting an Act and, where applicable, entering the relevant section."
+    },
+
+    "case_type": {
+      "available": true,
+      "description": "Cases can be searched by case type and registration year."
+    }
+  },
+
+  "court_orders_and_judgments": {
+    "search_methods": [
+      "Case number",
+      "Court number",
+      "Party name",
+      "Order date"
+    ],
+
+    "case_number_search": "Orders or judgments can be searched using the case type, case number and registration year.",
+    "party_name_search": "Orders or judgments can be searched using petitioner or respondent party information and year.",
+    "order_date_search": "Orders or judgments can be searched for a selected date range.",
+    "document_access": "Available orders and judgments can be opened in PDF format through the relevant eCourts service."
+  },
+
+  "cause_lists": {
+    "available": true,
+    "description": "Users can search cause lists by selecting the relevant court or bench and date."
+  },
+
+  "national_judicial_data_grid": {
+    "name": "National Judicial Data Grid",
+    "abbreviation": "NJDG",
+    "description": "NJDG provides searchable case-related information and analytical statistics covering courts across India.",
+    "information": [
+      "Institution of cases",
+      "Pendency",
+      "Disposal",
+      "Case-related information",
+      "Court and case statistics"
+    ],
+    "important_note": "NJDG statistics and case information should be treated as official judicial information and not as predictions of an individual case outcome."
+  },
+
+  "case_information_safety": {
+    "verification_rule": "The AI should rely on official eCourts information when presenting a user's case status or court-order information.",
+    "no_invention_rule": "If the required case information cannot be found or verified, the AI must say that it cannot verify the information instead of guessing.",
+    "privacy_rule": "The system should avoid unnecessarily exposing sensitive case information and should only process information needed for the user's requested task.",
+    "interpretation_rule": "The AI may summarize publicly available case-status information but should not present a legal interpretation of a court order as a substitute for professional legal advice."
+  },
+
+  "rag_use": [
+    "Explain how a user can check the status of a court case.",
+    "Identify appropriate eCourts search methods based on information available to the user.",
+    "Guide users toward official court orders and judgments.",
+    "Explain the purpose of the CNR number.",
+    "Direct users toward official NJDG information and statistics.",
+    "Support case-tracking features in Alimony Plus.",
+    "Provide official eCourts references when discussing case-status navigation."
+  ],
+
+  "application_to_alimony_plus": {
+    "primary_use": [
+      "Case-status navigation",
+      "Court-order navigation",
+      "Case tracking",
+      "Official information verification",
+      "User next-step guidance"
+    ],
+
+    "case_tracking_rule": "The application may help users understand how to locate and monitor their court case using official eCourts services.",
+
+    "safety_rule": "The AI must not claim that a case is pending, disposed, listed or decided unless the relevant official information has been verified.",
+
+    "human_review": "Questions requiring legal interpretation of a court order, procedural strategy or case-specific legal advice should be referred to an appropriate legal professional."
+  },
+
+  "rag_metadata": {
+    "language": "en",
+    "jurisdiction": "India",
+    "authority_level": "Official judicial service",
+    "document_type": "court_service_information",
+
+    "tags": [
+      "eCourts",
+      "case-status",
+      "CNR",
+      "court-orders",
+      "judgments",
+      "cause-list",
+      "NJDG",
+      "case-tracking",
+      "district-courts",
+      "high-courts"
+    ],
+
+    "intended_use": "retrieval_grounded_legal_navigation",
+    "legal_advice": false,
+    "requires_citation": true
+  }
+}
