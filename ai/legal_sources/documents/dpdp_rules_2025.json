@@ -1,0 +1,191 @@
+{
+  "document_id": "MEITY_DPDP_RULES_2025",
+  "title": "Digital Personal Data Protection Rules, 2025",
+  "document_type": "subordinate_legislation",
+  "rules": "Digital Personal Data Protection Rules, 2025",
+  "notification_date": "2025-11-13",
+  "notification_number": "G.S.R. 846(E)",
+
+  "source": {
+    "authority": "Ministry of Electronics and Information Technology, Government of India",
+    "publisher": "MeitY",
+    "official_source": true,
+    "url": "https://www.meity.gov.in/static/uploads/2025/11/53450e6e5dc0bfa85ebd78686cadad39.pdf",
+    "source_type": "official_gazette_notification",
+    "retrieved_for_project": "2026-10-08"
+  },
+
+  "legal_context": {
+    "subject": "Implementation and operational requirements under the Digital Personal Data Protection Act, 2023",
+    "parent_law": "Digital Personal Data Protection Act, 2023",
+    "important_note": "The Rules provide detailed requirements for implementation of the DPDP Act. Different rules commence on different dates under Rule 1 and the notification."
+  },
+
+  "commencement": {
+    "publication_date": "2025-11-13",
+
+    "immediate": {
+      "effective_date": "2025-11-13",
+      "rules": [
+        "Rule 1",
+        "Rule 2",
+        "Rules 17 to 21"
+      ]
+    },
+
+    "one_year": {
+      "effective_date": "2026-11-13",
+      "rules": [
+        "Rule 4"
+      ]
+    },
+
+    "eighteen_months": {
+      "effective_date": "2027-05-13",
+      "rules": [
+        "Rule 3",
+        "Rules 5 to 16",
+        "Rule 22",
+        "Rule 23"
+      ]
+    },
+
+    "rag_rule": "The system must check the commencement date of an individual rule before describing that rule as currently applicable or enforceable."
+  },
+
+  "definitions": {
+    "act": "The Digital Personal Data Protection Act, 2023.",
+    "techno_legal_measures": "Measures referred to in the Rules in connection with specified technical and legal requirements.",
+    "user_account": "The online account registered by the Data Principal with the Data Fiduciary, including specified profiles, pages, handles, email address, mobile number or similar means of accessing services.",
+    "verifiable_consent": "Consent verified in accordance with the applicable provisions of the Rules."
+  },
+
+  "key_rules": {
+    "rule_3": {
+      "title": "Notice given by Data Fiduciary to Data Principal",
+      "summary": "The notice must be understandable independently and provide clear and plain information necessary for specific and informed consent, including an itemised description of personal data and the specified purpose or purposes of processing.",
+      "important_elements": [
+        "Notice should be presented independently of other information.",
+        "Notice should use clear and plain language.",
+        "Personal data proposed to be processed should be described in an itemised manner.",
+        "The specified purpose or purposes of processing should be clearly described.",
+        "The notice should provide the relevant communication link and other means for exercising specified rights and withdrawing consent."
+      ],
+      "commencement": "2027-05-13"
+    },
+
+    "rule_4": {
+      "title": "Registration of Consent Manager",
+      "summary": "The Rules provide requirements concerning registration of Consent Managers and related conditions.",
+      "commencement": "2026-11-13"
+    },
+
+    "rules_5_to_7": {
+      "title": "Processing and related requirements",
+      "summary": "The Rules contain operational requirements connected with processing of personal data and specified obligations under the Act.",
+      "commencement": "2027-05-13"
+    },
+
+    "rules_8_and_9": {
+      "title": "Data Fiduciary obligations",
+      "summary": "The Rules contain detailed requirements concerning specified obligations of Data Fiduciaries.",
+      "commencement": "2027-05-13"
+    },
+
+    "rules_10_and_11": {
+      "title": "Verifiable consent for specified processing",
+      "summary": "The Rules provide requirements concerning verifiable consent in circumstances covered by the Act and Rules.",
+      "commencement": "2027-05-13"
+    },
+
+    "rules_12_to_16": {
+      "title": "Rights and related mechanisms",
+      "summary": "The Rules contain operational mechanisms connected with Data Principal rights and related requirements.",
+      "commencement": "2027-05-13"
+    },
+
+    "rules_17_to_21": {
+      "title": "Data Protection Board and related matters",
+      "summary": "These rules contain provisions connected with the Data Protection Board and other institutional or procedural requirements.",
+      "commencement": "2025-11-13"
+    },
+
+    "rules_22_and_23": {
+      "title": "Additional compliance and procedural requirements",
+      "summary": "The Rules contain further requirements under the DPDP framework.",
+      "commencement": "2027-05-13"
+    }
+  },
+
+  "privacy_and_security_principles": {
+    "notice": "Data Fiduciaries are required to provide appropriate information to Data Principals in the manner specified by the applicable Rules.",
+
+    "security": "The DPDP Rules establish requirements intended to support appropriate protection and security of digital personal data.",
+
+    "user_rights": "The Rules provide operational mechanisms connected with rights available under the DPDP Act, subject to their applicable commencement dates.",
+
+    "children": "The Rules contain provisions concerning verifiable parental consent and processing of children's personal data under the applicable framework.",
+
+    "data_breach": "The Rules contain requirements relating to notification and response to personal data breaches under the applicable provisions.",
+
+    "contact_and_grievance": "The Rules contain mechanisms relating to communication, grievance handling and exercise of rights under the DPDP framework."
+  },
+
+  "application_to_alimony_plus": {
+    "primary_use": [
+      "Privacy-by-design",
+      "Data protection compliance planning",
+      "User privacy notices",
+      "Consent management",
+      "Data security",
+      "Data breach response",
+      "Data Principal rights navigation"
+    ],
+
+    "sensitive_information_rule": "Alimony Plus should minimise collection and exposure of personal legal information and process only information necessary for its stated purposes.",
+
+    "document_security_rule": "Uploaded legal documents and case information should be protected using appropriate technical and organisational safeguards.",
+
+    "consent_rule": "Where consent is the applicable legal basis, the product should provide clear information and appropriate mechanisms for obtaining and managing consent in accordance with the applicable provisions.",
+
+    "commencement_rule": "The system must check the effective date of each relevant Rule before using it as a currently applicable compliance requirement."
+  },
+
+  "rag_use": [
+    "Answer high-level questions about the DPDP Rules.",
+    "Explain operational privacy requirements relevant to a digital platform.",
+    "Support privacy-by-design decisions for Alimony Plus.",
+    "Retrieve applicable commencement dates for individual Rules.",
+    "Support explanations concerning notices, consent, security, rights and grievance mechanisms.",
+    "Provide source-backed information about the DPDP compliance framework."
+  ],
+
+  "safety_rule": "The AI must not claim that Alimony Plus is legally compliant merely because selected requirements from these Rules have been implemented.",
+
+  "human_review": "Questions involving regulatory compliance, privacy notices, consent architecture, data-sharing arrangements, breach response or interpretation of the DPDP framework should be reviewed by an appropriate privacy or legal professional.",
+
+  "rag_metadata": {
+    "language": "en",
+    "jurisdiction": "India",
+    "authority_level": "Central rules",
+    "document_type": "subordinate_legislation",
+
+    "tags": [
+      "DPDP-Rules",
+      "DPDP-Rules-2025",
+      "Digital-Personal-Data-Protection",
+      "privacy",
+      "personal-data",
+      "Data-Fiduciary",
+      "Data-Principal",
+      "consent",
+      "data-security",
+      "data-breach",
+      "commencement"
+    ],
+
+    "intended_use": "retrieval_grounded_legal_navigation",
+    "legal_advice": false,
+    "requires_citation": true
+  }
+}
