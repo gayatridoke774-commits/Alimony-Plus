@@ -1,0 +1,112 @@
+{
+  "document_id": "NALSA_WOMENS_ASSISTANCE",
+  "title": "NALSA — Assistance for Women",
+  "document_type": "legal_aid_service_information",
+  "organization": "National Legal Services Authority",
+  "jurisdiction": "India",
+
+  "source": {
+    "authority": "National Legal Services Authority",
+    "official_source": true,
+    "url": "https://nalsa.gov.in/womens-assistance/",
+    "source_type": "official_service_information",
+    "retrieved_for_project": "2026-10-08"
+  },
+
+  "service_context": {
+    "subject": "Free legal assistance for women",
+    "purpose": "Information on how women facing legal issues can approach Legal Services Institutions for free legal assistance.",
+    "important_note": "This source provides information about accessing legal services. It is not a source for determining legal entitlement or predicting a court outcome."
+  },
+
+  "assistance_routes": {
+    "nearest_legal_services_authority": {
+      "description": "Women facing legal issues can approach Legal Services Institutions at different levels.",
+      "institutions": [
+        "Taluk Legal Services Committee (TLSC)",
+        "District Legal Services Authority (DLSA)",
+        "State Legal Services Authority (SLSA)"
+      ],
+      "support": "Panel Lawyers or Paralegal Volunteers can assist with the process."
+    },
+
+    "online_application": {
+      "available": true,
+      "description": "Women can apply for free legal aid online through the official NALSA portal."
+    },
+
+    "nalsa_helpline": {
+      "available": true,
+      "number": "15100",
+      "description": "Toll-free National Legal Aid Helpline through which callers can speak with a Panel Lawyer for guidance."
+    },
+
+    "legal_aid_clinics": {
+      "available": true,
+      "description": "Legal Aid Clinics are available in locations including villages, colleges, jails and NGOs.",
+      "support": [
+        "Assist in filling legal aid applications",
+        "Connect applicants with an appropriate lawyer",
+        "Explain rights and legal options"
+      ],
+      "personnel": [
+        "Paralegal Volunteers",
+        "Panel Advocates"
+      ]
+    },
+
+    "application_tracking": {
+      "available": true,
+      "description": "After applying online or offline, the applicant receives a Diary Number that can be used to track progress and follow up with the relevant Legal Services Authority."
+    }
+  },
+
+  "rag_use": [
+    "Answer questions about where women can seek free legal assistance.",
+    "Identify the appropriate level of Legal Services Institution based on the available location information.",
+    "Provide the official NALSA helpline number when appropriate.",
+    "Explain that legal aid clinics can help with applications and connecting applicants with lawyers.",
+    "Explain that an applicant can track an application using the Diary Number.",
+    "Provide a citation to the official NALSA source when this information is retrieved."
+  ],
+
+  "application_to_alimony_plus": {
+    "primary_use": [
+      "Legal-aid referral",
+      "Human escalation",
+      "Women support navigation",
+      "Legal-services discovery",
+      "Next-step recommendations"
+    ],
+
+    "routing_rule": "When a user appears to need legal representation or legal advice beyond the AI's safe scope, the system may provide NALSA legal-aid access information and encourage appropriate human legal assistance.",
+
+    "safety_rule": "The AI must not claim that NALSA will accept, win, or resolve a particular case. It should provide the official access information without guaranteeing an outcome.",
+
+    "human_review": "Questions requiring legal advice, representation, interpretation of individual facts, or urgent safety intervention should be routed to an appropriate human professional or relevant emergency/support service."
+  },
+
+  "rag_metadata": {
+    "language": "en",
+    "jurisdiction": "India",
+    "authority_level": "Official legal services authority",
+    "document_type": "service_information",
+
+    "tags": [
+      "NALSA",
+      "women",
+      "free-legal-aid",
+      "legal-assistance",
+      "TLSC",
+      "DLSA",
+      "SLSA",
+      "legal-aid-clinic",
+      "helpline-15100",
+      "legal-services"
+    ],
+
+    "intended_use": "retrieval_grounded_legal_navigation",
+    "legal_advice": false,
+    "requires_citation": true
+  }
+}
