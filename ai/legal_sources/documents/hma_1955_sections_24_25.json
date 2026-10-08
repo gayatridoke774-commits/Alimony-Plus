@@ -1,0 +1,139 @@
+{
+  "document_id": "INDIA_CODE_HMA_1955_SECTIONS_24_25",
+  "title": "Hindu Marriage Act, 1955 — Sections 24 and 25",
+  "document_type": "statutory_text",
+  "act": "The Hindu Marriage Act, 1955",
+  "act_number": 25,
+  "enactment_date": "1955-05-18",
+
+  "source": {
+    "authority": "Government of India",
+    "publisher": "India Code",
+    "official_source": true,
+    "url": "https://www.indiacode.nic.in/bitstream/123456789/1560/1/A1955-25Eng.pdf",
+    "source_type": "official_statutory_text",
+    "version_note": "India Code PDF states 'As on the 15th April, 2026'.",
+    "retrieved_for_project": "2026-10-08"
+  },
+
+  "legal_context": {
+    "subject": "Maintenance and alimony under the Hindu Marriage Act, 1955",
+    "scope": "Sections 24 and 25",
+    "important_note": "These sections provide statutory routes within proceedings under the Hindu Marriage Act. They do not establish a universal fixed percentage or mathematical formula for maintenance."
+  },
+
+  "sections": {
+
+    "section_24": {
+      "title": "Maintenance pendente lite and expenses of proceedings",
+      "type": "interim_maintenance",
+
+      "plain_summary": "Where, in a proceeding under the Hindu Marriage Act, either the wife or husband has no independent income sufficient for their support and the necessary expenses of the proceeding, the court may, on application by either spouse, order the respondent to pay proceeding expenses and a reasonable monthly sum during the proceeding, having regard to the petitioner's own income and the respondent's income.",
+
+      "statutory_text": {
+        "main_provision": "Where in any proceeding under this Act it appears to the court that either the wife or the husband, as the case may be, has no independent income sufficient for her or his support and the necessary expenses of the proceeding, it may, on the application of the wife or the husband, order the respondent to pay to the petitioner the expenses of the proceeding, and monthly during the proceeding such sum as, having regard to the petitioner's own income and the income of the respondent, it may seem to the court to be reasonable.",
+
+        "proviso": "Provided that the application for the payment of the expenses of the proceeding and such monthly sum during the proceeding, shall, as far as possible, be disposed of within sixty days from the date of service of notice on the wife or the husband, as the case may be."
+      },
+
+      "key_elements": [
+        "Applies to proceedings under the Hindu Marriage Act.",
+        "Either spouse may apply.",
+        "The applicant's independent income is relevant.",
+        "The respondent's income is relevant.",
+        "The court may order payment of expenses of the proceeding.",
+        "The court may order a monthly sum during the proceeding.",
+        "The amount is what the court considers reasonable having regard to the relevant income.",
+        "The application should, as far as possible, be disposed of within sixty days from the date of service of notice."
+      ],
+
+      "rag_use": [
+        "Identify Section 24 as a possible interim-maintenance route when the user is involved in a proceeding under the Hindu Marriage Act.",
+        "Ask whether the applicant has independent income sufficient for support and proceeding expenses.",
+        "Ask for relevant income information of both spouses.",
+        "Distinguish interim maintenance under Section 24 from permanent alimony under Section 25."
+      ]
+    },
+
+    "section_25": {
+      "title": "Permanent alimony and maintenance",
+      "type": "permanent_alimony",
+
+      "plain_summary": "A court exercising jurisdiction under the Hindu Marriage Act may, at the time of passing a decree or subsequently, on an application by either spouse, order the respondent to pay maintenance and support as a gross sum or monthly or periodical sum for a term not exceeding the life of the applicant, having regard to the statutory considerations and circumstances of the case.",
+
+      "statutory_text": {
+        "subsection_1": "Any court exercising jurisdiction under this Act may, at the time of passing any decree or at any time subsequent thereto, on application made to it for the purpose by either the wife or the husband, as the case may be, order that the respondent shall pay to the applicant for her or his maintenance and support such gross sum or such monthly or periodical sum for a term not exceeding the life of the applicant as, having regard to the respondent's own income and other property, if any, the income and other property of the applicant, the conduct of the parties and other circumstances of the case, it may seem to the court to be just, and any such payment may be secured, if necessary, by a charge on the immovable property of the respondent.",
+
+        "subsection_2": "If the court is satisfied that there is a change in the circumstances of either party at any time after it has made an order under sub-section (1), it may at the instance of either party, vary, modify or rescind any such order in such manner as the court may deem just.",
+
+        "subsection_3": "If the court is satisfied that the party in whose favour an order has been made under this section has re-married or, if such party is the wife, that she has not remained chaste, or, if such party is the husband, that he has had sexual intercourse with any woman outside wedlock, it may at the instance of the other party vary, modify or rescind any such order in such manner as the court may deem just."
+      },
+
+      "key_elements": [
+        "Either spouse may apply.",
+        "The application may be made at the time of passing a decree or subsequently.",
+        "The court may order a gross sum.",
+        "The court may order a monthly or periodical sum.",
+        "The term cannot exceed the life of the applicant.",
+        "The respondent's income and other property may be considered.",
+        "The applicant's income and other property may be considered.",
+        "The conduct of the parties may be considered.",
+        "Other circumstances of the case may be considered.",
+        "A payment may, if necessary, be secured by a charge on the respondent's immovable property.",
+        "An order may be varied, modified or rescinded when there is a change in circumstances.",
+        "Sub-section (3) specifies circumstances concerning remarriage and conduct under which an order may be varied, modified or rescinded."
+      ],
+
+      "rag_use": [
+        "Identify Section 25 as a possible permanent-alimony and maintenance route under the Hindu Marriage Act.",
+        "Ask whether a decree has been passed or whether the proceeding is at a stage where Section 25 may be relevant.",
+        "Collect relevant income and property information for both parties.",
+        "Consider the conduct of the parties and other circumstances only as statutory considerations, not as an automatic formula.",
+        "Preserve the distinction between statutory considerations and any planning estimate."
+      ]
+    }
+  },
+
+  "application_to_alimony_plus": {
+    "primary_use": [
+      "Legal RAG retrieval",
+      "Case-intake routing",
+      "Maintenance pathway explanation",
+      "Citation-backed answers",
+      "Evaluation of statutory-route classification"
+    ],
+
+    "calculator_rule": "Do not infer a fixed percentage or guaranteed amount from Sections 24 or 25.",
+
+    "safety_rule": "The AI should explain the statutory route and relevant considerations without deciding entitlement or predicting a court's final order.",
+
+    "human_review": "Questions requiring interpretation of the user's specific facts, entitlement, procedural strategy, or conflicting legal routes should be escalated for appropriate legal or human review."
+  },
+
+  "rag_metadata": {
+    "language": "en",
+    "jurisdiction": "India",
+    "authority_level": "Central statute",
+    "document_type": "bare_act_sections",
+    "sections": [
+      "24",
+      "25"
+    ],
+
+    "tags": [
+      "Hindu-Marriage-Act",
+      "HMA",
+      "section-24",
+      "section-25",
+      "interim-maintenance",
+      "maintenance-pendente-lite",
+      "proceeding-expenses",
+      "permanent-alimony",
+      "maintenance"
+    ],
+
+    "intended_use": "retrieval_grounded_legal_navigation",
+    "legal_advice": false,
+    "requires_citation": true
+  }
+}
