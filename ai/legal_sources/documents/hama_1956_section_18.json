@@ -1,0 +1,118 @@
+{
+  "document_id": "INDIA_CODE_HAMA_1956_SECTION_18",
+  "title": "Hindu Adoptions and Maintenance Act, 1956 — Section 18",
+  "document_type": "statutory_text",
+  "act": "The Hindu Adoptions and Maintenance Act, 1956",
+  "act_number": 78,
+  "enactment_date": "1956-12-21",
+
+  "source": {
+    "authority": "Government of India",
+    "publisher": "India Code",
+    "official_source": true,
+    "url": "https://www.indiacode.nic.in/bitstream/123456789/1638/1/AA1956____78.pdf",
+    "source_type": "official_statutory_text",
+    "retrieved_for_project": "2026-10-08"
+  },
+
+  "legal_context": {
+    "subject": "Maintenance of a Hindu wife",
+    "scope": "Section 18",
+    "chapter": "Chapter III — Maintenance",
+    "important_note": "Section 18 concerns the entitlement of a Hindu wife to maintenance from her husband and circumstances in which she may live separately without forfeiting her claim."
+  },
+
+  "section_18": {
+    "title": "Maintenance of wife",
+
+    "statutory_text": {
+      "subsection_1": "Subject to the provisions of this section, a Hindu wife, whether married before or after the commencement of this Act, shall be entitled to be maintained by her husband during her lifetime.",
+
+      "subsection_2": {
+        "intro": "A Hindu wife shall be entitled to live separately from her husband without forfeiting her claim to maintenance if:",
+
+        "grounds": {
+          "a": "He is guilty of desertion, that is to say, of abandoning her without reasonable cause and without her consent or against her wish, or of wilfully neglecting her.",
+
+          "b": "He has treated her with such cruelty as to cause a reasonable apprehension in her mind that it will be harmful or injurious to live with her husband.",
+
+          "d": "He has any other wife living.",
+
+          "e": "He keeps a concubine in the same house in which his wife is living or habitually resides with a concubine elsewhere.",
+
+          "f": "He has ceased to be a Hindu by conversion to another religion.",
+
+          "g": "There is any other cause justifying her living separately."
+        },
+
+        "omitted_clause": "Clause (c) has been omitted."
+      },
+
+      "subsection_3": "A Hindu wife shall not be entitled to separate residence and maintenance from her husband if she is unchaste or ceases to be a Hindu by conversion to another religion."
+    },
+
+    "plain_summary": "Section 18 provides that, subject to the section's conditions, a Hindu wife is entitled to maintenance from her husband during her lifetime. It also recognizes specified circumstances in which she may live separately without losing her maintenance claim.",
+
+    "key_elements": [
+      "The provision applies to a Hindu wife.",
+      "The wife is entitled to be maintained by her husband during her lifetime, subject to the section.",
+      "A wife may live separately without forfeiting her maintenance claim in specified circumstances.",
+      "Desertion is one recognized ground.",
+      "Cruelty creating a reasonable apprehension that living with the husband would be harmful or injurious is one recognized ground.",
+      "Having another wife living is one recognized ground.",
+      "Keeping a concubine in the same house or habitually residing with a concubine elsewhere is one recognized ground.",
+      "Conversion of the husband to another religion is one recognized ground.",
+      "Any other cause justifying separate residence is one recognized ground.",
+      "Sub-section (3) specifies circumstances in which the wife is not entitled to separate residence and maintenance under this section."
+    ],
+
+    "rag_use": [
+      "Identify Section 18 as a possible maintenance route when the facts indicate that the Hindu Adoptions and Maintenance Act may apply.",
+      "Ask relevant questions about the marital relationship and circumstances of separate residence.",
+      "Distinguish statutory eligibility questions from the amount of maintenance.",
+      "Do not automatically conclude that a user is entitled to maintenance solely from one stated fact.",
+      "Flag fact-specific eligibility questions for appropriate human or legal review."
+    ]
+  },
+
+  "application_to_alimony_plus": {
+    "primary_use": [
+      "Legal RAG retrieval",
+      "Maintenance-route identification",
+      "Case intake",
+      "Citation-backed explanations",
+      "Eligibility-question generation"
+    ],
+
+    "calculator_rule": "Section 18 does not provide a fixed mathematical formula for calculating maintenance. Do not infer a guaranteed amount from this section.",
+
+    "safety_rule": "The AI should explain the statutory provision and its stated grounds without deciding legal entitlement.",
+
+    "human_review": "Fact-specific questions concerning eligibility, separate residence, conduct, conflicting proceedings, or interpretation of the statutory grounds should be escalated for appropriate legal or human review."
+  },
+
+  "rag_metadata": {
+    "language": "en",
+    "jurisdiction": "India",
+    "authority_level": "Central statute",
+    "document_type": "bare_act_section",
+
+    "sections": [
+      "18"
+    ],
+
+    "tags": [
+      "Hindu-Adoptions-and-Maintenance-Act",
+      "HAMA",
+      "section-18",
+      "maintenance-of-wife",
+      "Hindu-wife",
+      "separate-residence",
+      "maintenance"
+    ],
+
+    "intended_use": "retrieval_grounded_legal_navigation",
+    "legal_advice": false,
+    "requires_citation": true
+  }
+}
