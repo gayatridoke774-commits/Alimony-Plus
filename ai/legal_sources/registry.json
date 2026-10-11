@@ -24,7 +24,8 @@
       "last_verified_on": "2026-10-07",
       "version": "Act No. 46 of 2023",
       "status": "verified_source",
-      "source_url": "https://www.indiacode.nic.in/indiacode/handle/123456789/20099?view_type=browse"
+      "source_url": "https://www.indiacode.nic.in/indiacode/handle/123456789/20099?view_type=browse",
+      "document_url": "https://www.indiacode.nic.in/bitstream/123456789/20335/1/a2023-46.pdf"
     },
     {
       "source_id": "HMA_1955_S24_S25",
@@ -41,7 +42,8 @@
       "last_verified_on": "2026-10-07",
       "version": "Act No. 25 of 1955",
       "status": "verified_source",
-      "source_url": "https://www.indiacode.nic.in/indiacode/handle/123456789/1560?sam_handle=123456789%2F1362&view_type=search"
+      "source_url": "https://www.indiacode.nic.in/indiacode/handle/123456789/1560?sam_handle=123456789%2F1362&view_type=search",
+      "document_url": "https://www.indiacode.nic.in/bitstream/123456789/1560/1/A1955-25Eng.pdf"
     },
     {
       "source_id": "HAMA_1956_S18",
@@ -57,7 +59,8 @@
       "last_verified_on": "2026-10-07",
       "version": "Act No. 78 of 1956",
       "status": "verified_source",
-      "source_url": "https://www.indiacode.nic.in/indiacode/handle/123456789/1638?view_type=browse"
+      "source_url": "https://www.indiacode.nic.in/indiacode/handle/123456789/1638?view_type=browse",
+      "document_url": "https://www.indiacode.nic.in/bitstream/123456789/1638/1/AA1956____78.pdf"
     },
     {
       "source_id": "PWDVA_2005_S20",
@@ -73,7 +76,8 @@
       "last_verified_on": "2026-10-07",
       "version": "Act No. 43 of 2005",
       "status": "verified_source",
-      "source_url": "https://www.indiacode.nic.in/handle/123456789/20035?sam_handle=123456789%2F2510&view_type=search"
+      "source_url": "https://www.indiacode.nic.in/handle/123456789/20035?sam_handle=123456789%2F2510&view_type=search",
+      "document_url": "https://www.indiacode.nic.in/bitstream/123456789/2021/5/A2005-43.pdf"
     },
     {
       "source_id": "SMA_1954_S36_S37",
@@ -90,7 +94,8 @@
       "last_verified_on": "2026-10-07",
       "version": "Act No. 43 of 1954",
       "status": "verified_source",
-      "source_url": "https://www.indiacode.nic.in/indiacode/handle/123456789/1387?col=123456789%2F1362&view_type=search"
+      "source_url": "https://www.indiacode.nic.in/indiacode/handle/123456789/1387?col=123456789%2F1362&view_type=search",
+      "document_url": "https://www.indiacode.nic.in/bitstream/123456789/20574/1/special_marriage_act.pdf"
     },
     {
       "source_id": "SC_RAJNESH_V_NEHA_2020",
@@ -118,7 +123,8 @@
       "last_verified_on": "2026-10-07",
       "version": "Criminal Appeal No. 2842 of 2024; decided 2024-07-10; 2024 INSC 506",
       "status": "verified_source",
-      "source_url": "https://api.sci.gov.in/supremecourt/2024/3533/3533_2024_11_1501_53688_Judgement_10-Jul-2024.pdf"
+      "source_url": "https://api.sci.gov.in/supremecourt/2024/3533/3533_2024_11_1501_53688_Judgement_10-Jul-2024.pdf",
+      "document_url": "https://webapi.sci.gov.in/supremecourt/2024/3533/3533_2024_11_1501_53688_Judgement_10-Jul-2024.pdf"
     },
     {
       "source_id": "NALSA_WOMENS_ASSISTANCE",
@@ -162,7 +168,8 @@
       "last_verified_on": "2026-10-07",
       "version": null,
       "status": "verified_source",
-      "source_url": "https://services.ecourts.gov.in/ecourtindia_v6/"
+      "source_url": "https://services.ecourts.gov.in/ecourtindia_v6/",
+      "document_url": "https://ecourts.gov.in/ecourts2.0/"
     },
     {
       "source_id": "MEDIATION_ACT_2023",
@@ -176,7 +183,8 @@
       "last_verified_on": "2026-10-07",
       "version": "Act No. 32 of 2023",
       "status": "verified_source",
-      "source_url": "https://www.indiacode.nic.in/indiacode/handle/123456789/19637?col=123456789%2F1362&view_type=search"
+      "source_url": "https://www.indiacode.nic.in/indiacode/handle/123456789/19637?col=123456789%2F1362&view_type=search",
+      "document_url": "https://www.indiacode.nic.in/bitstream/123456789/19637/1/A2023-32.pdf"
     },
     {
       "source_id": "DPDP_ACT_2023",
@@ -190,7 +198,8 @@
       "last_verified_on": "2026-10-07",
       "version": "Act No. 22 of 2023",
       "status": "verified_source_commencement_requires_notification_check",
-      "source_url": "https://www.indiacode.nic.in/indiacode/handle/123456789/22037?view_type=browse"
+      "source_url": "https://www.indiacode.nic.in/indiacode/handle/123456789/22037?view_type=browse",
+      "document_url": "https://www.indiacode.nic.in/bitstream/123456789/22037/1/a2023-22.pdf"
     },
     {
       "source_id": "DPDP_RULES_2025",
@@ -204,7 +213,26 @@
       "last_verified_on": "2026-10-07",
       "version": "2025 Rules; official MeitY publication",
       "status": "verified_source_commencement_timeline_requires_check",
-      "source_url": "https://www.meity.gov.in/documents/act-and-policies/digital-personal-data-protection-rules-2025-gDOxUjMtQWa?pageTitle=Digit"
+      "source_url": "https://www.meity.gov.in/documents/act-and-policies/digital-personal-data-protection-rules-2025-gDOxUjMtQWa?pageTitle=Digit",
+      "document_url": "https://www.meity.gov.in/static/uploads/2025/11/53450e6e5dc0bfa85ebd78686cadad39.pdf"
+    },
+    {
+      "source_id": "PWDVA_2005_S18",
+      "title": "Protection of Women from Domestic Violence Act, 2005 — Section 18",
+      "source_url": "https://www.indiacode.nic.in/bitstream/123456789/2021/5/A2005-43.pdf",
+      "document_url": "https://www.indiacode.nic.in/bitstream/123456789/2021/5/A2005-43.pdf",
+      "authority": "Government of India",
+      "official_source": true,
+      "last_verified_on": "2026-10-07",
+      "reviewed_on": null,
+      "source_type": "statute",
+      "source_role": "primary_legal_source",
+      "sections": [
+        "18"
+      ],
+      "effective_from": null,
+      "version": "Act No. 43 of 2005",
+      "status": "verified_source"
     }
   ]
 }

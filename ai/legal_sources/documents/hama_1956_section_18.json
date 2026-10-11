@@ -7,10 +7,12 @@
   "enactment_date": "1956-12-21",
 
   "source": {
+    "source_id":"HAMA_1956_S18",
+    "document_url": "https://www.indiacode.nic.in/bitstream/123456789/1638/1/AA1956____78.pdf",
     "authority": "Government of India",
     "publisher": "India Code",
     "official_source": true,
-    "url": "https://www.indiacode.nic.in/bitstream/123456789/1638/1/AA1956____78.pdf",
+    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/1638/1/AA1956____78.pdf",
     "source_type": "official_statutory_text",
     "retrieved_for_project": "2026-10-08"
   },

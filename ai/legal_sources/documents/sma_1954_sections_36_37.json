@@ -7,10 +7,12 @@
   "enactment_date": "1954-10-09",
 
   "source": {
+    "source_id":"SMA_1954_S36_S37",
+    "document_url": "https://www.indiacode.nic.in/bitstream/123456789/20574/1/special_marriage_act.pdf",
     "authority": "Government of India",
     "publisher": "India Code",
     "official_source": true,
-    "url": "https://www.indiacode.nic.in/bitstream/123456789/20574/1/special_marriage_act.pdf",
+    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/20574/1/special_marriage_act.pdf",
     "source_type": "official_statutory_text",
     "retrieved_for_project": "2026-10-08"
   },

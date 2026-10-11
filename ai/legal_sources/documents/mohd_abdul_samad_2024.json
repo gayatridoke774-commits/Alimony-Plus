@@ -8,9 +8,11 @@
   "citation": "2024 INSC 506",
 
   "source": {
+    "source_id":"SC_MOHD_ABDUL_SAMAD_2024",
+    "document_url": "https://webapi.sci.gov.in/supremecourt/2024/3533/3533_2024_11_1501_53688_Judgement_10-Jul-2024.pdf",
     "authority": "Supreme Court of India",
     "official_source": true,
-    "url": "https://webapi.sci.gov.in/supremecourt/2024/3533/3533_2024_11_1501_53688_Judgement_10-Jul-2024.pdf",
+    "source_url": "https://webapi.sci.gov.in/supremecourt/2024/3533/3533_2024_11_1501_53688_Judgement_10-Jul-2024.pdf",
     "source_type": "official_judgment",
     "retrieved_for_project": "2026-10-08"
   },

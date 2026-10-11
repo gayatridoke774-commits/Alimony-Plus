@@ -6,9 +6,10 @@
   "jurisdiction": "India",
 
   "source": {
+    "source_id":"NALSA_WOMENS_ASSISTANCE",
     "authority": "National Legal Services Authority",
     "official_source": true,
-    "url": "https://nalsa.gov.in/womens-assistance/",
+    "source_url": "https://nalsa.gov.in/womens-assistance/",
     "source_type": "official_service_information",
     "retrieved_for_project": "2026-10-08"
   },

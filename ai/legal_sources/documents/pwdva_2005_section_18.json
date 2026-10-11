@@ -1,0 +1,88 @@
+
+{
+  "document_id": "INDIA_CODE_PWDVA_2005_SECTION_18",
+  "title": "Protection of Women from Domestic Violence Act, 2005 — Section 18",
+  "document_type": "statutory_text",
+  "act": "The Protection of Women from Domestic Violence Act, 2005",
+  "act_number": 43,
+  "enactment_date": "2005-09-13",
+  "source": {
+    "source_id": "PWDVA_2005_S18",
+    "document_url": "https://www.indiacode.nic.in/bitstream/123456789/2021/5/A2005-43.pdf",
+    "authority": "Government of India",
+    "publisher": "India Code",
+    "official_source": true,
+    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/2021/5/A2005-43.pdf",
+    "source_type": "official_statutory_text",
+    "retrieved_for_project": "2026-10-10"
+  },
+  "legal_context": {
+    "subject": "Protection orders in cases involving domestic violence",
+    "scope": "Section 18",
+    "chapter": "Chapter IV — Procedure for obtaining orders of reliefs",
+    "important_note": "Section 18 concerns protection orders that a Magistrate may pass after giving the aggrieved person and the respondent an opportunity of being heard and being prima facie satisfied that domestic violence has taken place or is likely to take place."
+  },
+  "section_18": {
+    "title": "Protection orders",
+    "statutory_text": {
+      "intro": "The Magistrate may, after giving the aggrieved person and the respondent an opportunity of being heard and on being prima facie satisfied that domestic violence has taken place or is likely to take place, pass a protection order in favour of the aggrieved person and prohibit the respondent from—",
+      "prohibitions": {
+        "a": "Committing any act of domestic violence.",
+        "b": "Aiding or abetting in the commission of acts of domestic violence.",
+        "c": "Entering the place of employment of the aggrieved person or, if the person aggrieved is a child, its school or any other place frequented by the aggrieved person.",
+        "d": "Attempting to communicate in any form, whatsoever, with the aggrieved person, including personal, oral or written or electronic or telephonic contact.",
+        "e": "Alienating any assets, operating bank lockers or bank accounts used or held or enjoyed by both parties, jointly by the aggrieved person and the respondent or singly by the respondent, including her stridhan or any other property held either jointly by the parties or separately by them, without the leave of the Magistrate.",
+        "f": "Causing violence to the dependants, other relatives or any person who give the aggrieved person assistance from domestic violence.",
+        "g": "Committing any other act as specified in the protection order."
+      }
+    },
+    "plain_summary": "Section 18 provides for protection orders that may prohibit specified conduct connected with domestic violence, including violence, aiding violence, certain forms of contact, interference with specified assets, and violence against people assisting the aggrieved person.",
+    "key_elements": [
+      "The provision concerns protection orders.",
+      "The aggrieved person and respondent must be given an opportunity of being heard under the section.",
+      "The Magistrate must be prima facie satisfied that domestic violence has taken place or is likely to take place.",
+      "The section identifies seven categories of prohibited conduct.",
+      "The provision includes restrictions concerning communication and specified assets.",
+      "The precise terms of any order depend on the applicable law and the facts considered by the Magistrate."
+    ],
+    "rag_use": [
+      "Identify Section 18 as a possible statutory route concerning protection orders.",
+      "Summarize the categories of conduct listed in the provision.",
+      "Distinguish the statutory text from plain-language explanations.",
+      "Provide a citation to Section 18 whenever information from this document is presented.",
+      "Do not infer that a protection order has been or will be granted."
+    ]
+  },
+  "application_to_alimony_plus": {
+    "primary_use": [
+      "Legal RAG retrieval",
+      "Protection-order route identification",
+      "Domestic-violence-related case intake",
+      "Citation-backed explanations"
+    ],
+    "calculator_rule": "Section 18 does not prescribe a mathematical formula for calculating monetary relief or maintenance.",
+    "safety_rule": "Explain the provision without deciding whether a person is legally entitled to an order or predicting a court's decision.",
+    "human_review": "Fact-specific questions involving safety, domestic violence, evidence, or the terms of a protection order should be escalated for appropriate legal or human review."
+  },
+  "rag_metadata": {
+    "language": "en",
+    "jurisdiction": "India",
+    "authority_level": "Central statute",
+    "document_type": "bare_act_section",
+    "sections": [
+      "18"
+    ],
+    "tags": [
+      "Protection-of-Women-from-Domestic-Violence-Act",
+      "PWDVA",
+      "section-18",
+      "protection-orders",
+      "domestic-violence",
+      "communication-restrictions",
+      "asset-protection"
+    ],
+    "intended_use": "retrieval_grounded_legal_navigation",
+    "legal_advice": false,
+    "requires_citation": true
+  }
+}

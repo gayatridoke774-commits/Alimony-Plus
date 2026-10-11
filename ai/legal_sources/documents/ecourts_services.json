@@ -6,9 +6,11 @@
   "jurisdiction": "India",
 
   "source": {
+    "source_id":"ECOURTS_CASE_STATUS",
+    "document_url": "https://ecourts.gov.in/ecourts2.0/",
     "authority": "eCommittee, Supreme Court of India",
     "official_source": true,
-    "url": "https://ecourts.gov.in/ecourts2.0/",
+    "source_url": "https://ecourts.gov.in/ecourts2.0/",
     "source_type": "official_court_service_portal",
     "retrieved_for_project": "2026-10-08"
   },

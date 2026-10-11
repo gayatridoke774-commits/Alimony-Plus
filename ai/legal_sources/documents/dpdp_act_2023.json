@@ -7,10 +7,12 @@
   "enactment_date": "2023-08-11",
 
   "source": {
+    "source_id":"DPDP_ACT_2023",
+    "document_url": "https://www.indiacode.nic.in/bitstream/123456789/22037/1/a2023-22.pdf",
     "authority": "Government of India",
     "publisher": "India Code",
     "official_source": true,
-    "url": "https://www.indiacode.nic.in/bitstream/123456789/22037/1/a2023-22.pdf",
+    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/22037/1/a2023-22.pdf",
     "source_type": "official_statutory_text",
     "retrieved_for_project": "2026-10-08",
     "version_note": "Official India Code text includes the commencement notification dated 13 November 2025."

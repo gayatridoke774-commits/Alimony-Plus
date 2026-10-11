@@ -1,235 +1,242 @@
+
 import json
+from functools import lru_cache
 from pathlib import Path
 
+import numpy as np
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 
 
-# ---------------------------------------------------------
-# File paths
-# ---------------------------------------------------------
-
 BASE_DIR = Path(__file__).resolve().parent
 EMBEDDED_FILE = BASE_DIR / "embedded_chunks.json"
 
+MODEL_NAME = "intfloat/multilingual-e5-small"
 
-# ---------------------------------------------------------
-# Load legal knowledge base
-# ---------------------------------------------------------
+# Provisional threshold; validate with a larger retrieval test set.
+MIN_SIMILARITY_THRESHOLD = 0.82
 
-print("Loading legal knowledge base...")
-
-with open(EMBEDDED_FILE, "r", encoding="utf-8") as f:
-    chunks = json.load(f)
-
-print(f"Legal chunks loaded: {len(chunks)}")
+# Prefer statutory text when its score is sufficiently close to
+# the highest-scoring chunk from the same document.
+MAX_STATUTORY_SCORE_GAP = 0.05
 
 
-# ---------------------------------------------------------
-# Load embedding model
-# ---------------------------------------------------------
+@lru_cache(maxsize=1)
+def load_resources():
+    """Load and cache the model, chunks, and document embeddings."""
+    print("Loading legal knowledge base...")
 
-print("Loading E5-small model...")
+    with open(EMBEDDED_FILE, "r", encoding="utf-8") as file:
+        loaded_chunks = json.load(file)
 
-model = SentenceTransformer(
-    "intfloat/multilingual-e5-small"
-)
+    if not isinstance(loaded_chunks, list) or not loaded_chunks:
+        raise ValueError("The embedded knowledge base is empty or invalid.")
 
+    for index, chunk in enumerate(loaded_chunks):
+        if not isinstance(chunk, dict):
+            raise ValueError(f"Chunk {index} is not a JSON object.")
 
-# ---------------------------------------------------------
-# Semantic legal search
-# ---------------------------------------------------------
+        required = (
+            "document_id",
+            "title",
+            "text",
+            "embedding",
+            "source_url",
+            "authority",
+            "section",
+        )
+        missing = [key for key in required if not chunk.get(key)]
 
-def search_legal_sources(question, top_k=5):
-    """
-    Search the verified legal knowledge base using
-    semantic similarity.
+        if missing:
+            raise ValueError(
+                f"Chunk {index} is missing required fields: {missing}"
+            )
 
-    Args:
-        question: User's legal question.
-        top_k: Number of results to return.
+        if len(chunk["embedding"]) != 384:
+            raise ValueError(f"Chunk {index} has an invalid embedding size.")
 
-    Returns:
-        List of relevant legal source results containing:
-        - similarity score
-        - document ID
-        - title
-        - section
-        - legal text
-        - authority
-        - official source status
-        - official source URL
-        - citation information
-    """
-
-    # -----------------------------------------------------
-    # Convert user question into an embedding
-    # -----------------------------------------------------
-
-    query_embedding = model.encode(
-        [f"query: {question}"],
-        normalize_embeddings=True
+    embeddings = np.asarray(
+        [chunk["embedding"] for chunk in loaded_chunks],
+        dtype=np.float32,
     )
 
-    # -----------------------------------------------------
-    # Get stored document embeddings
-    # -----------------------------------------------------
+    print(f"Legal chunks loaded: {len(loaded_chunks)}")
+    print("Loading E5-small model...")
 
-    document_embeddings = [
-        chunk["embedding"]
-        for chunk in chunks
+    embedding_model = SentenceTransformer(MODEL_NAME)
+
+    return loaded_chunks, embeddings, embedding_model
+
+
+def select_best_chunk(
+    chunks,
+    scores,
+    max_score_gap=MAX_STATUTORY_SCORE_GAP,
+):
+    """
+    Prefer statutory text if it scores within max_score_gap of
+    the best chunk. Otherwise, return the highest-scoring chunk.
+    """
+    if not chunks or len(chunks) != len(scores):
+        raise ValueError(
+            "Chunks and scores must be non-empty and equal in length."
+        )
+
+    best_index = max(range(len(scores)), key=lambda i: scores[i])
+    best_score = scores[best_index]
+
+    statutory_candidates = [
+        i
+        for i, chunk in enumerate(chunks)
+        if chunk.get("text", "").lstrip().startswith("Statutory Text >")
+        and best_score - scores[i] <= max_score_gap
     ]
 
-    # -----------------------------------------------------
-    # Calculate cosine similarity
-    # -----------------------------------------------------
+    if statutory_candidates:
+        selected_index = max(
+            statutory_candidates,
+            key=lambda i: scores[i],
+        )
+    else:
+        selected_index = best_index
+
+    return chunks[selected_index]
+
+
+def search_legal_sources(
+    question,
+    top_k=5,
+    min_similarity=MIN_SIMILARITY_THRESHOLD,
+):
+    """
+    Return unique legal documents ranked by their selected matching chunks.
+
+    A result is returned only when its similarity meets the threshold.
+    Similarity is a retrieval signal, not a probability of legal correctness.
+    """
+    if not isinstance(question, str) or not question.strip():
+        return []
+
+    if not isinstance(top_k, int) or isinstance(top_k, bool) or top_k < 1:
+        raise ValueError("top_k must be a positive integer.")
+
+    if not isinstance(min_similarity, (int, float)) or not (
+        -1.0 <= min_similarity <= 1.0
+    ):
+        raise ValueError("min_similarity must be between -1 and 1.")
+
+    chunks, document_embeddings, model = load_resources()
+
+    query_embedding = model.encode(
+        [f"query: {question.strip()}"],
+        normalize_embeddings=True,
+    )
 
     similarities = cosine_similarity(
         query_embedding,
-        document_embeddings
+        document_embeddings,
     )[0]
 
-    # -----------------------------------------------------
-    # Rank results from highest to lowest similarity
-    # -----------------------------------------------------
+    # Group eligible chunks by document so we can choose the most
+    # useful chunk without losing the other candidates prematurely.
+    chunks_by_document = {}
 
-    ranked_indexes = similarities.argsort()[::-1][:top_k]
+    for index, raw_score in enumerate(similarities):
+        score = float(raw_score)
+
+        if score < min_similarity:
+            continue
+
+        chunk = chunks[index]
+        document_id = chunk["document_id"]
+
+        chunks_by_document.setdefault(document_id, []).append(
+            {
+                "score": score,
+                "chunk": chunk,
+            }
+        )
+
+    best_by_document = {}
+
+    for document_id, candidates in chunks_by_document.items():
+        candidate_chunks = [item["chunk"] for item in candidates]
+        candidate_scores = [item["score"] for item in candidates]
+
+        selected_chunk = select_best_chunk(candidate_chunks, candidate_scores)
+
+        # Retrieve the score belonging to the exact selected chunk.
+        selected_index = next(
+            i
+            for i, candidate_chunk in enumerate(candidate_chunks)
+            if candidate_chunk is selected_chunk
+        )
+        selected_score = candidate_scores[selected_index]
+
+        best_by_document[document_id] = {
+            "score": selected_score,
+            "chunk": selected_chunk,
+        }
+
+    ranked = sorted(
+        best_by_document.values(),
+        key=lambda item: item["score"],
+        reverse=True,
+    )[:top_k]
 
     results = []
 
-    for index in ranked_indexes:
-
-        chunk = chunks[index]
-
-        # -------------------------------------------------
-        # Build a clean citation/source card
-        # -------------------------------------------------
+    for item in ranked:
+        chunk = item["chunk"]
 
         citation = {
             "title": chunk["title"],
-            "section": chunk.get("section", ""),
-            "authority": chunk.get("authority", ""),
-            "source_url": chunk.get("source_url", ""),
+            "section": chunk["section"],
+            "authority": chunk["authority"],
+            "source_url": chunk["source_url"],
             "official_source": chunk.get("official_source", False),
         }
 
-        # -------------------------------------------------
-        # Build final result
-        # -------------------------------------------------
-
-        result = {
-            "score": round(
-                float(similarities[index]),
-                4
-            ),
-
-            "document_id": chunk["document_id"],
-
-            "title": chunk["title"],
-
-            "section": chunk.get(
-                "section",
-                ""
-            ),
-
-            "text": chunk["text"],
-
-            "source_url": chunk.get(
-                "source_url",
-                ""
-            ),
-
-            "authority": chunk.get(
-                "authority",
-                ""
-            ),
-
-            "official_source": chunk.get(
-                "official_source",
-                False
-            ),
-
-            "citation": citation,
-        }
-
-        results.append(result)
+        results.append(
+            {
+                "score": round(item["score"], 4),
+                "document_id": chunk["document_id"],
+                "title": chunk["title"],
+                "section": chunk["section"],
+                "text": chunk["text"],
+                "source_url": chunk["source_url"],
+                "authority": chunk["authority"],
+                "official_source": chunk.get("official_source", False),
+                "citation": citation,
+            }
+        )
 
     return results
 
 
-# ---------------------------------------------------------
-# Print search results
-# ---------------------------------------------------------
-
 def print_results(results):
-    """
-    Display retrieved legal sources in a readable format.
-    """
-
+    """Display retrieved sources and their citation metadata."""
     print("\n" + "=" * 70)
     print("TOP LEGAL SOURCES")
     print("=" * 70)
 
-    for i, result in enumerate(results, start=1):
+    if not results:
+        print("No sufficiently relevant source found.")
+        return
 
-        print(f"\n[{i}] Similarity: {result['score']}")
-
+    for rank, result in enumerate(results, start=1):
+        print(f"\n[{rank}] Similarity: {result['score']}")
         print(f"Title: {result['title']}")
-
-        if result["section"]:
-            print(f"Section: {result['section']}")
-
+        print(f"Section: {result['section']}")
         print(f"Authority: {result['authority']}")
-
-        print(
-            f"Official source: "
-            f"{result['official_source']}"
-        )
-
+        print(f"Official source: {result['official_source']}")
         print(f"Source: {result['source_url']}")
-
         print("\nLegal text:")
-
         print(result["text"])
-
-        print("\nCitation:")
-
-        print(
-            f"{result['citation']['title']}"
-        )
-
-        if result["citation"]["section"]:
-            print(
-                f"Section: "
-                f"{result['citation']['section']}"
-            )
-
-        print(
-            f"Authority: "
-            f"{result['citation']['authority']}"
-        )
-
-        print(
-            f"Official URL: "
-            f"{result['citation']['source_url']}"
-        )
-
         print("-" * 70)
 
 
-# ---------------------------------------------------------
-# Test the search system directly
-# ---------------------------------------------------------
-
 if __name__ == "__main__":
-
-    question = input(
-        "\nAsk a legal knowledge question: "
-    )
-
-    results = search_legal_sources(
-        question,
-        top_k=5
-    )
-
+    question = input("\nAsk a legal knowledge question: ")
+    results = search_legal_sources(question, top_k=5)
     print_results(results)

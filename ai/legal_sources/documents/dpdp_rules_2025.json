@@ -7,10 +7,12 @@
   "notification_number": "G.S.R. 846(E)",
 
   "source": {
+    "source_id":"DPDP_RULES_2025",
+    "document_url": "https://www.meity.gov.in/static/uploads/2025/11/53450e6e5dc0bfa85ebd78686cadad39.pdf",
     "authority": "Ministry of Electronics and Information Technology, Government of India",
     "publisher": "MeitY",
     "official_source": true,
-    "url": "https://www.meity.gov.in/static/uploads/2025/11/53450e6e5dc0bfa85ebd78686cadad39.pdf",
+    "source_url": "https://www.meity.gov.in/static/uploads/2025/11/53450e6e5dc0bfa85ebd78686cadad39.pdf",
     "source_type": "official_gazette_notification",
     "retrieved_for_project": "2026-10-08"
   },

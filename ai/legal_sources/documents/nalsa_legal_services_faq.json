@@ -6,9 +6,11 @@
   "jurisdiction": "India",
 
   "source": {
+    "source_id":"NALSA_LEGAL_SERVICES_FAQ",
+    "document_url": "https://nalsa.gov.in/faqs/",
     "authority": "National Legal Services Authority",
     "official_source": true,
-    "url": "https://nalsa.gov.in/faqs/",
+    "source_url": "https://nalsa.gov.in/faqs/",
     "source_type": "official_faq",
     "retrieved_for_project": "2026-10-08"
   },

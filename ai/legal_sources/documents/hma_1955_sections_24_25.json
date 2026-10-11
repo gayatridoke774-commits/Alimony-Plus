@@ -7,12 +7,14 @@
   "enactment_date": "1955-05-18",
 
   "source": {
+    "source_id":"HMA_1955_S24_S25",
+    "document_url": "https://www.indiacode.nic.in/bitstream/123456789/1560/1/A1955-25Eng.pdf",
     "authority": "Government of India",
     "publisher": "India Code",
     "official_source": true,
-    "url": "https://www.indiacode.nic.in/bitstream/123456789/1560/1/A1955-25Eng.pdf",
+    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/1560/1/A1955-25Eng.pdf",
     "source_type": "official_statutory_text",
-    "version_note": "India Code PDF states 'As on the 15th April, 2026'.",
+    "version_note": "India Code PDF states 'As on the 15th April, 2026'",
     "retrieved_for_project": "2026-10-08"
   },
 

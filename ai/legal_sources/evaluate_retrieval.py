@@ -1,10 +1,11 @@
-from semantic_search import search_legal_sources
+
+from semantic_search import (
+    MIN_SIMILARITY_THRESHOLD,
+    search_legal_sources,
+)
 
 
-# ---------------------------------------------------------
-# Retrieval evaluation test cases
-# ---------------------------------------------------------
-
+# Each question has one expected relevant document.
 TEST_CASES = [
     {
         "question": "What does Section 24 of the Hindu Marriage Act provide?",
@@ -34,88 +35,207 @@ TEST_CASES = [
     },
 ]
 
+# Questions that should not retrieve legal sources from this corpus.
+IRRELEVANT_QUERIES = [
+    "What is the weather forecast for Mumbai tomorrow?",
+    "How do I bake a chocolate cake?",
+    "Explain photosynthesis in plants.",
+    "Who won the latest cricket match?",
+    "What is the capital of Japan?",
+]
 
-# ---------------------------------------------------------
-# Run evaluation
-# ---------------------------------------------------------
+TOP_K = 5
+
+REQUIRED_FIELDS = (
+    "document_id",
+    "title",
+    "section",
+    "text",
+    "source_url",
+    "authority",
+    "official_source",
+    "citation",
+)
+
+REQUIRED_CITATION_FIELDS = (
+    "title",
+    "section",
+    "authority",
+    "source_url",
+    "official_source",
+)
+
+
+def check_citation_integrity(result):
+    """Check required source metadata and citation consistency."""
+    errors = []
+
+    for field in REQUIRED_FIELDS:
+        if field not in result or result[field] is None:
+            errors.append(f"Missing field: {field}")
+        elif field != "official_source" and not result[field]:
+            errors.append(f"Empty field: {field}")
+
+    citation = result.get("citation")
+
+    if not isinstance(citation, dict):
+        return errors + ["Citation is missing or not an object"]
+
+    for field in REQUIRED_CITATION_FIELDS:
+        if field not in citation or citation[field] is None:
+            errors.append(f"Missing citation field: {field}")
+        elif field != "official_source" and not citation[field]:
+            errors.append(f"Empty citation field: {field}")
+
+    source_url = result.get("source_url", "")
+    if source_url and not source_url.startswith("https://"):
+        errors.append("Source URL is not HTTPS")
+
+    if not isinstance(result.get("official_source"), bool):
+        errors.append("official_source must be a boolean")
+
+    # Ensure the displayed citation matches the retrieved result.
+    for field in REQUIRED_CITATION_FIELDS:
+        if field in result and field in citation:
+            if result[field] != citation[field]:
+                errors.append(f"Citation mismatch: {field}")
+
+    score = result.get("score")
+    if not isinstance(score, (int, float)) or not -1 <= score <= 1:
+        errors.append("Invalid cosine similarity score")
+
+    return errors
+
 
 def run_evaluation():
-    total_tests = len(TEST_CASES)
-    passed = 0
+    hits = {1: 0, 3: 0, 5: 0}
+    reciprocal_rank_total = 0.0
+    citation_errors = []
+    duplicate_document_results = 0
+    relevant_failures = []
 
     print("\n" + "=" * 70)
     print("LEGAL RETRIEVAL EVALUATION")
     print("=" * 70)
+    print(f"Queries: {len(TEST_CASES)}")
+    print(f"Similarity threshold: {MIN_SIMILARITY_THRESHOLD}")
+    print(f"Ranking cutoff: {TOP_K}")
 
     for number, test in enumerate(TEST_CASES, start=1):
-
         question = test["question"]
-        expected_document_id = test["expected_document_id"]
+        expected_id = test["expected_document_id"]
 
-        print(f"\nRunning Test {number}...")
-        print(f"Question: {question}")
+        results = search_legal_sources(question, top_k=TOP_K)
+        document_ids = [r.get("document_id") for r in results]
 
-        # Search the legal knowledge base
-        results = search_legal_sources(
-            question,
-            top_k=5
+        # Recall@k: one expected relevant document per question.
+        for k in hits:
+            if expected_id in document_ids[:k]:
+                hits[k] += 1
+
+        # Reciprocal rank: 1/rank, or zero if not retrieved.
+        if expected_id in document_ids:
+            rank = document_ids.index(expected_id) + 1
+            reciprocal_rank_total += 1.0 / rank
+        else:
+            rank = None
+            relevant_failures.append(question)
+
+        if len(document_ids) != len(set(document_ids)):
+            duplicate_document_results += 1
+
+        for result in results:
+            for error in check_citation_integrity(result):
+                citation_errors.append(
+                    f"Relevant query {number}: {error} "
+                    f"(document={result.get('document_id', 'UNKNOWN')})"
+                )
+
+        print(f"\nTest {number}: {question}")
+        print(f"Expected document: {expected_id}")
+        print(f"Expected document rank: {rank or 'NOT RETRIEVED'}")
+        print(f"Retrieved documents: {document_ids}")
+        print(
+            "Top similarity:",
+            results[0]["score"] if results else "NO RESULTS",
         )
 
-        # Extract document IDs from retrieved results
-        document_ids = [
-            result["document_id"]
-            for result in results
-        ]
-
-        # Check whether the expected source
-        # appears in the top 5 results
-        found = expected_document_id in document_ids
-
-        if found:
-            passed += 1
-            status = "PASS"
-        else:
-            status = "FAIL"
-
-        print(f"\nTest {number}: {status}")
-        print(f"Expected document: {expected_document_id}")
-
-        if results:
-            print(f"Top result: {results[0]['title']}")
-            print(f"Top similarity: {results[0]['score']}")
-        else:
-            print("Top result: No results")
-
-        print(f"Retrieved document IDs: {document_ids}")
-
-        print("-" * 70)
-
-    # -----------------------------------------------------
-    # Final evaluation result
-    # -----------------------------------------------------
-
-    accuracy = (passed / total_tests) * 100
+    total = len(TEST_CASES)
 
     print("\n" + "=" * 70)
-    print("EVALUATION SUMMARY")
+    print("RANKING METRICS")
     print("=" * 70)
 
-    print(f"Total tests : {total_tests}")
-    print(f"Passed      : {passed}")
-    print(f"Failed      : {total_tests - passed}")
-    print(f"Accuracy    : {accuracy:.2f}%")
+    for k in (1, 3, 5):
+        print(f"Recall@{k}: {hits[k]}/{total} = {hits[k] / total:.2%}")
 
-    if passed == total_tests:
-        print("\nRESULT: ALL TESTS PASSED")
+    mrr = reciprocal_rank_total / total if total else 0.0
+    print(f"MRR: {mrr:.4f}")
+
+    # Test whether unrelated queries are rejected by the threshold.
+    print("\n" + "=" * 70)
+    print("IRRELEVANT-QUERY REJECTION")
+    print("=" * 70)
+
+    rejected = 0
+
+    for question in IRRELEVANT_QUERIES:
+        results = search_legal_sources(question, top_k=TOP_K)
+        is_rejected = len(results) == 0
+
+        if is_rejected:
+            rejected += 1
+
+        top_score = results[0]["score"] if results else "NO RESULTS"
+
+        print(f"\nQuestion: {question}")
+        print(f"Top score: {top_score}")
+        print(f"Rejected: {'PASS' if is_rejected else 'FAIL'}")
+
+        for result in results:
+            for error in check_citation_integrity(result):
+                citation_errors.append(
+                    f"Irrelevant query: {error} "
+                    f"(document={result.get('document_id', 'UNKNOWN')})"
+                )
+
+    print(f"\nRejection rate: {rejected}/{len(IRRELEVANT_QUERIES)}")
+
+    print("\n" + "=" * 70)
+    print("CITATION INTEGRITY")
+    print("=" * 70)
+
+    print(f"Citation errors: {len(citation_errors)}")
+    print(f"Queries with duplicate document IDs: {duplicate_document_results}")
+
+    for error in citation_errors:
+        print(f"ERROR: {error}")
+
+    print("\n" + "=" * 70)
+    print("OVERALL SUMMARY")
+    print("=" * 70)
+
+    ranking_pass = all(hits[k] == total for k in (1, 3, 5))
+    rejection_pass = rejected == len(IRRELEVANT_QUERIES)
+    citations_pass = len(citation_errors) == 0
+    duplicates_pass = duplicate_document_results == 0
+
+    print(f"Recall@1/3/5 all 100%: {ranking_pass}")
+    print(f"All irrelevant queries rejected: {rejection_pass}")
+    print(f"Citation checks passed: {citations_pass}")
+    print(f"No duplicate document IDs: {duplicates_pass}")
+
+    if all((ranking_pass, rejection_pass, citations_pass, duplicates_pass)):
+        print("\nRESULT: ALL CURRENT EVALUATION CHECKS PASSED")
     else:
-        print("\nRESULT: SOME TESTS FAILED")
+        print("\nRESULT: REVIEW REQUIRED")
 
-    print("=" * 70)
+    print(
+        "\nNote: Results reflect this test set only. "
+        "Passing these checks does not establish legal accuracy "
+        "or production readiness."
+    )
 
-
-# ---------------------------------------------------------
-# Main
-# ---------------------------------------------------------
 
 if __name__ == "__main__":
     run_evaluation()

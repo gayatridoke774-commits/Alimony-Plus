@@ -7,10 +7,12 @@
   "enactment_date": "2023-09-14",
 
   "source": {
+    "source_id":"MEDIATION_ACT_2023",
+    "document_url": "https://www.indiacode.nic.in/bitstream/123456789/19637/1/A2023-32.pdf",
     "authority": "Government of India",
     "publisher": "India Code",
     "official_source": true,
-    "url": "https://www.indiacode.nic.in/bitstream/123456789/19637/1/A2023-32.pdf",
+    "source_url": "https://www.indiacode.nic.in/bitstream/123456789/19637/1/A2023-32.pdf",
     "source_type": "official_statutory_text",
     "retrieved_for_project": "2026-10-08"
   },
