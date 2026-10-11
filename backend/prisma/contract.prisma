@@ -1,0 +1,102 @@
+// use prisma-8
+model Case {
+  id          Int      @id @default(autoincrement())
+  userId      Int
+  title       String
+  caseType    String?
+  legalRoute  String?
+  status      String   @default("ACTIVE")
+  description String?
+  createdAt   DateTime @default(now())
+}
+
+model Party {
+  id        Int      @id @default(autoincrement())
+  caseId    Int
+  name      String
+  role      String
+  createdAt DateTime @default(now())
+}
+
+model Dependent {
+  id        Int      @id @default(autoincrement())
+  caseId    Int
+  name      String
+  relation  String?
+  age       Int?
+  createdAt DateTime @default(now())
+}
+
+model Proceeding {
+  id             Int       @id @default(autoincrement())
+  caseId         Int
+  courtName      String?
+  caseNumber     String?
+  proceedingType String?
+  status         String    @default("ONGOING")
+  filedAt        DateTime?
+  createdAt      DateTime  @default(now())
+}
+
+model Order {
+  id           Int       @id @default(autoincrement())
+  proceedingId Int
+  orderType    String?
+  orderDate    DateTime?
+  amount       Decimal?
+  description  String?
+  createdAt    DateTime  @default(now())
+}
+model Payment {
+  id          Int      @id @default(autoincrement())
+  orderId     Int
+  amount      Decimal
+  paymentDate DateTime
+  status      String   @default("RECEIVED")
+  reference   String?
+  notes       String?
+  createdAt   DateTime @default(now())
+}
+
+model Document {
+  id           Int      @id @default(autoincrement())
+  caseId       Int
+  fileName     String
+  originalName String
+  mimeType     String
+  fileSize     Int
+  storagePath  String
+  documentType String?
+  uploadedBy   Int
+  createdAt    DateTime @default(now())
+}
+
+model User {
+  id        Int      @id @default(autoincrement())
+  name      String
+  email     String   @unique
+  password  String
+  role      String   @default("OWNER")
+  createdAt DateTime @default(now())
+}
+
+model CalculatorRun {
+  id             Int      @id @default(autoincrement())
+  caseId         Int
+  userId         Int
+  formulaVersion String
+  inputData      String
+  resultData     String
+  createdAt      DateTime @default(now())
+}
+
+
+model AuditLog {
+  id Int @id @default(autoincrement())
+  userId Int
+  action String
+  entityType String
+  entityId Int?
+  metadata String?
+  createdAt DateTime @default(now())
+}

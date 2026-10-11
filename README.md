@@ -5,7 +5,7 @@
   
   <p>
     <img src="https://img.shields.io/badge/Project-Tech%20Tomorrow-blue?style=for-the-badge" alt="Tech Tomorrow" />
-    <img src="https://img.shields.io/badge/Status-Research%20&%20Design-orange?style=for-the-badge" alt="Status" />
+    <img src="https://img.shields.io/badge/Status-Frontend%20Prototype-green?style=for-the-badge" alt="Status" />
     <img src="https://img.shields.io/badge/Focus-India%20Legal%20Tech-green?style=for-the-badge" alt="India Focus" />
     <img src="https://img.shields.io/badge/AI-Responsible%20RAG-purple?style=for-the-badge" alt="AI Tech" />
   </p>
@@ -16,6 +16,20 @@
 **Alimony+ is a Tech Tomorrow group project exploring how technology can reduce information, preparation, tracking, and access barriers in maintenance and alimony journeys in India.**
 
 > **LEGAL DISCLAIMER:** Alimony+ is a technology and research project and does not provide individualized legal advice. Information is intended for general educational and navigational purposes. Legal rights, procedures, and outcomes depend on facts, jurisdiction, applicable law, and current judicial interpretation. Users should consult a qualified advocate or official legal-aid service for case-specific assistance.
+
+---
+
+## Run the frontend prototype
+
+```sh
+cd frontend
+npm ci
+npm run dev
+```
+
+Open http://127.0.0.1:3000 to explore the labeled synthetic demo. Case creation, order/payment forms, a monthly demonstration ledger, document readiness, planning scenarios and a structured-data review/export workspace are included.
+
+See [frontend setup and limitations](frontend/README.md) and [backend/AI integration handoff](frontend/API-HANDOFF.md). The existing backend can be connected for supported APIs. Hearing dates, monthly payment schedules and period allocations still require backend extensions before the live ledger can be enabled. No production database or AI service is bundled with the demo.
 
 ---
 
@@ -486,9 +500,9 @@ erDiagram
 ## Technology Stack
 
 **CURRENT:**
-- *Frontend:* [Not Initialized]
-- *Backend:* [Not Initialized]
-- *Database:* [Not Initialized]
+- *Frontend:* Next.js + React + TypeScript + Tailwind CSS prototype in `frontend/`.
+- *Backend:* Existing Express APIs for auth, cases, proceedings, orders, payments, documents and planning calculations.
+- *Database:* PostgreSQL / Prisma contract present; requires a configured database.
 
 **PLANNED:**
 - *Frontend:* Next.js (React), Tailwind CSS
@@ -506,8 +520,8 @@ erDiagram
 |------|--------|-------|
 | Research & Documentation | ✅ Complete | Initial architecture and legal landscape defined. |
 | Legal Source Registry | 🚧 In Progress | Compiling India Code & SC judgments. |
-| UI & Authentication | 📋 Planned | - |
-| Calculator & Case Tracker | 📋 Planned | - |
+| UI & Authentication | Prototype implemented | Responsive frontend and backend login adapter; deployment validation remains. |
+| Calculator & Case Tracker | Prototype implemented | Live supported records; scheduled ledger/hearing workflows demonstrated with synthetic data. |
 | AI / RAG Implementation | 📋 Planned | - |
 | Document Vault | 📋 Planned | - |
 | Security & Testing | 📋 Planned | - |
