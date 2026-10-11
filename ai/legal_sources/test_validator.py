@@ -1,6 +1,8 @@
-import unittest
+﻿import unittest
 import json
 import tempfile
+import urllib.error
+from unittest.mock import MagicMock
 from pathlib import Path
 from unittest.mock import patch
 
@@ -247,6 +249,35 @@ class TestValidatorHelpers(unittest.TestCase):
             any("Missing source URL" in error for error in errors)
         )
 
+    def test_url_check_falls_back_to_get_after_head_timeout(self):
+        from validate_sources import check_url_reachability
+
+        check_url_reachability.cache_clear()
+
+        response = MagicMock()
+        response.status = 200
+        response.geturl.return_value = (
+            "https://www.indiacode.nic.in/test.pdf"
+        )
+        response.__enter__.return_value = response
+
+        with patch(
+            "validate_sources.urllib.request.urlopen",
+            side_effect=[
+                urllib.error.URLError("timed out"),
+                response,
+            ],
+        ) as mock_urlopen:
+            status, message = check_url_reachability(
+                "https://www.indiacode.nic.in/test.pdf",
+                timeout=1,
+            )
+
+        check_url_reachability.cache_clear()
+
+        self.assertEqual(status, "REACHABLE")
+        self.assertIn("GET fallback", message)
+        self.assertEqual(mock_urlopen.call_count, 2)
 
 if __name__ == "__main__":
     unittest.main()

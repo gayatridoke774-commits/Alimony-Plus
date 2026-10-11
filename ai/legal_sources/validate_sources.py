@@ -169,7 +169,6 @@ def check_url_reachability(source_url, timeout=10):
         )
     }
 
-    # First try HEAD to avoid downloading the document.
     request = urllib.request.Request(
         source_url,
         headers=headers,
@@ -181,33 +180,28 @@ def check_url_reachability(source_url, timeout=10):
             return "REACHABLE", (
                 f"HTTP {response.status}; final URL: {response.geturl()}"
             )
-
     except urllib.error.HTTPError as error:
-        # Some servers don't support HEAD, so try GET instead.
         if error.code not in (403, 405, 501):
             return "REVIEW", f"HTTP error {error.code}"
+    except (urllib.error.URLError, TimeoutError, OSError, ValueError):
+        # Try the limited GET request before declaring reachability unknown.
+        pass
 
-    except (urllib.error.URLError, TimeoutError, OSError, ValueError) as error:
-        return "REVIEW", f"Could not confirm reachability: {error}"
+    request = urllib.request.Request(
+        source_url,
+        headers={**headers, "Range": "bytes=0-1023"},
+        method="GET",
+    )
 
-    # HEAD was blocked; use GET and read only a small amount.
     try:
-        request = urllib.request.Request(
-            source_url,
-            headers={**headers, "Range": "bytes=0-1023"},
-            method="GET",
-        )
-
         with urllib.request.urlopen(request, timeout=timeout) as response:
             response.read(1024)
             return "REACHABLE", (
                 f"HTTP {response.status} (GET fallback); "
                 f"final URL: {response.geturl()}"
             )
-
     except urllib.error.HTTPError as error:
         return "REVIEW", f"GET fallback returned HTTP {error.code}"
-
     except (urllib.error.URLError, TimeoutError, OSError, ValueError) as error:
         return "REVIEW", f"Could not confirm reachability: {error}"
 
@@ -247,6 +241,7 @@ def validate_registry(registry):
         )
 
     return errors, registry_by_id
+
 
 
 def validate_document(file_path, registry_by_id):
