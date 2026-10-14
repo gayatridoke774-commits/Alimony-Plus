@@ -2441,3 +2441,190 @@ td small {
 .table-scroll {
   position: relative;
 }
+
+/* Section 13B cooling-period tracker */
+.cooling-view {
+  display: grid;
+  gap: 20px;
+  min-width: 0;
+}
+
+.cooling-intro {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 23px;
+}
+
+.cooling-icon {
+  display: grid;
+  place-items: center;
+  flex: 0 0 48px;
+  height: 48px;
+  border-radius: 10px;
+  background: #f0f3e9;
+  color: #244737;
+}
+
+.cooling-intro h2,
+.cooling-legal-note h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+}
+
+.cooling-intro p,
+.cooling-legal-note p {
+  margin: 0;
+  line-height: 1.8;
+  font-size: 13px;
+}
+
+.cooling-panel {
+  padding-bottom: 22px;
+}
+
+.cooling-panel > .panel-heading {
+  padding: 22px 23px;
+}
+
+.cooling-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  padding: 0 23px 22px;
+}
+
+.cooling-fields input {
+  min-height: 43px;
+}
+
+.cooling-empty,
+.cooling-error {
+  margin: 0 23px 20px;
+  padding: 13px 15px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.cooling-empty {
+  background: #f0f3e9;
+  color: #41594b;
+}
+
+.cooling-error {
+  background: #fbf2db;
+  color: #8a601d;
+}
+
+.cooling-milestone {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin: 0 23px 22px;
+  padding: 18px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #fafbf7;
+}
+
+.cooling-label,
+.cooling-stats .stat-top {
+  display: block;
+  color: #606e56;
+  font-size: 12px;
+}
+
+.cooling-milestone h3 {
+  margin: 7px 0 0;
+  font-size: 21px;
+}
+
+.cooling-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 0 23px 22px;
+}
+
+.cooling-stats .stat-card {
+  min-width: 0;
+}
+
+.cooling-stats .stat-value {
+  display: block;
+  margin-top: 10px;
+}
+
+.cooling-progress-track {
+  height: 10px;
+  overflow: hidden;
+  margin: 0 23px;
+  border-radius: 20px;
+  background: #e7eade;
+}
+
+.cooling-progress-fill {
+  height: 100%;
+  border-radius: inherit;
+  background: var(--green);
+  transition: width 180ms ease;
+}
+
+.cooling-progress-caption {
+  margin: 9px 23px 0;
+  font-size: 12px;
+}
+
+.cooling-legal-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+  padding: 22px;
+  color: #41594b;
+}
+
+.cooling-legal-note > svg {
+  flex: 0 0 auto;
+  margin-top: 1px;
+}
+
+.cooling-disclaimer {
+  margin: 0;
+  color: #606e56;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+@media (max-width: 640px) {
+  .cooling-fields,
+  .cooling-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .cooling-intro,
+  .cooling-legal-note {
+    padding: 17px;
+  }
+
+  .cooling-fields {
+    padding: 0 17px 18px;
+  }
+
+  .cooling-milestone,
+  .cooling-stats {
+    margin-left: 17px;
+    margin-right: 17px;
+  }
+
+  .cooling-progress-track {
+    margin-left: 17px;
+    margin-right: 17px;
+  }
+
+  .cooling-progress-caption {
+    margin-left: 17px;
+    margin-right: 17px;
+  }
+}

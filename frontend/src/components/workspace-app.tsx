@@ -2,6 +2,10 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { CoolingPeriodView } from "./cooling-period-view";
+import { WaiverApplicationView } from "@/components/waiver-application-view";
+import { SettlementChecklistView } from "@/components/settlement-checklist-view";
+import { JointPetitionStudio } from "@/components/joint-petition-studio";
 import {
   LayoutDashboard,
   FolderHeart,
@@ -53,6 +57,10 @@ const nav = [
   { id: "payments", title: "Maintenance", icon: Wallet },
   { id: "documents", title: "Documents", icon: Files },
   { id: "calculator", title: "Planning calculator", icon: Calculator },
+  { id: "cooling-period", title: "Cooling period tracker", icon: CalendarDays },
+  { id: "waiver-application", title: "Waiver application", icon: ShieldCheck },
+  { id: "settlement-checklist", title: "Settlement checklist", icon: Files },
+  { id: "joint-petition", title: "Joint-petition studio", icon: ShieldCheck },
 ];
 const pageTitles: Record<string, string> = {
   dashboard: "Overview",
@@ -64,6 +72,10 @@ const pageTitles: Record<string, string> = {
   "data-review": "Data workspace",
   help: "Help & legal aid",
   settings: "Settings",
+  "cooling-period": "Cooling period tracker",
+  "waiver-application": "Waiver application",
+  "settlement-checklist": "Settlement checklist",
+  "joint-petition": "Joint-petition studio",
 };
 
 export function WorkspaceApp({ section }: { section: string }) {
@@ -1183,6 +1195,10 @@ export function WorkspaceApp({ section }: { section: string }) {
             </>
           )}
           {section === "calculator" && <CalculatorView />}
+          {section === "cooling-period" && <CoolingPeriodView />}
+          {section === "waiver-application" && <WaiverApplicationView />}
+          {section === "settlement-checklist" && <SettlementChecklistView />}
+          {section === "joint-petition" && <JointPetitionStudio />}
           {section === "data-review" && (
             <DataReviewView
               onAdd={() => open("source")}
