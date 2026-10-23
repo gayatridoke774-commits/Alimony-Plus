@@ -220,15 +220,24 @@ def run_evaluation():
     citations_pass = len(citation_errors) == 0
     duplicates_pass = duplicate_document_results == 0
 
+    all_checks_pass = all(
+        (ranking_pass, rejection_pass, citations_pass, duplicates_pass)
+    )
+
     print(f"Recall@1/3/5 all 100%: {ranking_pass}")
     print(f"All irrelevant queries rejected: {rejection_pass}")
     print(f"Citation checks passed: {citations_pass}")
     print(f"No duplicate document IDs: {duplicates_pass}")
 
-    if all((ranking_pass, rejection_pass, citations_pass, duplicates_pass)):
+    if all_checks_pass:
         print("\nRESULT: ALL CURRENT EVALUATION CHECKS PASSED")
     else:
         print("\nRESULT: REVIEW REQUIRED")
+
+        if relevant_failures:
+            print("\nRelevant questions that failed retrieval:")
+            for question in relevant_failures:
+                print(f"- {question}")
 
     print(
         "\nNote: Results reflect this test set only. "
@@ -236,6 +245,8 @@ def run_evaluation():
         "or production readiness."
     )
 
+    return 0 if all_checks_pass else 1
+
 
 if __name__ == "__main__":
-    run_evaluation()
+    raise SystemExit(run_evaluation())
