@@ -7,6 +7,12 @@ import numpy as np
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 
+from source_policy import (
+    get_source_eligibility,
+    get_document_source_ids,
+    is_document_eligible,
+)
+
 
 BASE_DIR = Path(__file__).resolve().parent
 EMBEDDED_FILE = BASE_DIR / "embedded_chunks.json"
@@ -107,11 +113,15 @@ def search_legal_sources(
     question,
     top_k=5,
     min_similarity=MIN_SIMILARITY_THRESHOLD,
+    *,
+    evaluation_mode=False,
 ):
     """
-    Return unique legal documents ranked by their selected matching chunks.
+    Return unique, eligible legal documents ranked by matching chunks.
 
-    A result is returned only when its similarity meets the threshold.
+    Only sources with an eligible registry status, current verification
+    date, and current substantive content-review date can be returned.
+
     Similarity is a retrieval signal, not a probability of legal correctness.
     """
     if not isinstance(question, str) or not question.strip():
@@ -120,12 +130,56 @@ def search_legal_sources(
     if not isinstance(top_k, int) or isinstance(top_k, bool) or top_k < 1:
         raise ValueError("top_k must be a positive integer.")
 
-    if not isinstance(min_similarity, (int, float)) or not (
-        -1.0 <= min_similarity <= 1.0
+    if (
+        not isinstance(min_similarity, (int, float))
+        or isinstance(min_similarity, bool)
+        or not -1.0 <= min_similarity <= 1.0
     ):
         raise ValueError("min_similarity must be between -1 and 1.")
 
     chunks, document_embeddings, model = load_resources()
+
+    if not isinstance(evaluation_mode, bool):
+        raise ValueError("evaluation_mode must be a boolean.")
+
+    if evaluation_mode:
+        # Offline evaluation only: test retrieval candidates
+        # without approving them for legal-AI production use.
+        eligible_indices = list(range(len(chunks)))
+
+        print(
+            "WARNING: Evaluation mode enabled. "
+            "Results are unapproved retrieval candidates."
+        )
+    else:
+        # Production mode: fail closed.
+        eligibility = get_source_eligibility()
+        document_sources = get_document_source_ids()
+
+        eligible_indices = [
+            index
+            for index, chunk in enumerate(chunks)
+            if is_document_eligible(
+                chunk.get("document_id"),
+                eligibility,
+                document_sources,
+            )
+        ]
+
+    print(
+        f"Eligible legal chunks: {len(eligible_indices)} "
+        f"of {len(chunks)}"
+    )
+
+    if not eligible_indices:
+        print(
+            "No eligible legal sources are available. "
+            "Check registry status, verification dates, and review dates."
+        )
+        return []
+
+    eligible_chunks = [chunks[index] for index in eligible_indices]
+    eligible_embeddings = document_embeddings[eligible_indices]
 
     query_embedding = model.encode(
         [f"query: {question.strip()}"],
@@ -134,11 +188,10 @@ def search_legal_sources(
 
     similarities = cosine_similarity(
         query_embedding,
-        document_embeddings,
+        eligible_embeddings,
     )[0]
 
-    # Group eligible chunks by document so we can choose the most
-    # useful chunk without losing the other candidates prematurely.
+    # Group relevant chunks by document.
     chunks_by_document = {}
 
     for index, raw_score in enumerate(similarities):
@@ -147,7 +200,7 @@ def search_legal_sources(
         if score < min_similarity:
             continue
 
-        chunk = chunks[index]
+        chunk = eligible_chunks[index]
         document_id = chunk["document_id"]
 
         chunks_by_document.setdefault(document_id, []).append(
@@ -163,9 +216,12 @@ def search_legal_sources(
         candidate_chunks = [item["chunk"] for item in candidates]
         candidate_scores = [item["score"] for item in candidates]
 
-        selected_chunk = select_best_chunk(candidate_chunks, candidate_scores)
+        selected_chunk = select_best_chunk(
+            candidate_chunks,
+            candidate_scores,
+        )
 
-        # Retrieve the score belonging to the exact selected chunk.
+        # Find the score for the exact selected chunk.
         selected_index = next(
             i
             for i, candidate_chunk in enumerate(candidate_chunks)
@@ -221,7 +277,7 @@ def print_results(results):
     print("=" * 70)
 
     if not results:
-        print("No sufficiently relevant source found.")
+        print("No eligible, sufficiently relevant source found.")
         return
 
     for rank, result in enumerate(results, start=1):

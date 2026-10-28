@@ -125,7 +125,11 @@ def run_evaluation():
         question = test["question"]
         expected_id = test["expected_document_id"]
 
-        results = search_legal_sources(question, top_k=TOP_K)
+        results = search_legal_sources(
+            question,
+            top_k=TOP_K,
+            evaluation_mode=True,
+        )
         document_ids = [r.get("document_id") for r in results]
 
         # Recall@k: one expected relevant document per question.
@@ -180,7 +184,11 @@ def run_evaluation():
     rejected = 0
 
     for question in IRRELEVANT_QUERIES:
-        results = search_legal_sources(question, top_k=TOP_K)
+        results = search_legal_sources(
+            question,
+            top_k=TOP_K,
+            evaluation_mode=True,
+        )
         is_rejected = len(results) == 0
 
         if is_rejected:
